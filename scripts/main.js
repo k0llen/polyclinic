@@ -28,23 +28,20 @@ burgerBtn.addEventListener('click', function (){
 // burger menu accordeon 
 
 
- document.querySelectorAll('.header__nav-item-more-w').forEach((item) => {
+ document.querySelectorAll('.header__nav-item-more').forEach((item) => {
     item.addEventListener('click', () => {
         const parent = item.parentNode;
-        document.querySelectorAll('.header__nav-item-more-btn').forEach((element) => {
-            element.classList.remove('header__nav-item-more-btn-hover');
-        })
         document.querySelectorAll('.header__nav-more-list-w').forEach((element) => {
             element.classList.remove('header__nav-more-list-w-hover');
-        })
-        if (parent.classList.contains('burger__accordeon-item--active')) {
-            parent.classList.remove('burger__accordeon-item--active');
+        });
+        if (item.classList.contains('burger__accordeon-item--active')) {
+            item.classList.remove('burger__accordeon-item--active');
         } else {
             document.querySelectorAll('.header__nav-item-more').forEach((child) => {
                 child.classList.remove('burger__accordeon-item--active');
             })
-            parent.classList.add('burger__accordeon-item--active');
+            item.classList.add('burger__accordeon-item--active');
         }
-    })
- })
+    });
+ });
 
