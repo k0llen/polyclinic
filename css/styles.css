@@ -497,6 +497,10 @@ h1, h2, h3, h4, h5, h6{
     display: none;
 }
 
+.doctors__btn-hide{
+    display: none;
+}
+
 /* Doctor styles end */
 
 /* Service styles start */
@@ -527,7 +531,7 @@ h1, h2, h3, h4, h5, h6{
 
 @media screen and (max-width: 970px) {
     .wrapper {
-        padding: 0 24px;
+        padding: 0 16px;
         max-width: 768px;
     }
 
@@ -867,6 +871,12 @@ h1, h2, h3, h4, h5, h6{
         display: block;
     }
 
+    .doctors__btn-hide{
+        text-align: center;
+        align-self: stretch;
+    }
+
+
 }
 
 @media screen and (max-width:450px){
@@ -890,9 +900,33 @@ h1, h2, h3, h4, h5, h6{
         max-width: 280px;
         max-height: 260px;
     }
+    
+    .doctors__list{
+        margin-bottom: 36px;
+    }
 
     .doctors__item:nth-child(4), .doctors__item:nth-child(7){
         margin-right: 0;
+    }
+
+    .doctors__item:nth-child(8), .doctors__item:nth-child(9){
+        margin-bottom: 0;
+    }
+
+    .show .doctors__item-hidden{
+        display: inline-flex;
+    }
+
+    .show ~ .doctors__btn-hide{
+        display: block;
+    }
+
+    .show ~ .doctors__btn-show{
+        display: none;
+    }
+
+    .show .doctors__item:nth-child(8),.show .doctors__item:nth-child(9){
+        margin-bottom: 16px;
     }
 
 }

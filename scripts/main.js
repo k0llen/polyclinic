@@ -45,3 +45,16 @@ burgerBtn.addEventListener('click', function (){
     });
  });
 
+// Doctors show blocks
+
+const btnShow = document.querySelector('.doctors__btn-show');
+const btnHide = document.querySelector('.doctors__btn-hide');
+const docList = document.querySelector('.doctors__list');
+
+btnHide.addEventListener('click', () =>{
+    docList.classList.toggle('show');
+});
+
+btnShow.addEventListener('click', () =>{
+    docList.classList.toggle('show');
+});
