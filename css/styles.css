@@ -625,7 +625,7 @@ h1, h2, h3, h4, h5, h6{
     color: #00588D;
 }
 
-.paid__card-btn{
+.paid__btn{
     display: inline-block;
     align-self: flex-start;
 }
@@ -650,13 +650,39 @@ h1, h2, h3, h4, h5, h6{
         margin-right: 40px;
     }
 
+    .service__cards{
+        gap: 16px 12px;
+    }
+
+    .paid__cards{
+        gap: 16px 20px;
+    }
+
+    .paid__card{
+        height: 295px;
+    }
+
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 978px) {
     .wrapper {
         padding: 0 16px;
         max-width: 768px;
     }
+
+    .title{
+        font-size: 32px;
+        line-height: 120%;
+    }
+
+    .intro__title{
+        margin-bottom: 32px;
+    }
+
+    .doctors__title, .service__title, .paid__title{
+        margin-bottom: 20px;
+    }
+
 
     .header__wrapper{
         justify-content: space-between;
@@ -899,6 +925,39 @@ h1, h2, h3, h4, h5, h6{
         margin-bottom: 20px;
     }
 
+    .service{
+        margin-bottom: 80px;
+    }
+
+    .service__cards{
+        grid-template-columns: repeat(2,1fr);
+        gap: 12px;
+    }
+
+    .paid{
+        margin-bottom: 80px;
+    }
+
+    .paid__cards{
+        grid-template-columns: repeat(2,1fr);
+        gap: 12px;
+    }
+
+    .paid__card{
+        height: 264px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .paid__cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paid__card{
+        max-width: 360px;
+    }
 }
 
 
@@ -1002,6 +1061,15 @@ h1, h2, h3, h4, h5, h6{
         align-self: stretch;
     }
 
+    .service__cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paid__card{
+        padding: 10px 12px 12px 20px;
+    }
+
 
 }
 
@@ -1055,4 +1123,27 @@ h1, h2, h3, h4, h5, h6{
         margin-bottom: 16px;
     }
 
+}
+
+@media screen and (max-width:360px) {
+
+    .paid__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paid__card{
+        height: 280px;
+    }
+
+    .paid__btn{
+        align-self: stretch;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .doctors__item:nth-child(8){
+        margin-bottom: 16px;
+    }
 }
