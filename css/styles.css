@@ -968,7 +968,8 @@ h1, h2, h3, h4, h5, h6{
     }
 
     .paid__card{
-        max-width: 360px;
+        max-width: none;
+        width: 100%;
     }
 }
 
