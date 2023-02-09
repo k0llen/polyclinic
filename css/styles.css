@@ -644,6 +644,196 @@ h1, h2, h3, h4, h5, h6{
 
 /* paid styles end */
 
+/* Contacts styles start */
+
+.contacts {
+    margin-bottom: 120px;
+}
+
+.contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__title {
+    margin-bottom: 24px;
+}
+
+.contacts__cards {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.contacts__card {
+    padding: 20px 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    width: 100%;
+}
+
+.contacts__card-phone {
+    height: 236px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: span 3;
+}
+
+.contacts__card-phone-num {
+    padding-left: 32px;
+    background: url(../img/phone.png) no-repeat left center;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 135%;
+    color: #000C2B;
+    text-decoration: none;
+}
+
+.contacts__card-phone-desc {
+}
+
+.contacts__card-phone-desc-text {
+}
+
+.contacts__card-address {
+    grid-column: span 6;
+}
+
+.contacts__card-phone-desc-time{
+
+}
+.contacts__card-phone-desc-center, .contacts__card-phone-desc-time {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: #3C5C70;
+}
+
+.contacts__card-phone-desc-center{
+    margin-bottom: 2px;
+}
+
+
+
+.contacs__card-address-text{
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 135%;
+    color: #000C2B;
+    padding-left: 32px;
+    background: url(../img/location.png) no-repeat left 2px;
+    margin-bottom: 8px;
+}
+
+.contacts__card-address-info {
+    margin-bottom: 12px;
+}
+
+.contacts__card-address-info-route {
+    margin-bottom: 8px;
+}
+
+.contacts__card-address-info-route, .contacts__card-address-info-time, .contacts__card-address-phone-cass {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: #3C5C70;
+}
+
+.contacts__card-address-phone {
+}
+
+.contacts__card-address-phone-cass {
+}
+
+.contacts__card-address-phone-num {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+    text-decoration: none;
+    color: #000C2B;
+}
+
+.contacts__card-subsid {
+    grid-column: span 9;
+}
+
+.contacts__card-subsid-title {
+    margin-bottom: 20px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: #000C2B;
+}
+
+.contacts__card-subsid-cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 32px 48px;
+}
+
+.contacts__card-subsid-card {
+
+}
+.contacts__card-subsid-address{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000C2B;
+    padding-left: 28px;
+    background: url(../img/location.png) no-repeat left 2px;
+    margin-bottom: 8px;
+}
+
+
+.contacts__card-subsid-route {
+    margin-bottom: 8px;
+}
+
+.contacts__card-subsid-time {
+    margin-bottom: 8px;
+}
+
+.contacts__card-subsid-phone {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+    color: #000C2B;
+    text-decoration: none;
+}
+
+.contacts__card-subsid-cass {
+
+}
+
+.contacts__card-subsid-route, .contacts__card-subsid-time, .contacts__card-subsid-cass{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: #3C5C70;
+}
+
+.contacts__btn-more {
+    display: block;
+    align-self: flex-start;
+    text-align: center;
+}
+
+.contacts__card-phone-num, .contacts__card-address-phone-num, .contacts__card-subsid-phone{
+    transition: .3s all;
+}
+
+.contacts__card-phone-num:hover, .contacts__card-address-phone-num:hover, .contacts__card-subsid-phone:hover{
+    opacity: .7;
+}
+
+/* Contacts styles end */
+
 /* Media styles */ 
 
 @media screen and (min-width: 1024px) {
@@ -656,7 +846,7 @@ h1, h2, h3, h4, h5, h6{
 
 @media screen and (max-width: 1024px) {
     .wrapper{
-        padding: 0 48px;
+        padding: 0 16px;
     }
     .header__logo{
         margin-right: 40px;
@@ -674,13 +864,14 @@ h1, h2, h3, h4, h5, h6{
         height: 295px;
     }
 
+    .contacts__cards{
+        gap: 20px;
+    }
+
+
 }
 
 @media screen and (max-width: 978px) {
-    .wrapper {
-        padding: 0 16px;
-        max-width: 768px;
-    }
 
     .title{
         font-size: 32px;
@@ -959,6 +1150,36 @@ h1, h2, h3, h4, h5, h6{
         height: 264px;
     }
 
+
+    .contacts{
+        margin-bottom: 80px;
+    }
+
+    .contacts__cards{
+        gap: 12px;
+    }
+
+    .contacts__card{
+        padding: 16px;
+    }
+
+    .contacts__card-phone{
+        grid-column: span 3;
+    }
+
+    .contacts__card-address{
+        grid-column: span 6;
+    }
+
+    .contacts__card-subsid-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .contacts__card-phone-num, .contacts__card-address-text{
+        font-size: 20px;
+        line-height: 135%;
+    }
+
 }
 
 @media screen and (max-width:700px) {
@@ -1099,6 +1320,21 @@ h1, h2, h3, h4, h5, h6{
         padding: 10px 12px 12px 20px;
     }
 
+    .contacts__cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__card-subsid-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contacts__btn-more{
+        align-self: stretch;
+    }
+
 
 }
 
@@ -1135,7 +1371,7 @@ h1, h2, h3, h4, h5, h6{
     .doctors__item:nth-child(8), .doctors__item:nth-child(9){
         margin-bottom: 0;
     }
-    
+
     .paid__wrapper{
         display: flex;
         flex-direction: column;
