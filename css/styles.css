@@ -1636,9 +1636,18 @@ h1, h2, h3, h4, h5, h6{
         display: flex;
         flex-direction: column;
     }
+    
+    .paid__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
 
     .paid__card{
         padding: 10px 12px 12px 20px;
+    }
+    .paid__btn{
+        align-self: stretch;
+        text-align: center;
     }
 
     .contacts__cards{
@@ -1753,19 +1762,10 @@ h1, h2, h3, h4, h5, h6{
         margin-bottom: 0;
     }
 
-    .paid__wrapper{
-        display: flex;
-        flex-direction: column;
-    }
-
     .paid__card{
         height: 280px;
     }
 
-    .paid__btn{
-        align-self: stretch;
-        text-align: center;
-    }
 
 }
 
