@@ -611,7 +611,13 @@ h1, h2, h3, h4, h5, h6{
     line-height: 145%;
     color: #3C5C70;
     text-decoration: none;
+    transition: .3s all;
 }
+
+.paid__card-link:hover{
+    color: #000C2B;
+}
+
 .paid__card-more {
     position: absolute;
     bottom: 12px;
@@ -619,10 +625,16 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 400;
     font-size: 16px;
     line-height: 145%;
-    padding-right: 36px;
-    background: url(../svg/arrow-right.svg) no-repeat 95% center;
+    padding: 5px 36px 5px 10px;
+    background: url(../svg/arrow-right.svg) no-repeat 93% center;
     text-decoration: none;
     color: #00588D;
+    transition: .3s all;
+    border-radius: 16px;
+}
+
+.paid__card-more:hover{
+    background: url(../svg/arrow-right.svg) no-repeat 95% center, #FFFFFF;
 }
 
 .paid__btn{
