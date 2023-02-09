@@ -1061,6 +1061,22 @@ h1, h2, h3, h4, h5, h6{
         align-self: stretch;
     }
 
+    .show .doctors__item-hidden{
+        display: inline-flex;
+    }
+
+    .show ~ .doctors__btn-hide{
+        display: block;
+    }
+
+    .show ~ .doctors__btn-show{
+        display: none;
+    }
+
+    .show .doctors__item:nth-child(8),.show .doctors__item:nth-child(9){
+        margin-bottom: 16px;
+    }
+
     .service__cards{
         display: flex;
         flex-direction: column;
@@ -1107,21 +1123,6 @@ h1, h2, h3, h4, h5, h6{
         margin-bottom: 0;
     }
 
-    .show .doctors__item-hidden{
-        display: inline-flex;
-    }
-
-    .show ~ .doctors__btn-hide{
-        display: block;
-    }
-
-    .show ~ .doctors__btn-show{
-        display: none;
-    }
-
-    .show .doctors__item:nth-child(8),.show .doctors__item:nth-child(9){
-        margin-bottom: 16px;
-    }
 
 }
 
