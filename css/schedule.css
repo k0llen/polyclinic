@@ -1286,6 +1286,10 @@ h1, h2, h3, h4, h5, h6{
         padding: 8px;
     }
 
+    .schedule-dropdown__list-item {
+        padding: 8px 8px 8px 16px;
+    }
+
     .schedule__dropdown-wrapper .schedule-form-group:last-child .schedule-dropdown__list{
         top: 60px;
     }
