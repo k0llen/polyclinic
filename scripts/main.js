@@ -27,23 +27,24 @@ burgerBtn.addEventListener('click', function (){
 
 // burger menu accordeon 
 
-
- document.querySelectorAll('.header__nav-item-more').forEach((item) => {
-    item.addEventListener('click', () => {
-        const parent = item.parentNode;
-        document.querySelectorAll('.header__nav-more-list-w').forEach((element) => {
-            element.classList.remove('header__nav-more-list-w-hover');
+if(screenWidth <= 978) {
+    document.querySelectorAll('.header__nav-item-more').forEach((item) => {
+        item.addEventListener('click', () => {
+            document.querySelectorAll('.header__nav-more-list-w').forEach((element) => {
+                element.classList.remove('header__nav-more-list-w-hover');
+            });
+            if (item.classList.contains('burger__accordeon-item--active')) {
+                item.classList.remove('burger__accordeon-item--active');
+            } else {
+                document.querySelectorAll('.header__nav-item-more').forEach((child) => {
+                    child.classList.remove('burger__accordeon-item--active');
+                })
+                item.classList.add('burger__accordeon-item--active');
+            };
         });
-        if (item.classList.contains('burger__accordeon-item--active')) {
-            item.classList.remove('burger__accordeon-item--active');
-        } else {
-            document.querySelectorAll('.header__nav-item-more').forEach((child) => {
-                child.classList.remove('burger__accordeon-item--active');
-            })
-            item.classList.add('burger__accordeon-item--active');
-        }
     });
- });
+};
+
 
 // Doctors show blocks
 
@@ -58,3 +59,7 @@ btnHide.addEventListener('click', () =>{
 btnShow.addEventListener('click', () =>{
     docList.classList.toggle('show');
 });
+
+
+// Shedule filters
+
