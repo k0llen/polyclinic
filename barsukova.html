@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/schedule.css">
+    <link rel="stylesheet" href="./css/barsukova.css">
     <title>Мурманская городская поликлиника № 2</title>
 </head>
 <body>
@@ -51,7 +51,7 @@
                     <div class="header__nav-bot">
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
-                                <a href="#!" class="header__nav-item-text">
+                                <a href="./schedule.html" class="header__nav-item-text">
                                     Расписание
                                 </a>
                             </li>
@@ -148,7 +148,7 @@
                                 </div>                              
                             </li>
                             <li class="header__nav-item header__nav-item-more">
-                                <a href="./about.html" class="header__nav-item-text header__nav-item-text-more">
+                                <a href="#!" class="header__nav-item-text header__nav-item-text-more">
                                     О поликлинике
                                 </a>
                                 <div class="header__nav-more-list-w header__nav-more-list-w-hover">
@@ -248,391 +248,193 @@
     </header>
     <!--Header end-->
     <main class="main">
-        <!-- Schedule start -->
-        <section class="schedule">
+        <!--About start-->
+        <section class="about">
             <div class="wrapper">
-                <h1 class="schedule__title">
+                <a href="./schedule.html" class="about__link-back">
                     Расписание приёма
-                </h1>
-                <p class="schedule__desc">
-                    При первом посещении врача с собой нужно взять паспорт, медполис и СНИЛС.
-                </p>
-                <div class="schedule__form-wrapper">
-                    <div class="schedule__btns">
-                        <img src="./img/filters-button.png" alt="" class="schedule__dropdown-btn-open">
-                        <span class="schedule__dropdown-btn-close"></span>
-                    </div>
-                    <div class="schedule__dropdown-wrapper">
-                        <div class="schedule-form-group">
-                            <div class="schedule-dropdown">
-                                <button class="schedule-dropdown__button">Все филиалы</button>
-                                <ul class="schedule-dropdown__list">
-                                    <li class="schedule-dropdown__list-item" data-value="all">Все филиалы</li>
-                                    <li class="schedule-dropdown__list-item" data-value="1">Филиал 1</li>
-                                    <li class="schedule-dropdown__list-item" data-value="2">Филиал 2</li>
-                                    <li class="schedule-dropdown__list-item" data-value="3">Филиал 3</li>
-                                </ul>
-                                <input type="text" name="select-category" value="" class="schedule-dropdown__input-hidden" >
-                            </div>
-                        </div>
-                        <div class="schedule-form-group">
-                            <div class="schedule-dropdown">
-                                <button class="schedule-dropdown__button">Все отделения и специальности</button>
-                                <ul class="schedule-dropdown__list">
-                                    <li class="schedule-dropdown__list-item" data-value="all">Все отделения и специальности</li>
-                                    <li class="schedule-dropdown__list-item" data-value="1">Отделение 1</li>
-                                    <li class="schedule-dropdown__list-item" data-value="2">Отделение 2</li>
-                                    <li class="schedule-dropdown__list-item" data-value="3">Отделение 3</li>
-                                </ul>
-                                <input type="text" name="select-category" value="" class="schedule-dropdown__input-hidden" >
-                            </div>
+                </a>
+                <div class="about__card">
+                    <div class="about__card-top">
+                        <img src="./schedule-card-pics/schedule-card-pic-barsukova.png" alt="" class="about__pic">
+                        <div class="about__name-block">
+                            <h1 class="about__name">
+                                Барсукова Анастасия Николаевна
+                            </h1>
+                            <p class="about__prof desc">
+                                Педиатр
+                            </p>
                         </div>
                     </div>
-                    <div class="schedule__searchform">
-                        <input class="schedule__searchform-form" type="text" name="" id="" placeholder="Найти врача...">
-                        <a class="schedule__searchform-button">
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19 11.5002C19 13.7102 18.105 15.7102 16.657 17.1572C15.3483 18.466 13.6263 19.2805 11.7844 19.462C9.94243 19.6434 8.09457 19.1806 6.55563 18.1524C5.01668 17.1242 3.88187 15.5941 3.34455 13.823C2.80723 12.0519 2.90064 10.1492 3.60887 8.43926C4.3171 6.72929 5.59633 5.31779 7.2286 4.44525C8.86086 3.57272 10.7452 3.29315 12.5605 3.65417C14.3757 4.01519 16.0097 4.99446 17.1839 6.42514C18.3581 7.85581 18.9999 9.64937 19 11.5002V11.5002Z" stroke="#607988" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M21 21.5002L16.657 17.1572" stroke="#607988" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
-                            </svg>
+                    <h2 class="about__schedule">
+                        Расписание приёма
+                    </h2>
+                    <div class="about__sector-block">
+                        <p class="about__sector card__title">
+                            1, 5, 10 участки 
+                        </p>
+                        <a href="#!" class="about__sector-link">
+                            Узнать свой участок
                         </a>
                     </div>
+                    <ul class="about__sector-list">
+                        <li class="about__sector-item desc">
+                            ул. Героев Рыбачьего, 35/1, 35/2, 35/3, 37, 41, 43, 45, 47, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75
+                        </li>
+                        <li class="about__sector-item desc">
+                            ул. Крупской, 1–12, 14–25, 27, 29–36, 38, 40, 40А, 42, 44, 46, 48, 50, 52, 54, 60, 62, 64, 66, 68
+                        </li>
+                        <li class="about__sector-item desc">
+                            ул. Бабикова, 1, 2, 2А, 3–12, 14–16
+                        </li>
+                        <li class="about__sector-item desc">
+                            ул. Копытова, 47–50
+                        </li>
+                    </ul>
+                    <p class="about__address card__title">
+                        Мурманск, пр. Кольский, 149а, каб. 224
+                    </p>
+                    <ul class="about__time-list">
+                        <li class="about__time-item desc">
+                            пн 9:00–13:00
+                        </li>
+                        <li class="about__time-item desc">
+                            вт 9:00–13:00
+                        </li>
+                        <li class="about__time-item desc">
+                            ср 13:30–17:00
+                        </li>
+                        <li class="about__time-item desc">
+                            чт 8:30–12:00
+                        </li>
+                        <li class="about__time-item desc">
+                            пт 8:30–12:30
+                        </li>
+                    </ul>
+                    <a href="#!" class="about__enroll btn-red">Записаться</a>
+                    <h2 class="about__qual">
+                        Квалификация
+                    </h2>
+                    <div class="about__education-block">
+                        <h3 class="about__education-title card__title">
+                            Образование
+                        </h3>
+                        <p class="about__education-type desc">
+                            Высшее, Педиатрия 
+                        </p>
+                        <p class="about__education-place desc">
+                            ГОУ ВПО «Ставропольская государственная медицинская академия» Федерального агентства по Здравоохранению и социальному развитию»
+                        </p>
+                        <p class="about__education-date desc">
+                            2006 г.
+                        </p>
+                    </div>
+                    <div class="about__cat">
+                        <h3 class="about__cat-title card__title">
+                            Категория
+                        </h3>
+                        <p class="about__cat-type desc">
+                            Высшая, Педиатрия 
+                        </p>
+                        <p class="about__cat-date desc">
+                            от 16.12.2019
+                        </p>
+                    </div>
+                    <div class="about__sertificate">
+                        <h3 class="about__sertificate-title card__title">
+                            Сертификат специалиста
+                        </h3>
+                        <p class="about__sertificate-type desc">
+                            Педиатрия 
+                        </p>
+                        <p class="about__sertificate-given desc">
+                            выдан ФГБОУ ВО «Ставропольский государственный медицинский университет» МЗ РФ
+                        </p>
+                        <p class="about__sertificate-date desc">
+                            до 26.06.2026 
+                        </p>
+                    </div>
                 </div>
-                <div class="schedule__cards">
-                    <a href="./barsukova.html" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-barsukova.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Барсукова Анастасия Николаевна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Терапевт
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-stethocsope.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Абдулов Хусрав Умаралиевич
-                            </p>
-                            <p class="schedule__card-prof">
-                                Терапевт
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-syringe.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Диагностические кабинеты
-                            </p>
-                            <p class="schedule__card-prof">
-                                Приём анализов, прививки, процедуры, ЭКГ
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-tooth.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Артемьева Анна Александровна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Cтоматолог
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-robe.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Барковская Анастасия Николаевна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Врач-статистик, зав. информационно-статистическим отделением
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-robe.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Барсукова Анна Александровна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Эндоскопист
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-stethocsope.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
+            </div>
+        </section>
+        <!--About end-->
+        <!--Similar start-->
+        <section class="similar">
+            <div class="wrapper">
+                <h2 class="similar__title">
+                    Похожие врачи
+                </h2>
+                <div class="similar__cards">
+                    <div class="similar__card">
+                        <img src="./schedule-card-pics/schedule-card-pic-stethocsope.png" alt="" class="similar__pic">
+                        <div class="similar__card-text-block">
+                            <h3 class="similar__card-name">
                                 Батечко Виктория Игоревна
-                            </p>
-                            <p class="schedule__card-prof">
+                            </h3>
+                            <p class="similar__card-prof">
                                 Врач общей практики (семейный врач), зав. терапевтическим отделением 
                             </p>
                         </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-batova.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
+                    </div>
+                    <a href="#!" class="similar__card">
+                        <img src="./schedule-card-pics/schedule-card-pic-batova.png" alt="" class="similar__pic">
+                        <div class="similar__card-text-block">
+                            <h3 class="similar__card-name">
                                 Батова Наталья Васильевна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Физиотерапевт
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-brain.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Баулина Марина Станиславовна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Невролог
+                            </h3>
+                            <p class="similar__card-prof">
+                                Педиатр
                             </p>
                         </div>
                     </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-pill.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Бездушняк Юлия Владимировна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Эндокринолог
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-belavina.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Белавина Ксения Евгеньевна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Инфекционист
+                    <a href="#!" class="similar__card">
+                        <img src="./schedule-card-pics/schedule-card-pic-stethocsope.png" alt="" class="similar__pic">
+                        <div class="similar__card-text-block">
+                            <h3 class="similar__card-name">
+                                Абдулов Хусрав Умаралиевич
+                            </h3>
+                            <p class="similar__card-prof">
+                                Педиатр
                             </p>
                         </div>
                     </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-stethocsope.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
+                    <a href="#!" class="similar__card">
+                        <img src="./schedule-card-pics/schedule-card-pic-stethocsope.png" alt="" class="similar__pic">
+                        <div class="similar__card-text-block">
+                            <h3 class="similar__card-name">
                                 Белая Татьяна Петровна
-                            </p>
-                            <p class="schedule__card-prof">
+                            </h3>
+                            <p class="similar__card-prof">
                                 Врач общей практики (семейный врач)
                             </p>
                         </div>
                     </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-bijoeva.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
+                    <a href="#!" class="similar__card">
+                        <img src="./schedule-card-pics/schedule-card-pic-bijoeva.png" alt="" class="similar__pic">
+                        <div class="similar__card-text-block">
+                            <h3 class="similar__card-name">
                                 Биджоева Анастасия Анатольевна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Терапевт, зав. терапевтическим отделением 
+                            </h3>
+                            <p class="similar__card-prof">
+                                Педиатр, зав. педиатрическим отделением 
                             </p>
                         </div>
                     </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-boyandina.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
+                    <a href="#!" class="similar__card">
+                        <img src="./schedule-card-pics/schedule-card-pic-boyandina.png" alt="" class="similar__pic">
+                        <div class="similar__card-text-block">
+                            <h3 class="similar__card-name">
                                 Бояндина Елена Сергеевна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Терапевт
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-tooth.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Втехина Екатерина Михайловна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Cтоматолог
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-tooth.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Вещева Татьяна Анатольевна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Cтоматолог-терапевт
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-brain.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Василенко Елена Викторовна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Невролог, рефлексотерапевт
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-bistrickiy.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Быстрицкий Николай Иосифович
-                            </p>
-                            <p class="schedule__card-prof">
-                                Врач общей практики (семейный врач)
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-bistrickaya.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Быстрицкая Светлана Франковна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Врач клинической лабораторной диагностики, зав. клинической лабораторией
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-brain.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Василенко Елена Викторовна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Невролог, рефлексотерапевт
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-stethocsope.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Громовой Андрей Вячеславович
-                            </p>
-                            <p class="schedule__card-prof">
-                                Терапевт
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-stethocsope.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Гремякова Нина Олеговна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Терапевт, зав. терапевтическим отделением 
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-hearth.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Горохова Екатерина Сергеевна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Кардиолог
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-tooth.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Горбунова Юлия Васильевна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Зубной врач
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-stethocsope.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Гаврилина Дарья Сергеевна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Терапевт
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-stethocsope.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Дацюк Нина Владимировна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Терапевт
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-robe.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Деветиярова Ольга Александровна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Врач ультразвуковой диагностики
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-hearth.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Джорабаев Ойбек Салижанович
-                            </p>
-                            <p class="schedule__card-prof">
-                                Кардиолог
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-dobrov.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Добров Дмитрий Анатольевич
-                            </p>
-                            <p class="schedule__card-prof">
-                                Кардиолог, терапевт 
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#!" class="schedule__card">
-                        <img src="./schedule-card-pics/schedule-card-pic-stethocsope.png" alt="" class="schedule__card-pic">
-                        <div class="schedule__card-text">
-                            <p class="schedule__card-name">
-                                Доброва Маргарита Алексеевна
-                            </p>
-                            <p class="schedule__card-prof">
-                                Терапевт
+                            </h3>
+                            <p class="similar__card-prof">
+                                Педиатр
                             </p>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
-        <!-- Schedule end -->
+        <!--Similar end-->
     </main>
     <!--Footer start-->
     <footer class="footer">
@@ -819,6 +621,5 @@
     </footer>
     <!--Footer end-->
     <script src="./scripts/main.js"></script>
-    <script src="./scripts/schedule-script.js"></script>
 </body>
 </html>

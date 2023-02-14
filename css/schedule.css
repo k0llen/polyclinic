@@ -451,6 +451,12 @@ h1, h2, h3, h4, h5, h6{
     gap: 16px;
 }
 
+.schedule__btns{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
 .schedule__dropdown-btn-open{
     padding: 8px;
     border-radius: 8px;
@@ -676,6 +682,8 @@ h1, h2, h3, h4, h5, h6{
     padding-top: 32px;
     padding-bottom: 32px;
     background: #FFFFFF;
+    width: calc(100% - 48px);
+    margin: 0 auto;
 }
 
 .footer__wrapper {
@@ -1107,10 +1115,24 @@ h1, h2, h3, h4, h5, h6{
 
     /* Burger end*/
 
+    .schedule{
+        margin-bottom: 80px;
+    }
+
+    .schedule__title{
+        margin-bottom: 8px;
+        font-size: 32px;
+    }
+
+    .schedule__desc{
+        margin-bottom: 24px;
+    }
+
     .schedule__form-wrapper{
         flex-direction: row-reverse;
         gap: 8px;
         position: relative;
+        margin-bottom: 24px;
     }
 
     .schedule__dropdown--active .schedule__dropdown-btn-open{
@@ -1139,6 +1161,10 @@ h1, h2, h3, h4, h5, h6{
         background: #FFFFFF;
     }
 
+    .schedule__btns{
+        display: block;
+    }
+
 
     .schedule__dropdown-btn-open{
         display: block;
@@ -1154,6 +1180,7 @@ h1, h2, h3, h4, h5, h6{
     .footer{
         padding: 0;
         background: none;
+        width: 100%;
     }
 
     .footer__wrapper{
