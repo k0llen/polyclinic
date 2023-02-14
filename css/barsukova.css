@@ -1096,6 +1096,14 @@ h1, h2, h3, h4, h5, h6{
         align-items: start;
     }
 
+    .about__name{
+        font-size: 28px;
+    }
+
+    .about__schedule, .about__qual{
+        font-size: 20px;
+    }
+
 
     .similar{
         margin-bottom: 80px;
