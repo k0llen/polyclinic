@@ -420,18 +420,6 @@ h1, h2, h3, h4, h5, h6{
 /* Header styles end */
 
 /* About styles start */
-
-.card__title{
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
-}
-
-.about {
-    margin-bottom: 64px;
-}
-
 .about__link-back {
     display: inline-block;
     font-size: 16px;
@@ -444,208 +432,110 @@ h1, h2, h3, h4, h5, h6{
     transition: .3s all;
 }
 
-.about__link-back:hover{
-    color: #000C2B;
+.about {
+    margin-bottom: 120px;
 }
 
 .about__card {
-    padding: 24px 32px 32px;
+    padding: 24px 16px 32px 32px;
     border-radius: 24px;
     background: #FFFFFF;
 }
 
-.about__card-top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 32px;
-}
-
-.about__pic {
-    margin-right: 16px;
-    width: 88px;
-    height: 88px;
-    border-radius: 50%;
-}
-
-.about__name-block {
-}
-
-.about__name {
-    font-size: 30px;
-    line-height: 120%;
-    margin-bottom: 4px;
-}
-
-.about__prof {
-}
-
-.about__schedule {
+.card__title{
     font-size: 22px;
     line-height: 135%;
     margin-bottom: 12px;
 }
 
-.about__sector-block {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4px;
-}
-
-.about__sector {    
-    margin-right: 24px;
-}
-
-.about__sector-link {
-    font-size: 16px;
-    line-height: 145%;
-    color: #00588D;
-    padding-right: 30px;
-    background: url(../svg/arrow-right-blue.svg) no-repeat right center;
-    text-decoration: none;
-    transition: .3s all;
-}
-
-.about__sector-link:hover{
-    opacity: .7;
-}
-
-.about__sector-list {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-bottom: 16px;
-}
-.about__sector-item {
-}
-.about__address {
-    margin-bottom: 4px;
-}
-.about__time-list {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    margin-bottom: 24px;
-}
-
-
-
-.about__time-item {
-}
-
-.about__enroll{
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.about__qual {
-    font-size: 22px;
-    line-height: 135%;
-    margin-bottom: 12px;
-}
-.about__education-block {
-    margin-bottom: 16px;
-}
-.about__education-title {
-    margin-bottom: 4px;
-}
-.about__education-type {
-    margin-bottom: 4px;
-}
-.about__education-place {
-    margin-bottom: 4px;
-}
-.about__education-date {
-}
-.about__cat {
-    margin-bottom: 16px;
-}
-.about__cat-title {
-    margin-bottom: 4px;
-}
-.about__cat-type {
-    margin-bottom: 4px;
-}
-.about__cat-date {
-}
-.about__sertificate {
-}
-.about__sertificate-title {
-    margin-bottom: 4px;
-}
-.about__sertificate-type {
-    margin-bottom: 4px;
-}
-.about__sertificate-given {
-    margin-bottom: 4px;
-}
-.about__sertificate-date {
-}
-
-/* About styles end */
-
-
-/* Similar styles start */
-
-.similar {
-    margin-bottom: 120px;
-}
-
-.similar__title{
-    font-size: 30px;
-    line-height: 120%;
-    margin-bottom: 24px;
-}
-
-.similar__cards {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 16px;
-}
-.similar__card {
-    display: flex;
-    padding: 16px;
-    align-items: flex-start;
-    border-radius: 16px;
-    background: #FFFFFF;
-    text-decoration: none;
-    transition: .3s all;
-}
-
-.similar__card:hover{
-    background: #F7FBFF;
-}
-
-.similar__card-image{
-    margin-right: 12px;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 64px;
-    height: 64px;
-}
-
-.similar__pic {
-    object-fit: cover;
-}
-
-
-.similar__card-text-block {
-    width: calc(100% - 76px);
-}
-
-.similar__card-name {
-    font-weight: 600;
+.cab {
+    font-weight: 500;
     font-size: 18px;
     line-height: 150%;
     margin-bottom: 4px;
 }
-.similar__card-prof {
+
+.desc {
     font-size: 16px;
     line-height: 145%;
     color: #3C5C70;
 }
 
-/* Similar styles end */
+.about__card-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.about__card-phone{
+    text-decoration: none;
+    transition: .3s all;
+    display: inline-block;
+}
+
+.about__card-phone:hover{
+    color: #00588D;
+}
+
+.about__card-image {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 16px;
+}
+.about__card-pic {
+    object-fit: cover;
+    width: 100%;
+}
+.about__card-name-block {
+    width: calc(100% - 100px);
+}
+.about__card-name {
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 4px;
+}
+.about__card-spec {
+}
+.about__card-enroll {
+    margin-bottom: 32px;
+}
+
+.about__card-block {
+    margin-bottom: 40px;
+}
+
+.about__card-block:last-child{
+    margin-bottom: 0;
+}
+
+.about__card-block-title {
+}
+
+.about__card-block-cab {
+}
+
+.about__card-block-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.xray__title{
+    margin-bottom: 4px;
+}
+
+.about__card-block-desc {
+    margin-bottom: 12px;
+}
+
+.about__card-block-place {
+}
+
+/* About styles end */
+
+
 
 
 /* Footer styles start */
@@ -1097,9 +987,6 @@ h1, h2, h3, h4, h5, h6{
         align-items: flex-start;
     }
 
-    .about__sector{
-        margin: 0 0 2px 0;
-    }
 
     .about__time-list{
         flex-direction: column;
@@ -1107,23 +994,16 @@ h1, h2, h3, h4, h5, h6{
         align-items: start;
     }
 
-    .about__name{
+    .about__card-name{
         font-size: 28px;
     }
 
-    .about__schedule, .about__qual{
+    .about__card-enroll{
+        max-width: 550px;
+    }
+
+    .card__title{
         font-size: 20px;
-    }
-
-
-    .similar{
-        margin-bottom: 80px;
-    }
-
-    .similar__cards{
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
     }
 
 
@@ -1142,7 +1022,12 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:760px) {
+    .about__card-block-list{
+        flex-direction: column;
+        gap: 4px;
+        align-items: flex-start;
+    }
 }
 
 
@@ -1215,18 +1100,21 @@ h1, h2, h3, h4, h5, h6{
         transform: rotate(180deg);
     }
 
+    .about{
+        margin-bottom: 80px;
+    }
+
     .about__card-top{
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .about__pic{
-        margin: 0 0 8px 0;
+    .about__card-name-block{
+        width: 100%;
     }
 
-    .about__enroll{
-        display: block;
-        width: 100%;
+    .about__card-image{
+        margin: 0 0 8px 0;
     }
 
     .footer__wrapper{
