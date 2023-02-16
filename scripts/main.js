@@ -1,4 +1,4 @@
-const screenWidth = window.screen.width
+const screenWidth = window.innerWidth;
 // Header searchform opening
 if (document.querySelector('.header')){
     const headerBot = document.querySelector('.header__nav-bot');
@@ -129,6 +129,22 @@ if (document.querySelector('.schedule-dropdown')){
     });
 }
 
-if (document.querySelector('.call__side') && screenWidth >= 978) {
-    let sticky = new Sticky('.call__side');
+
+
+if (document.querySelector('.call__side-sticky')) {
+    if(screenWidth >= 1010){
+        var sticky = new Sticky('.call__side');
+    }
 }
+
+
+if (document.querySelector('#phone')) {
+    jQuery(function($){
+        $("#phone").mask("+7 (999) 999-99-99");
+    });
+}
+
+
+new AirDatepicker('#calendar', {
+    position: 'right center',
+});

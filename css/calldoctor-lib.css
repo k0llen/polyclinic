@@ -270,6 +270,7 @@ h1, h2, h3, h4, h5, h6{
     left: 0;    
     width: 100%;
     transition: all .3s ;
+    z-index: 2;
 }
 
 .header__nav-more-list-w-hover{
@@ -517,15 +518,22 @@ h1, h2, h3, h4, h5, h6{
     opacity: .7;
 }
 
-.call__date {
-    font-size: 16px;
-    line-height: 145%;
+.call__dates {
     margin-bottom: 24px;
 }
-.call__desc {
+
+.call__date{
     font-size: 16px;
     line-height: 145%;
+}
+
+.call__descs {
     margin-bottom: 24px;
+}
+
+.call__desc{
+    font-size: 16px;
+    line-height: 145%;
 }
 
 .call__form-w {
@@ -538,7 +546,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 24px;
 }
 
-input{
+.call__form-input{
     border: 1px solid #E0E4E7;
     border-radius: 8px;
     transition: .3s all;
@@ -547,9 +555,10 @@ input{
     font-size: 16px;
     line-height: 145%;
     color: #000C2B;
+    font-family: "Inter", sans-serif;
 }
 
-input:hover, input:focus, input:active{
+.call__form-input:hover, .call__form-input:focus, .call__form-input:active{
     border: 1px solid #00588D;
 }
 
@@ -557,17 +566,17 @@ input:hover, input:focus, input:active{
     position: relative;
 }
 
-.call__form-block-m{
+.call__form-block_medium{
     width: 100%;
     max-width: 460px;
 }
 
-.call__form-block-s{
+.call__form-block_small{
     max-width: 160px;
     width: 100%;
 }
 
-.call__form-block-w{
+.call__form-block-wrapper{
     width: 100%;
     display: flex;
     align-items: center;
@@ -1142,7 +1151,7 @@ input:hover, input:focus, input:active{
         margin-bottom: 16px;
     }
 
-    .call__form-block-m{
+    .call__form-block_medium{
         max-width: none;
     }
 
@@ -1240,12 +1249,12 @@ input:hover, input:focus, input:active{
         transform: rotate(180deg);
     }
 
-    .call__form-block-w{
+    .call__form-block-wrapper{
         flex-direction: column;
         gap: 24px;
     }
 
-    .call__form-block-s{
+    .call__form-block_small{
         max-width: none;
     }
 

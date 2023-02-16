@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/calldoctor.css">
+    <link rel="stylesheet" href="./libs/air-datepicker/air-datepicker.css">
     <title>Вызов врача</title>
 </head>
 <body>
@@ -259,61 +260,71 @@
                             Для вызова врача позвоните 
                         </p>
                         <a href="tel:88153656286" class="call__phone">8 (81536) 5-62-86</a>
-                        <p class="call__date">
-                            пн-пт 08:00–20:00<br>сб 9:00–14:00
-                        </p>
-                        <p class="call__desc">
-                            либо заполните форму ниже.<br>Заявки обрабатываем по будням 08:00–20:00, в сб 09:00–13:00.
-                        </p>
-                        <form action="" class="call__form-w">
+                        <div class="call__dates">
+                            <p class="call__date">
+                                пн-пт 08:00–20:00
+                            </p>
+                            <p class="call__date">
+                                сб 9:00–14:00
+                            </p>
+                        </div>
+                        <div class="call__descs">
+                            <p class="call__desc">
+                                либо заполните форму ниже.
+                            </p>
+                            <p class="call__desc">
+                                Заявки обрабатываем по будням 08:00–20:00, в сб 09:00–13:00.
+                            </p>
+                        </div>
+                        <form action="#" class="call__form-wrapper">
                             <div class="call__form-blocks">
-                                <div class="call__form-block-w">
-                                    <div class="call__form-block call__form-block-m">
-                                        <p class="call__form-label">
+                                <div class="call__form-block-wrapper">
+                                    <div class="call__form-block call__form-block_medium">
+                                        <div class="call__form-label">
                                             ФИО
-                                        </p>
-                                        <input type="text" class="call__form-name">
+                                        </div>
+                                        <input type="text" class="call__form-name call__form-input">
                                     </div>
-                                    <div class="call__form-block-s call__form-block">
-                                        <p class="call__form-label">
+                                    <div class="call__form-block_small call__form-block">
+                                        <div class="call__form-label">
                                             Дата рождения
-                                        </p>
-                                        <input type="text" class="call__form-date">
-                                        <a href="#!" class="call__form-date-calendar">
+                                        </div>
+                                        <input type="text" class="call__form-date call__form-input" id="calendar">
+                                        <span class="call__form-date-calendar">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M21 4H3V20H21V4Z" stroke="#9CADB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                                 <path d="M8 2V6" stroke="#9CADB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                                 <path d="M16 2V6" stroke="#9CADB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                                 <path d="M3 10H21" stroke="#9CADB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>                                            
-                                        </a>
+                                        </span>
                                     </div>
                                 </div>
-                                <div class="call__form-block-w">
-                                    <div class="call__form-block-s call__form-block">
-                                        <p class="call__form-label">
+                                <div class="call__form-block-wrapper">
+                                    <div class="call__form-block_small call__form-block">
+                                        <div class="call__form-label">
                                             Телефон
-                                        </p>
-                                        <input type="text" class="call__form-phone">
+                                        </div>
+                                        <input type="tel" id="phone" class="call__form-phone call__form-input">
                                     </div>
-                                    <div class="call__form-block call__form-block-m">
-                                        <p class="call__form-label">
+                                    <div class="call__form-block call__form-block_medium">
+                                        <div class="call__form-label">
                                             Адрес
-                                        </p>
-                                        <input type="text" class="call__form-address">
+                                        </div>
+                                        <input type="text" class="call__form-address call__form-input">
                                     </div>
                                 </div>
                                 <div class="call__form-block">
-                                    <p class="call__form-label">
+                                    <div class="call__form-label">
                                         Симптомы
-                                    </p>
-                                    <input type="text" class="call__form-symptoms">
+                                    </div>
+                                    <input type="text" class="call__form-symptoms call__form-input">
                                 </div>
                                 <div class="call__form-block">
-                                    <p class="call__form-label">
+                                    <div class="call__form-label">
                                         Был ли контакт с COVID-19
-                                    </p>
-                                    <input type="text" class="call__form-contact">
+                                    </div>
+                                    <input type="text" class="call__form-contact call__form-input">
                                 </div>
                             </div>
                             <div class="call__form-agreement">
@@ -330,29 +341,29 @@
                         <h2 class="call__side-title">
                             Показания к вызову врача
                         </h2>
-                        <ul class="call__side-list">
-                            <li class="call__side-item">
+                        <div class="call__side-list">
+                            <p class="call__side-item">
                                 Повышение температуры 
-                            </li>
-                            <li class="call__side-item">
+                            </p>
+                            <p class="call__side-item">
                                 Сильная боль
-                            </li>
-                            <li class="call__side-item">
+                            </p>
+                            <p class="call__side-item">
                                 Обострение хронической болезни
-                            </li>
-                            <li class="call__side-item">
+                            </p>
+                            <p class="call__side-item">
                                 Многократная рвота 
-                            </li>
-                            <li class="call__side-item">
+                            </p>
+                            <p class="call__side-item">
                                 Повышение давления
-                            </li>
-                            <li class="call__side-item">
+                            </p>
+                            <p class="call__side-item">
                                 Сыпь
-                            </li>
-                            <li class="call__side-item">
+                            </p>
+                            <p class="call__side-item">
                                 Диарея 
-                            </li>
-                        </ul>
+                            </p>
+                        </div>
                         <p class="call__side-desc">
                             Если вы в состоянии посетить врача лично, запишитесь на приём
                         </p>
@@ -546,6 +557,9 @@
         </div>
     </footer>
     <!--Footer end-->
+    <script src="./libs/air-datepicker/air-datepicker.js"></script>
+    <script src="./libs/jquery-3.6.3.min.js"></script>
+    <script src="./libs/jquery.maskedinput.js"></script>   
     <script src="./scripts/main.js"></script>
 </body>
 </html>
