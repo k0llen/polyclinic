@@ -1,8 +1,9 @@
+const screenWidth = window.screen.width
 // Header searchform opening
 if (document.querySelector('.header')){
     const headerBot = document.querySelector('.header__nav-bot');
     const btn = document.querySelector('.header__searchform-button');
-    const screenWidth = window.screen.width
+    
 
     btn.addEventListener('click', () => {
         if(screenWidth >= 1024){
@@ -126,4 +127,8 @@ if (document.querySelector('.schedule-dropdown')){
         });
 
     });
+}
+
+if (document.querySelector('.call__side') && screenWidth >= 978) {
+    let sticky = new Sticky('.call__side');
 }
