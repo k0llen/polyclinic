@@ -594,6 +594,11 @@ h1, h2, h3, h4, h5, h6{
 .call__form-desc {
 }
 
+.call__form-date-block{
+    z-index: 3;
+    position: relative;
+}
+
 .call__form-date {
 
 }
@@ -602,7 +607,7 @@ h1, h2, h3, h4, h5, h6{
     display: block;
     position: absolute;
     right: 8px;
-    bottom: 6px;
+    top: 8px;
 }
 
 

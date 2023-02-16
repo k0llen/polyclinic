@@ -145,6 +145,7 @@ if (document.querySelector('#phone')) {
 }
 
 
-new AirDatepicker('#calendar', {
+let calendar = new AirDatepicker('#calendar', {
+    inline: false,
     position: 'right center',
 });
