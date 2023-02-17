@@ -15,12 +15,6 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700;
 }
 
-
-.desc{
-    font-size: 16px;
-    line-height: 145%;
-}
-
 .title{
     font-size: 42px;
     line-height: 120%;
@@ -436,247 +430,133 @@ h1, h2, h3, h4, h5, h6{
 
 /* Header styles end */
 
-/* Call styles start */
+/* Entry styles start */
 
-
-.real-checkbox{
-    width: 0;
-    height: 0;
-    opacity: 0;
-    position: absolute;
-    z-index: -1;
-}
-
-.custom-checkbox{
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: #FFFFFF;
-    border: 1px solid #E0E4E7;
-    border-radius: 4px;
-    vertical-align: sub;
-    margin-right: 8px;
-}
-
-.custom-checkbox::before{
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background: url(../svg/check.svg) no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: .1s ease-in;
-}
-
-.real-checkbox:checked + .custom-checkbox::before {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.real-checkbox:checked + .custom-checkbox {
-    background: #EA5B13;
-}
-
-.call {
+.entry {
     margin-bottom: 120px;
 }
 
-.call__title {
+.entry__title {
     font-size: 42px;
     line-height: 120%;
     margin-bottom: 32px;
 }
-.call__cards {
+
+.entry__cards {
     display: flex;
     align-items: flex-start;
     gap: 16px;
     position: relative;
 }
-.call__form {
-    padding: 24px 32px 32px;
-    border-radius: 24px;
-    background: #FFFFFF;
-    width: calc(100% - 316px);
-}
 
-.call__form-for {
-    margin-bottom: 8px;
-}
-.call__phone {
-    font-family: 'Manrope';
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 135%;
-    margin-bottom: 2px;
-    text-decoration: none;
-    color: #000C2B;
-    transition: .3s all;
-    display: inline-block;
-}
-
-.call__phone:hover{
-    opacity: .7;
-}
-
-.call__dates {
-    margin-bottom: 24px;
-}
-
-
-.call__descs {
-    margin-bottom: 24px;
-}
-
-.call__desc{
-}
-
-.call__form-w {
-}
-
-.call__form-blocks{
+.entry__card {
+    max-width: calc(100% - 316px);
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin-bottom: 24px;
+    padding: 24px 32px 32px;
+    gap: 32px;
+    border-radius: 24px;
+    background: #FFFFFF;
 }
 
-.call__form-input{
-    border: 1px solid #E0E4E7;
-    border-radius: 8px;
-    transition: .3s all;
-    padding: 8px 8px 8px 10px;
-    width: 100%;
-    font-size: 16px;
-    line-height: 145%;
-    color: #000C2B;
-    font-family: "Inter", sans-serif;
-}
-
-.call__form-input:hover, .call__form-input:focus, .call__form-input:active{
-    border-color:#00588D;
-}
-
-.call__form-block {
-    position: relative;
-}
-
-.call__form-block_medium{
-    width: 100%;
-}
-
-.call__form-block_small{
-    max-width: 160px;
-    width: 100%;
-}
-
-.call__form-block-wrapper{
-    width: 100%;
+.entry__card-block {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 12px;
 }
 
-.call__form-label {
-    font-size: 14px;
-    line-height: 150%;
-    color: #3C5C70;
-    margin-bottom: 6px;
-}
-.call__form-name {
-}
-.call__form-desc {
+.entry__block-title {
+    font-size: 22px;
+    line-height: 135%;
 }
 
-.call__form-date-block{
-    z-index: 3;
-    position: relative;
+.entry__card-block-text {
+    font-size: 16px;
+    line-height: 145%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
 }
 
-.call__form-date {
-    position: relative;
-    z-index: 5;
-    background-color: transparent;
+.entry__block-desc {
 }
 
-.call__form-date-calendar{
-    display: block;
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    stroke: #9CADB8;
+.entry__block-desc_1 {
+    display: flex;
+    align-items: center;
+}
+
+.entry__block-desc_1-links{
+    display: flex;
+    align-items: center;
+}
+
+.entry__block-text-link {
+    margin: 0 6px 0 6px;
+    text-decoration: none;
+    color: #005081;
+    display: flex;
+    align-items: center;
+    gap: 2px;
     transition: .3s all;
 }
 
-.call__form-date:hover ~ .call__form-date-calendar, .call__form-date:focus ~ .call__form-date-calendar, .call__form-date:active ~ .call__form-date-calendar{
-    stroke: #00588D;
+.entry__block-text-link:hover{
+    opacity: .7;
 }
 
-
-
-
-.call__form-phone {
-}
-.call__form-address {
-}
-.call__form-symptoms {
-}
-.call__form-contact {
-}
-
-.call__form-agreement {
-    margin-bottom: 32px;
-}
-
-.call__form-agreement label{
+.entry__block-link {
+    color: #005081;
+    text-decoration: none;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 6px;
+    transition: .3s all;
 }
 
-.call__form-agreement-label {
-    width: calc(100% - 28px);
-}
-.call__form-button {
-    display: inline-block;
-    text-align: center;
+.entry__block-link:hover{
+    opacity: .7;
 }
 
-.call__side {
-    padding: 20px 24px;
-    border-radius: 24px;
-    background: #FFFFFF;
-    max-width: 300px;
-    width: 100%;
-    top: 20px;
-    position: sticky;
-}
-.call__side-title {
-    font-weight: 500;
+.entry__card-block-phone {
+    font-weight: 600;
     font-size: 18px;
     line-height: 150%;
-    margin-bottom: 6px;
+    color: #000C2B;
+    text-decoration: none;
+    transition: .3s all;
 }
-.call__side-list {
+
+.entry__card-block-phone:hover{
+    opacity: .7;
+}
+
+.entry__side {
+    position: sticky;
+    top: 15px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    margin-bottom: 40px;
-}
-
-.call__side-desc {
-    margin-bottom: 16px;
-}
-.call__side-button {
-    display: inline-block;
+    gap: 16px;
     width: 100%;
+    max-width: 300px;
+    padding: 20px 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+.entry__side-desc {
+    font-size: 16px;
+    line-height: 145%;
+    color: #3C5C70;
+}
+
+.entry__side-button {
     text-align: center;
+    width: 100%;
 }
 
 
-/* Call styles end */
+/* Entry styles end */
 
 
 /* Footer styles start */
@@ -840,7 +720,6 @@ h1, h2, h3, h4, h5, h6{
 
 /* Footer styles end */
 
-
 /* Media styles */ 
 
 @media screen and (min-width: 1024px) {
@@ -854,14 +733,6 @@ h1, h2, h3, h4, h5, h6{
 @media screen and (max-width: 1024px) {
     .wrapper{
         padding: 0 16px;
-    }
-
-    .call__cards{
-        gap: 12px;
-    }
-
-    .call__form {
-        width: calc(100% - 312px);
     }
 
     .header__logo{
@@ -1126,55 +997,43 @@ h1, h2, h3, h4, h5, h6{
         display: none;
     }
 
-    /* Burger end*/
-
-    .call{
+    .entry{
         margin-bottom: 80px;
     }
 
-    .call__title{
+    .entry__title{
         font-size: 32px;
         margin-bottom: 20px;
     }
 
-    .call__cards{
+    .entry__cards{
         flex-direction: column-reverse;
+        gap: 12px;
     }
 
-    .call__form{
+    .entry__card{
+        max-width: none;
         padding: 16px;
-        width: 100%;
-    }
-    
-    .call__form-for{
-        margin-bottom: 4px;
     }
 
-    .call__phone{
-        font-size: 20px;
-    }
-
-    .call__dates{
-        margin-bottom: 16px;
-    }
-
-    .call__form-block_medium{
+    .entry__side{
         max-width: none;
-    }
-
-    .call__side{
-        max-width: none;
+        padding: 16px;
         position: static;
     }
 
-    .call__side-button{
+    .entry__side-button{
         max-width: 248px;
     }
+
+
+    /* Burger end*/
+
 
     .footer{
         padding: 0;
         background: none;
-	    width: 100%;
+	width: 100%;
     }
 
     .footer__wrapper{
@@ -1257,21 +1116,7 @@ h1, h2, h3, h4, h5, h6{
         transform: rotate(180deg);
     }
 
-    .call__form-block-wrapper{
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .call__form-block_small{
-        max-width: none;
-    }
-
-    .call__form-button{
-        max-width: none;
-        width: 100%;
-    }
-
-    .call__side-button{
+    .entry__side-button{
         max-width: none;
     }
 
@@ -1312,14 +1157,16 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
-@media screen and (max-width:450px){
-
+@media screen and (max-width:530px){
+    .entry__block-desc_1{
+        flex-wrap: wrap;
+    }
 
 }
 
 @media screen and (max-width:360px) {
-    .call__side-button{
-        padding: 12px 30px;
+    .entry__block-text-link {
+        margin-right: 0;
     }
 }
 

@@ -8,9 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/calldoctor.css">
-    <link rel="stylesheet" href="./libs/air-datepicker/air-datepicker.css">
-    <title>Вызов врача</title>
+    <link rel="stylesheet" href="./css/entry.css">
+    <title>Мурманская городская поликлиника № 2</title>
 </head>
 <body>
     <!--Header start-->
@@ -24,10 +23,10 @@
                     </p>
                 </a>
                 <div class="header__nav-top-entry-hidden">
-                    <a href="#!" class="header__nav-top-entry-text">
+                    <a href="./entry.html" class="header__nav-top-entry-text">
                         Запись на приём
                     </a>
-                    <a href="#!" class="header__nav-top-entry-text">
+                    <a href="./calldoctor.html" class="header__nav-top-entry-text">
                         Вызов врача
                     </a>
                 </div>
@@ -249,127 +248,116 @@
     </header>
     <!--Header end-->
     <main class="main">
-        <section class="call">
+        <section class="entry">
             <div class="wrapper">
-                <h1 class="call__title">
-                    Вызов врача на дом
+                <h1 class="entry__title">
+                    Запись на приём 
                 </h1>
-                <div class="call__cards">
-                    <div class="call__form">
-                        <p class="call__form-for">
-                            Для вызова врача позвоните 
-                        </p>
-                        <a href="tel:88153656286" class="call__phone">8 (81536) 5-62-86</a>
-                        <div class="call__dates desc">
-                            <p>
-                                пн-пт 08:00–20:00
-                            </p>
-                            <p>
-                                сб 9:00–14:00
-                            </p>
-                        </div>
-                        <div class="call__descs desc">
-                            <p>
-                                либо заполните форму ниже.
-                            </p>
-                            <p>
-                                Заявки обрабатываем по будням 08:00–20:00, в сб 09:00–13:00.
-                            </p>
-                        </div>
-                        <form action="#" class="call__form-wrapper">
-                            <div class="call__form-blocks">
-                                <div class="call__form-block-wrapper">
-                                    <div class="call__form-block call__form-block_medium">
-                                        <div class="call__form-label">
-                                            ФИО
-                                        </div>
-                                        <input type="text" class="call__form-name call__form-input">
+                <div class="entry__cards">
+                    <div class="entry__card">
+                        <div class="entry__card-block">
+                            <h2 class="entry__block-title">
+                                Онлайн
+                            </h2>
+                            <div class="entry__card-block-text">
+                                <div class="entry__block-desc entry__block-desc_1">
+                                    <div class="entry__block-desc_1-links">    
+                                        <p>На сайте</p>
+                                        <a href="#!" class="entry__block-text-link">
+                                            reg.polarmed.ru
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.61538 7H6C5.44771 7 5 7.44772 5 8V17C5 18.1046 5.89543 19 7 19H16C16.5523 19 17 18.5523 17 18V14.3846" stroke="#0070B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 12L20 4" stroke="#0070B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14 4H20V10" stroke="#0070B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
                                     </div>
-                                    <div class="call__form-block_small call__form-block">
-                                        <div class="call__form-label">
-                                            Дата рождения
-                                        </div>
-                                        <div class="call__form-date-block">
-                                            <input type="text" class="call__form-date call__form-input" id="calendar">
-                                            <span class="call__form-date-calendar">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M21 4H3V20H21V4Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M8 2V6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M16 2V6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M3 10H21" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>                                            
-                                            </span>
-                                        </div>
+                                    <div class="entry__block-desc_1-links">
+                                        <p>или</p>
+                                        <a href="#!" class="entry__block-text-link">
+                                            reg.polarmed.ru
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.61538 7H6C5.44771 7 5 7.44772 5 8V17C5 18.1046 5.89543 19 7 19H16C16.5523 19 17 18.5523 17 18V14.3846" stroke="#0070B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 12L20 4" stroke="#0070B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14 4H20V10" stroke="#0070B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="call__form-block-wrapper">
-                                    <div class="call__form-block_small call__form-block">
-                                        <div class="call__form-label">
-                                            Телефон
-                                        </div>
-                                        <input type="tel" id="phone" class="call__form-phone call__form-input">
-                                    </div>
-                                    <div class="call__form-block call__form-block_medium">
-                                        <div class="call__form-label">
-                                            Адрес
-                                        </div>
-                                        <input type="text" class="call__form-address call__form-input">
-                                    </div>
+                                <div class="entry__block-desc">
+                                    <p>Для онлайн-записи данные ребёнка (паспорт, полис ОМС) должны быть зарегистрированы в базе данных поликлиники.</p>
                                 </div>
-                                <div class="call__form-block">
-                                    <div class="call__form-label">
-                                        Симптомы
-                                    </div>
-                                    <input type="text" class="call__form-symptoms call__form-input">
+                                <div class="entry__block-desc">
+                                    <p>Талоны на приём к врачу размещаем каждый понедельник, среду и пятницу в 08:00, на 14 дней вперёд.</p>
                                 </div>
-                                <div class="call__form-block">
-                                    <div class="call__form-label">
-                                        Был ли контакт с COVID-19
-                                    </div>
-                                    <input type="text" class="call__form-contact call__form-input">
+                                <div class="entry__block-desc">
+                                    <p>Записаться можно к врачу одного профиля не чаще 1 раза в день.</p>
                                 </div>
                             </div>
-                            <div class="call__form-agreement">
-                                <label class="desc">
-                                    <input type="checkbox" class="real-checkbox">
-                                    <span class="custom-checkbox"></span>
-                                    <p class="call__form-agreement-label">Cоглашаюсь на передачу и обработку персональных данных в соответствии с п.4 ст. 9 Федерального закона № 152-ФЗ</p>
-                                </label>
+                            <a href="#!" class="entry__block-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 21V3H15L20 8V21H4Z" stroke="#0070B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 12H15" stroke="#0070B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 8H12" stroke="#0070B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 16H15" stroke="#0070B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                                Инструкция для записи через портал                                
+                            </a>
+                        </div>
+                        <div class="entry__card-block">
+                            <h2 class="entry__block-title">
+                                Через инфомат
+                            </h2>
+                            <div class="entry__card-block-text">
+                                <div class="entry__block-desc">
+                                    <p>Находится в холле поликлиники.</p> 
+                                </div>
+                                <div class="entry__block-desc">
+                                    <p>Для онлайн-записи данные ребёнка (паспорт, полис ОМС) должны быть зарегистрированы в базе данных поликлиники.</p>
+                                </div>
+                                <div class="entry__block-desc">
+                                    <p>Талоны на приём к врачу размещаем каждый понедельник, среду и пятницу в 08:00, на 14 дней вперёд.</p>
+                                </div>
                             </div>
-                            <a href="#!" class="call__form-button btn-red">Отправить заявку</a>
-                        </form>
+                        </div>
+                        <div class="entry__card-block">
+                            <h2 class="entry__block-title">
+                                По телефону
+                            </h2>
+                            <div class="entry__card-block-text">
+                                <a href="tel:88153656286" class="entry__card-block-phone">8 (81536) 5-62-86</a>
+                                <div class="entry__block-desc">
+                                    <p>пн-пт 08:00–20:00</p>
+                                    <p>сб 9:00–14:00</p>
+                                </div>
+                                <div class="entry__block-desc">
+                                    <p>Для записи по телефону данные ребёнка (паспорт, полис ОМС) должны быть зарегистрированы в базе данных поликлиники.</p>
+                                </div>
+                                <div class="entry__block-desc">
+                                    <p>По утрам дозвониться сложнее. Если вы слышите короткие гудки, значит все линии заняты — пожалуйста, перезвоните позже.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry__card-block">
+                            <h2 class="entry__block-title">
+                                В регистратуре
+                            </h2>
+                            <div class="entry__card-block-text">
+                                <div class="entry__block-desc">
+                                    <p>пн-пт 08:00–20:00</p>
+                                    <p>сб 9:00–14:00</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <aside class="call__side">
-                        <h2 class="call__side-title">
-                            Показания к вызову врача
-                        </h2>
-                        <div class="call__side-list desc">
-                            <p>
-                                Повышение температуры 
-                            </p>
-                            <p>
-                                Сильная боль
-                            </p>
-                            <p>
-                                Обострение хронической болезни
-                            </p>
-                            <p>
-                                Многократная рвота 
-                            </p>
-                            <p>
-                                Повышение давления
-                            </p>
-                            <p>
-                                Сыпь
-                            </p>
-                            <p>
-                                Диарея 
-                            </p>
+                    <aside class="entry__side">
+                        <div class="entry__side-desc">
+                            <p>С острой болью, повышенной температурой и любым другим неотложным состоянием можно обратиться в регистратуру и вас сразу направят в кабинет неотложной помощи, ждать планового приёма врача не нужно.</p>
                         </div>
-                        <div class="call__side-desc">
-                            Если вы в состоянии посетить врача лично, запишитесь на приём
+                        <div class="entry__side-desc">
+                            <p>Также можно вызвать врача на дом по телефону или онлайн</p>
                         </div>
-                        <a href="#!" class="call__side-button btn-pink">Записаться на приём</a>
+                        <a href="#!" class="entry__side-button btn-pink">Узнать больше</a>
                     </aside>
                 </div>
             </div>
@@ -559,9 +547,6 @@
         </div>
     </footer>
     <!--Footer end-->
-    <script src="./libs/air-datepicker/air-datepicker.js"></script>
-    <script src="./libs/jquery-3.6.3.min.js"></script>
-    <script src="./libs/jquery.maskedinput.js"></script>   
     <script src="./scripts/main.js"></script>
 </body>
 </html>
