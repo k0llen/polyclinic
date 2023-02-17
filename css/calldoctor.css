@@ -15,6 +15,11 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700;
 }
 
+.call p{
+    font-size: 16px;
+    line-height: 145%;
+}
+
 .title{
     font-size: 42px;
     line-height: 120%;
@@ -498,8 +503,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .call__form-for {
-    font-size: 16px;
-    line-height: 145%;
     margin-bottom: 8px;
 }
 .call__phone {
@@ -523,8 +526,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .call__date{
-    font-size: 16px;
-    line-height: 145%;
 }
 
 .call__descs {
@@ -532,8 +533,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .call__desc{
-    font-size: 16px;
-    line-height: 145%;
 }
 
 .call__form-w {
@@ -559,7 +558,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .call__form-input:hover, .call__form-input:focus, .call__form-input:active{
-    border: 1px solid #00588D;
+    border-color:#00588D;
 }
 
 .call__form-block {
@@ -600,7 +599,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .call__form-date {
-
+    position: relative;
+    z-index: 5;
+    background-color: transparent;
 }
 
 .call__form-date-calendar{
@@ -608,7 +609,15 @@ h1, h2, h3, h4, h5, h6{
     position: absolute;
     right: 8px;
     top: 8px;
+    stroke: #9CADB8;
+    transition: .3s all;
 }
+
+.call__form-date:hover ~ .call__form-date-calendar, .call__form-date:focus ~ .call__form-date-calendar, .call__form-date:active ~ .call__form-date-calendar{
+    stroke: #00588D;
+}
+
+
 
 
 .call__form-phone {
@@ -631,8 +640,6 @@ h1, h2, h3, h4, h5, h6{
 
 .call__form-agreement-label {
     width: calc(100% - 28px);
-    font-size: 16px;
-    line-height: 145%;
 }
 .call__form-button {
     display: inline-block;
