@@ -20,6 +20,11 @@ h1, h2, h3, h4, h5, h6{
     line-height: 120%;
 }
 
+.desc{
+    font-size: 16px;
+    line-height: 145%;
+}
+
 .btn-red {
     font-family: 'Inter';
     font-weight: 600;
@@ -471,8 +476,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .entry__card-block-text {
-    font-size: 16px;
-    line-height: 145%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -535,9 +538,6 @@ h1, h2, h3, h4, h5, h6{
 .entry__side {
     position: sticky;
     top: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
     width: 100%;
     max-width: 300px;
     padding: 20px 24px;
@@ -545,14 +545,17 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 24px;
 }
 .entry__side-desc {
-    font-size: 16px;
-    line-height: 145%;
     color: #3C5C70;
+}
+
+.entry__side-desc p{
+    margin-bottom: 16px;
 }
 
 .entry__side-button {
     text-align: center;
     width: 100%;
+    display: block;
 }
 
 
@@ -915,6 +918,9 @@ h1, h2, h3, h4, h5, h6{
     .header__nav--active .header__nav-item-more{
         flex-direction: column;
         align-items: start;
+    }
+    .header__nav-item-text, .header__nav-item-text-more {
+        padding: 0 !important;
     }
 
     .header__nav-item-text-more::before{
