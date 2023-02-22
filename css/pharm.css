@@ -459,7 +459,7 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
-.pharm__block-list {
+.pharm__block-list ul{
     list-style: disc;
     padding-left: 22px;
 }
@@ -470,6 +470,7 @@ h1, h2, h3, h4, h5, h6{
     flex-direction: column;
     gap: 12px;
 }
+
 .pharm__link {
     display: flex;
     align-items: flex-start;
@@ -949,11 +950,6 @@ h1, h2, h3, h4, h5, h6{
 
 @media screen and (max-width: 978px) {
 
-    .title{
-        font-size: 32px;
-        line-height: 120%;
-    }
-
 
     .header__wrapper{
         justify-content: space-between;
@@ -1012,6 +1008,8 @@ h1, h2, h3, h4, h5, h6{
     .pharm__card{
         width: 100%;
         max-width: none;
+        padding: 16px;
+        gap: 40px;
     }
 
     .pharm__side{
@@ -1183,9 +1181,11 @@ h1, h2, h3, h4, h5, h6{
     }
 
 
-
-
     /* Burger end*/
+
+    .title{
+        font-size: 28px;
+    }
 
 
     .footer{
@@ -1287,6 +1287,11 @@ h1, h2, h3, h4, h5, h6{
 
     .pharm__form-button{
         align-self: stretch;
+    }
+
+    .pharm__block-adresses-cards{
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px;
     }
 
     .footer__wrapper{
