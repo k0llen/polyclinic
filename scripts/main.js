@@ -144,11 +144,11 @@ if (document.querySelector('#phone')) {
     });
 }
 
-
-let calendar = new AirDatepicker('#calendar', {
-    position: 'bottom right',
-});
-
+if (document.querySelector('#calendar')) {
+    let calendar = new AirDatepicker('#calendar', {
+        position: 'bottom right',
+    });
+}
 const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
@@ -161,3 +161,21 @@ for (let anchor of anchors) {
         });
     });
 };
+
+
+if (screenWidth <= 978){
+    const trigger = document.querySelectorAll('.paid__block-title');
+    const accordeonItem = document.querySelector('accordeon__item');
+    trigger.forEach(item => { 
+        item.addEventListener('click', function(e) {
+            if (item.classList.contains('accordeon-item--active')) {
+                item.classList.remove('accordeon-item--active');
+            } else {
+                trigger.forEach((child) => {
+                    child.classList.remove('accordeon-item--active');
+                })
+                item.classList.add('accordeon-item--active');
+            };
+        });
+    });
+}
