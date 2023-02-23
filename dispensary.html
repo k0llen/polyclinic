@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/dispensary.css">
+    <link rel="stylesheet" href="./libs/air-datepicker/air-datepicker.css">
+    <title>Диспансеризация</title>
+</head>
+<body>
+    <!--Header start-->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <a href="./index.html" class="header__logo">
+                    <img src="./svg/logo.svg" alt="Logo" class="header__logo-pic">
+                    <p class="header__logo-text">
+                        Мурманская городская поликлиника № 2
+                    </p>
+                </a>
+                <div class="header__nav-top-entry-hidden">
+                    <a href="./entry.html" class="header__nav-top-entry-text">
+                        Запись на приём
+                    </a>
+                    <a href="./calldoctor.html" class="header__nav-top-entry-text">
+                        Вызов врача
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <a href="./index.html" class="header__logo-hidden">
+                        <img src="./svg/logo-burger.svg" alt="">
+                        <p class="header__logo-hidden-text">
+                            Мурманская городская детская поликлиника № 1
+                        </p>
+                    </a>
+                    <div class="header__nav-top">
+                        <div class="header__nav-top-entry">
+                            <a href="#!" class="header__nav-top-entry-text">
+                                Запись на приём
+                            </a>
+                            <a href="#!" class="header__nav-top-entry-text">
+                                Вызов врача
+                            </a>
+                        </div>
+                        <a href="tel:88153656286" class="header__nav-top-call">8 (81536) 5-62-86</a>
+                    </div>
+                    <div class="header__nav-bot">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="./schedule.html" class="header__nav-item-text">
+                                    Расписание
+                                </a>
+                            </li>
+                            <li class="header__nav-item header__nav-item-more">
+                                <a href="#!" class="header__nav-item-text header__nav-item-text-more">
+                                    Пациентам
+                                </a>                                                              
+                                <div class="header__nav-more-list-w header__nav-more-list-w-hover">
+                                    <div class="header__nav-more-1">
+                                        <ul class="header__nav-more-item">
+                                            <li>
+                                                <a href="./entry.html">
+                                                    Запись на приём
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="./calldoctor.html">
+                                                    Вызов врача на дом
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="header__nav-more-item">
+                                            <li>    
+                                                <a href="./attachment.html">
+                                                    Прикрепление
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Льготные лекарства
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Платные услуги
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Диспансеризация
+                                                </a>
+                                            </li>
+                                            <li>    
+                                                <a href="#!">
+                                                    Вакцинация
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="header__nav-more-item">
+                                            <li>
+                                                <a href="#!">
+                                                    Частые вопросы
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Доступная среда
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Подготовка к процедурам
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Памятки и рекомендации 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Школа здоровья
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="header__nav-more-item">
+                                            <li>    
+                                                <a href="#!">
+                                                    Участки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Страховые программы
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Обратная связь
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>  
+                                </div>                              
+                            </li>
+                            <li class="header__nav-item header__nav-item-more">
+                                <a href="#!" class="header__nav-item-text header__nav-item-text-more">
+                                    О поликлинике
+                                </a>
+                                <div class="header__nav-more-list-w header__nav-more-list-w-hover">
+                                    <div class="header__nav-more-2">
+                                        <ul class="header__nav-more-item">
+                                            <li>
+                                                <a href="#!">
+                                                    История
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Структура
+                                                </a>
+                                            </li>
+                                            <li>  
+                                                <a href="#!">
+                                                    Вакансии
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="header__nav-more-item">
+                                            <li>
+                                                <a href="#!">
+                                                    Обращение главврача
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Новости
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    СМИ о нас
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="header__nav-more-item">
+                                            <li>
+                                                <a href="#!">
+                                                    Нацпроекты
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Закупки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Документы
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    Оценка условий труда
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!">
+                                                    «Новая поликлиника» 
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>  
+                                </div>   
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#!" class="header__nav-item-text">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header__searchform">
+                            <input type="text" class="header__searchform-form" placeholder="Найти...">
+                            <a href="#!" class="header__searchform-button">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 11.5002C19 13.7102 18.105 15.7102 16.657 17.1572C15.3483 18.466 13.6263 19.2805 11.7844 19.462C9.94243 19.6434 8.09457 19.1806 6.55563 18.1524C5.01668 17.1242 3.88187 15.5941 3.34455 13.823C2.80723 12.0519 2.90064 10.1492 3.60887 8.43926C4.3171 6.72929 5.59633 5.31779 7.2286 4.44525C8.86086 3.57272 10.7452 3.29315 12.5605 3.65417C14.3757 4.01519 16.0097 4.99446 17.1839 6.42514C18.3581 7.85581 18.9999 9.64937 19 11.5002V11.5002Z" stroke="#607988" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 21.5002L16.657 17.1572" stroke="#607988" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="#!" class="searchform-button-view">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 12.5C21.055 7.936 16.937 4.5 12 4.5C7.063 4.5 2.945 7.936 2 12.5C2.945 17.064 7.063 20.5 12 20.5C16.937 20.5 21.055 17.064 22 12.5Z" stroke="#607988" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 16C13.933 16 15.5 14.433 15.5 12.5C15.5 10.567 13.933 9 12 9C10.067 9 8.5 10.567 8.5 12.5C8.5 14.433 10.067 16 12 16Z" stroke="#607988" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header__burger burger">
+                    <span class="burger__line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header end-->
+    <main class="main">
+        <section class="dispensary">
+            <div class="wrapper">
+                <h1 class="dispensary__title">
+                    Диспансеризация
+                </h1>
+                <div class="dispensary__cards">
+                    <div class="dispensary__card">
+                        <div id="block-1" class="dispensary__block">
+                            <h2 class="dispensary__block-title">
+                                О диспансеризации
+                            </h2>
+                            <div class="dispensary__block-text desc">
+                                <p>Диспансеризация — профилактическое обследование для раннего выявления  заболеваний, получения рекомендаций от врачей. Занимает 1–3 дня.</p>
+                                <div class="dispensary__block-text-list-wrapper">
+                                    Диспансеризацию рекомендуют проходить:
+                                    <ul>
+                                        <li>раз в три года в возрасте от 18 до 39 лет включительно;</li>
+                                        <li>ежегодно в возрасте 40 лет и старше.</li>
+                                    </ul>
+                                </div>
+                                <p>Если в этом году вам исполняется 18, 21, 24, 27, 30, 33, 36, 39 или более лет, вы имеете право на бесплатную диспансеризацию.</p>
+                                <p>Гражданин проходит диспансеризацию в медицинской организации, в которой он получает первичную медико-санитарную помощь, то есть по месту прикрепления.</p>
+                            </div>
+                        </div>
+                        <div id="block-2" class="dispensary__block">
+                            <h2 class="dispensary__block-title">
+                                Углублённая диспансеризация
+                            </h2>
+                            <div class="dispensary__block-text desc" >
+                                <p>Приглашаем пациентов, прикрепленных к врачебному участку для медицинского обслуживания государственных служащих Мурманской области, пройти углубленную диспансеризацию </p>
+                            </div>
+                            <img src="./img/dispensary-pic.png" alt="" class="dispensary__pic">
+                        </div>
+                        <form id="block-3" action="#" class="dispensary__form" id="block-6">
+                            <div class="dispensary__form-top desc">
+                                <h2 class="dispensary__form-title title">
+                                    Запись на диспансеризацию
+                                </h2>
+                                <p>Записаться можно по телефону</p>
+                                <a href="tel:88153656286" class="dispensary__form-phone">8 (81536) 5-62-86</a>
+                                <div class="dispensary__form-dates">
+                                    <p>пн-пт 08:00–20:00</p>
+                                    <p>сб 9:00–14:00</p>
+                                </div>
+                                <div class="dispensary__form-descs">
+                                    <p>либо заполнив форму ниже. </p>
+                                    <p>Заявки обрабатываем по будням 08:00–20:00, в сб 09:00–13:00.</p>
+                                </div>
+                            </div>
+                            <div class="dispensary__form-blocks">
+                                <div class="dispensary__form-block dispensary__form-bock_large">
+                                    <div class="dispensary__form-block-name">
+                                        ФИО
+                                    </div>
+                                    <input type="text" name="" id="" class="dispensary__form-input_large dispensary__form-input">
+                                </div>
+                                <div class="dispensary__form-block dispensary__form-block-wrapper">
+                                    <div class="dispensary__form-block_small ">
+                                        <div class="dispensary__form-block-name">
+                                            Дата рождения
+                                        </div>
+                                        <input type="text" class="dispensary__form-input_small dispensary__form-input" id="calendar">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 4H3V20H21V4Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 2V6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 2V6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3 10H21" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="dispensary__form-block_medium">
+                                        <div class="dispensary__form-block-name">
+                                            Телефон (позвоним, когда рецепт будет готов)
+                                        </div>
+                                        <input type="text" name="" id="phone" class="dispensary__form-block-input_medium dispensary__form-input">
+                                    </div>
+                                </div>
+                                <div class="dispensary__form-block dispensary__form-bock_large dispensary__form-block-desired">
+                                    <div class="dispensary__form-block-name">
+                                        Желаемые день, время приёма
+                                    </div>
+                                    <textarea type="text" name="" id="" class="dispensary__form-input_large dispensary__form-input dispensary__form-textarea-desired"></textarea>
+                                </div>
+                            </div>
+                            <div class="dispensary__form-agreement">
+                                <label class="desc">
+                                    <input type="checkbox" class="real-checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p class="dispensary__form-agreement-label">Cоглашаюсь на передачу и обработку персональных данных в соответствии с п.4 ст. 9 Федерального закона № 152-ФЗ</p>
+                                </label>
+                            </div>
+                            <a href="#!" class="dispensary__form-button btn-red">Отправить заявку</a>
+                        </form>
+                    </div>
+                    <aside class="dispensary_side">
+                        <div class="dispensary__side-links desc">
+                            <a href="#block-1" class="dispensary__side-link">О диспансеризации</a>
+                            <a href="#block-2" class="dispensary__side-link">Углублённая диспансеризация</a>
+                            <a href="#block-3" class="dispensary__side-link">Запись на диспансеризацию</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Footer start-->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <h2 class="footer__title">
+                        Мурманская городская поликлиника № 2
+                    </h2>
+                    <div class="footer__info-about">
+                        <div class="footer__info-about-grey">
+                            <p class="footer__address">
+                                Мурманск, пр. Кольский, 149а
+                            </p>
+                            <a href="tel:88153656286" class="footer__phone">8 (81536) 5-62-86</a>
+                        </div>
+                        <div class="footer__info-about-links">
+                            <a href="#!" class="footer__info-link">Все контакты</a>
+                            <a href="#!" class="footer__info-link">Расписание приёма</a>
+                        </div>
+                    </div>
+                    <a href="#!" class="footer__link-vk">
+                        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.7083 1.25004C22.8333 0.750041 22.7083 0.333374 21.9583 0.333374H19.5C18.875 0.333374 18.5833 0.666707 18.4167 1.04171C18.4167 1.04171 17.1667 4.08337 15.4167 6.08337C14.8333 6.62504 14.5833 6.83337 14.25 6.83337C14.125 6.83337 13.875 6.62504 13.875 6.12504V1.25004C13.875 0.625041 13.7083 0.333374 13.1667 0.333374H9.33333C8.91667 0.333374 8.70833 0.625041 8.70833 0.916707C8.70833 1.50004 9.58333 1.62504 9.66667 3.29171V6.91671C9.66667 7.70837 9.54167 7.87504 9.20833 7.87504C8.375 7.87504 6.375 4.79171 5.16667 1.29171C4.91667 0.625041 4.66667 0.333374 4.04167 0.333374H1.58333C0.916667 0.333374 0.75 0.666707 0.75 1.04171C0.75 1.70837 1.58333 4.91671 4.625 9.20837C6.66667 12.125 9.54167 13.6667 12.125 13.6667C13.6667 13.6667 13.875 13.3334 13.875 12.75C13.875 9.95837 13.75 9.66671 14.5 9.66671C14.875 9.66671 15.5 9.87504 16.9583 11.2917C18.625 12.9584 18.9167 13.6667 19.8333 13.6667H22.2917C23 13.6667 23.3333 13.3334 23.125 12.625C22.6667 11.2084 19.5417 8.20837 19.375 8.00004C19 7.54171 19.125 7.33337 19.375 6.91671C19.375 6.91671 22.375 2.66671 22.7083 1.25004Z" fill="#0070B3"/>
+                        </svg>                            
+                    </a>
+                </div>
+                <div class="footer__links-wrapper">
+                    <div class="footer__links-cards">
+                        <div class="footer__links-card">
+                            <a href="#!" class="footer__links-card-title">
+                                Пациентам
+                            </a>
+                            <div class="footer__links-block">
+                                <ul class="footer__links-list">
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Запись на приём
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Вызов на дом
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Прикрепление
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Льготные лекарства
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Платные услуги
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Диспансеризация
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Вакцинация
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="footer__links-list">
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Частые вопросы
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Подготовка к процедурам
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Памятки и рекомендации 
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Школа здоровья
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Участки
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Страховые программы
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Обратная связь
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__links-card">
+                            <a href="#!" class="footer__links-card-title">
+                                О поликлинике
+                            </a>
+                            <div class="footer__links-block">
+                                <ul class="footer__links-list">
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Общая информация
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Структура
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Доступная среда
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Вакансии
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            История
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            СМИ о нас
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="footer__links-list">
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Нацпроекты
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Закупки
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Документы
+                                        </a>
+                                    </li>
+                                    <li class="footer__links-item">
+                                        <a href="#!" class="footer__links-link">
+                                            Оценка условий труда
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer__copy">
+                    © 2022
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--Footer end-->
+    <script src="./libs/jquery-3.6.3.min.js"></script>
+    <script src="./libs/jquery.maskedinput.js"></script>
+    <script src="./libs/air-datepicker/air-datepicker.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
