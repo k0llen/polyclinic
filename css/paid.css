@@ -1305,6 +1305,18 @@ h1, h2, h3, h4, h5, h6{
         display: block;
     }
 
+    .show .show__more-btn{
+        display: none;
+    }
+
+    .show .hide__more-btn{
+        display: block;
+    }
+
+    .show .card_hidden{
+        display: block;
+    }
+
     .footer__wrapper{
         padding: 16px;
     }

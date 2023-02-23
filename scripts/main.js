@@ -179,3 +179,22 @@ if (screenWidth <= 978){
         });
     });
 }
+
+
+if (screenWidth <= 660) {
+    const showBtn = document.querySelectorAll('.show__more-btn');
+    const hideBtn = document.querySelectorAll('.hide__more-btn');
+    
+    document.querySelectorAll('.paid__block-prices-card').forEach((element) => {
+        showBtn.forEach((element) =>{
+            element.addEventListener('click', () => {
+                element.parentNode.classList.add('show');
+            });
+        });
+        hideBtn.forEach((element) =>{
+            element.addEventListener('click', () => {
+                element.parentNode.classList.remove('show');
+            });
+        });
+    });
+}
