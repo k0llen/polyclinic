@@ -565,6 +565,10 @@ h1, h2, h3, h4, h5, h6{
     transition: .3s all;
 }
 
+.paid__prices-card-schedule:hover{
+    opacity: .7;
+}
+
 .prices__card-cards {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -1134,6 +1138,11 @@ h1, h2, h3, h4, h5, h6{
         margin-bottom: 80px;
     }
 
+    .paid__title {
+        margin-bottom: 24px;
+        font-size: 32px;
+    }
+
     .paid__side{
         display: none;
     }
@@ -1167,6 +1176,14 @@ h1, h2, h3, h4, h5, h6{
         height: 24px;
         background: url(../svg/select-button.svg) no-repeat center center;
         transition: .3s all;
+    }
+
+    .paid__block-title{
+        margin-bottom: 0;
+    }
+
+    .accordeon-item--active.paid__block-title{
+        margin-bottom: 12px;
     }
 
     .accordeon__item {
