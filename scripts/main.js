@@ -205,7 +205,6 @@ if (screenWidth <= 660) {
 
 if(document.querySelector('.faq')) {
     const trigger = document.querySelectorAll('.faq__accordeon-item-title');
-    const textHidden = document.querySelector('.faq__accordeon-item-desc');
 
     trigger.forEach((item) => { 
         item.addEventListener('click', function(e) {
@@ -219,5 +218,21 @@ if(document.querySelector('.faq')) {
             };
         });
     });
+}
 
+if(document.querySelector('.prepare')) {
+    const trigger = document.querySelectorAll('.prepare__accordeon-item-title');
+
+    trigger.forEach((item) => { 
+        item.addEventListener('click', function(e) {
+            if (item.parentNode.classList.contains('prepare__accordeon-item--active')) {
+                item.parentNode.classList.remove('prepare__accordeon-item--active');
+            } else {
+                trigger.forEach((child) => {
+                    child.parentNode.classList.remove('prepare__accordeon-item--active');
+                })
+                item.parentNode.classList.add('prepare__accordeon-item--active');
+            };
+        });
+    });
 }
