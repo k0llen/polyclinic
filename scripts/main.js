@@ -166,7 +166,7 @@ for (let anchor of anchors) {
 if (screenWidth <= 978){
     const trigger = document.querySelectorAll('.paid__block-title');
     const accordeonItem = document.querySelector('accordeon__item');
-    trigger.forEach(item => { 
+    trigger.forEach((item) => { 
         item.addEventListener('click', function(e) {
             if (item.classList.contains('accordeon-item--active')) {
                 item.classList.remove('accordeon-item--active');
@@ -197,4 +197,27 @@ if (screenWidth <= 660) {
             });
         });
     });
+}
+
+
+// Faq page accordeon
+
+
+if(document.querySelector('.faq')) {
+    const trigger = document.querySelectorAll('.faq__accordeon-item-title');
+    const textHidden = document.querySelector('.faq__accordeon-item-desc');
+
+    trigger.forEach((item) => { 
+        item.addEventListener('click', function(e) {
+            if (item.parentNode.classList.contains('faq__accordeon-item--active')) {
+                item.parentNode.classList.remove('faq__accordeon-item--active');
+            } else {
+                trigger.forEach((child) => {
+                    child.parentNode.classList.remove('faq__accordeon-item--active');
+                })
+                item.parentNode.classList.add('faq__accordeon-item--active');
+            };
+        });
+    });
+
 }
