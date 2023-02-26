@@ -236,3 +236,20 @@ if(document.querySelector('.prepare')) {
         });
     });
 }
+
+if (document.querySelector('.area__accordeon')){
+    const trigger = document.querySelectorAll('.accordeon__item-title');
+
+    trigger.forEach((item) => { 
+        item.addEventListener('click', function(e) {
+            if (item.parentNode.classList.contains('area__accordeon-item--active')) {
+                item.parentNode.classList.remove('area__accordeon-item--active');
+            } else {
+                trigger.forEach((child) => {
+                    child.parentNode.classList.remove('area__accordeon-item--active');
+                })
+                item.parentNode.classList.add('area__accordeon-item--active');
+            };
+        });
+    });
+}
