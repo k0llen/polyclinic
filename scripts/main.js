@@ -253,3 +253,11 @@ if (document.querySelector('.area__accordeon')){
         });
     });
 }
+
+if (document.querySelector('.feedback')) {
+    const trigger = document.querySelector('.feedback__form-recent-title');
+    
+    trigger.addEventListener('click', () =>{
+        trigger.parentNode.classList.toggle('feedback__form-recent--active');
+    });
+};
