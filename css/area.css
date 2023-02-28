@@ -497,6 +497,8 @@ h1, h2, h3, h4, h5, h6{
     font-size: 22px;
     line-height: 135%;
     cursor: pointer;
+    padding: 20px 60px 20px 32px;
+    margin: -20px -60px -20px -32px;
 }
 
 .accordeon__item-title span{
@@ -1000,6 +1002,8 @@ h1, h2, h3, h4, h5, h6{
 
     .accordeon__item-title {
         font-size: 20px;
+        padding: 16px 48px 16px 16px;
+        margin: -16px -48px -16px -16px;
     }
 
     .accordeon__item-title::after{
