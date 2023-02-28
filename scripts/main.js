@@ -261,3 +261,21 @@ if (document.querySelector('.feedback')) {
         trigger.parentNode.classList.toggle('feedback__form-recent--active');
     });
 };
+
+
+if (document.querySelector('.structure')){
+    const trigger = document.querySelectorAll('.accordeon__item-title');
+
+    trigger.forEach((item) => { 
+        item.addEventListener('click', function(e) {
+            if (item.parentNode.classList.contains('accordeon__item--active')) {
+                item.parentNode.classList.remove('accordeon__item--active');
+            } else {
+                trigger.forEach((child) => {
+                    child.parentNode.classList.remove('accordeon__item--active');
+                })
+                item.parentNode.classList.add('accordeon__item--active');
+            };
+        });
+    });
+}
