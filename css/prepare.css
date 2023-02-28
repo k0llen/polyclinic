@@ -537,6 +537,10 @@ h6 {
     margin-top: 12px;
 }
 
+.prepare__accordeon-desc-hidden p + p{
+    margin-top: 4px;
+}
+
 .prepare__accordeon-desc-hidden h3:first-child {
     margin-top: 0px;
 }
