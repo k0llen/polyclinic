@@ -279,3 +279,19 @@ if (document.querySelector('.structure')){
         });
     });
 }
+
+if (document.querySelector('.vacancy')) {
+    const trigger = document.querySelectorAll('.accordeon__item-title-block');
+    trigger.forEach((item) => { 
+        item.addEventListener('click', function(e) {
+            if (item.parentNode.classList.contains('accordeon__item--active')) {
+                item.parentNode.classList.remove('accordeon__item--active');
+            } else {
+                trigger.forEach((child) => {
+                    child.parentNode.classList.remove('accordeon__item--active');
+                })
+                item.parentNode.classList.add('accordeon__item--active');
+            };
+        });
+    });
+}
