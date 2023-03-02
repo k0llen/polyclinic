@@ -556,18 +556,19 @@ h6 {
     font-size: 18px;
     line-height: 150%;
     margin-bottom: 4px;
+}
+
+.accordeon__item-hidden span{
+    display: block;
+    height: 8px;
+}
+
+.accordeon__item-hidden p + h3 {
     margin-top: 16px;
 }
 
-.accordeon__item-hidden h3:first-child {
-    margin-top: 0;
-}
 
-.accordeon__item-list-wrapper {
-    margin-top: 8px;
-}
-
-.accordeon__item-list-wrapper ul {
+.accordeon__item-hidden ul {
     padding-left: 25px;
     list-style-type: disc;
 }

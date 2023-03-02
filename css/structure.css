@@ -542,7 +542,7 @@ h6 {
     transition: .3s all;
 }
 
-.accordeon__item-list-wrapper ul {
+.accordeon__item-text ul {
     padding-left: 25px;
     list-style: disc;
 }
@@ -551,6 +551,7 @@ h6 {
     text-decoration: none;
     color: #000C2B;
     transition: .3s all;
+    display: inline-block;
 }
 
 .phone:hover {
