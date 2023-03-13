@@ -447,74 +447,77 @@ h6 {
 
 /* Header styles end */
 
-/* Purchase styles start */ 
+/* documents styles start */
 
-.purchase {
+.documents {
     margin-bottom: 120px;
 }
 
-.purchase__title {
-    margin-bottom: 32px;
+.documents__title {
+    margin-bottom: 24px;
 }
 
-.purchase__card {
-    padding: 24px 32px 32px 32px;
-    border-radius: 24px;
-    background: #FFFFFF;
+.documents__searchform {
+    margin-bottom: 32px;
+    position: relative;
+    width: 100%;
+}
+
+.documents__searchform-form {
+    width: 100%;
+    border: none;
+    padding: 8px 16px 8px 46px;
+    border-radius: 8px;
+    height: 40px;
+    color: #000C2B;
+}
+
+.documents__searchform-form::placeholder{
+    color: #607988;
+}
+
+.documents__searchform span {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    cursor: pointer;
+}
+
+
+.documentss__card {
     display: flex;
     flex-direction: column;
     gap: 48px;
-    align-items: flex-start;
+    padding: 24px 32px 32px 32px;
+    border-radius: 24px;
+    background: #FFFFFF;
 }
 
-.purchase__block {
+.documents__block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
 }
 
-.purchase__block h2{
-    margin-bottom: 12px;
+.documents__block h2{
     font-size: 30px;
     line-height: 120%;
 }
 
-.purchase__block-link{
+.documents__block a{
     text-decoration: none;
-    color: #000C2B;
-    display: inline-block;
-    transition: .3s all;
-}
-
-.purchase__block-link:hover{
-    opacity: .7;
-
-}
-
-.purchase__block_links {
-
-}
-
-.purchase__block_links-link{
-    margin-bottom: 12px;
     padding-left: 30px;
     background: url(../svg/file.svg) no-repeat left top;
-    text-decoration: none;
-    color: #00588D;
-    display: inline-block;
     transition: .3s all;
+    color: #00588D;
 }
 
-.purchase__block_links-link:hover{
+.documents__block a:hover{
     opacity: .7;
-
 }
 
-.purchase__block_links-link:last-child{
-    margin-bottom: 0;
-}
-
-/* Purchase styles end */
+/* Documents styles end */
 
 
 /* Footer styles start */
@@ -957,17 +960,25 @@ h6 {
     }
     /* Burger end*/
 
-    .purchase{
+    .documents {
         margin-bottom: 80px;
     }
 
-    .purchase__title{
+    .documents__title{
+        margin-bottom: 20px;
+    }
+
+    .documents__searchform{
         margin-bottom: 24px;
     }
 
-    .purchase__card{
-        padding: 16px;
+    .documents__card{
         gap: 40px;
+        padding: 16px;
+    }
+
+    .documents__block h2{
+        font-size: 28px;
     }
 
 
@@ -984,11 +995,7 @@ h6 {
 
 }
 
-@media screen and (max-width:770px) {
-    .purchase__block h2{
-        font-size: 26px;
-    }
-}
+@media screen and (max-width:700px) {}
 
 
 
