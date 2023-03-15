@@ -208,7 +208,7 @@ h6 {
 .header__nav-list {
     display: flex;
     align-items: center;
-    transition: all .3s;
+    transition: .3s all;
 }
 
 .header__nav-item {
@@ -372,6 +372,301 @@ h6 {
     color: #607988;
 }
 
+.searchform__hidden_results {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 24px -243px rgba(173, 148, 136, 0.3);
+    transition: .3s all;
+    background: #FFFFFF;
+    overflow: auto;
+    height: 400px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    opacity: 0;
+}
+
+.hidden-schedule {}
+
+.hidden-block {}
+
+.hidden-block-title {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.hidden-block-title h3 {
+    font-size: 22px;
+    line-height: 135%;
+}
+
+.hidden-block-title p {
+    font-size: 14px;
+    line-height: 150%;
+    color: #3C5C70;
+}
+
+.hidden-schedule-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hidden-schedule-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding: 6px;
+    margin-left: -6px;
+    border-radius: 16px;
+    transition: .3s all;
+}
+
+.hidden-schedule-card:hover {
+    background: #F7FBFF;
+}
+
+
+.hidden-schedule-card-pic {}
+
+.hidden-schedule-card-text h4 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 4px;
+}
+
+.hidden-schedule-card-text p {
+    color: #000C2B;
+}
+
+
+.hidden-paid {}
+
+.hidden-paid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.hidden-paid-card {
+    padding: 6px 8px;
+    margin-left: -8px;
+    transition: .3s all;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+.hidden-paid-card:hover {
+    background: #F7FBFF;
+}
+
+.hidden-paid-card-top {
+    margin-bottom: 4px;
+}
+
+.hidden-paid-card-top h4 {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+}
+
+.hidden-paid-card-top p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #3C5C70;
+}
+
+.hidden-paid-card div+p {
+    color: #000C2B;
+}
+
+.hidden-vac {}
+
+.hidden-vac a {
+    text-decoration: none;
+    color: #000C2B;
+    padding: 6px 12px;
+    margin-left: -12px;
+    display: block;
+    transition: .3s all;
+}
+
+.hidden-vac a:hover {
+    background: #F7FBFF;
+    color: #00588D;
+}
+
+.hidden-faq {}
+
+.hidden-faq-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hidden-faq-card {
+    text-decoration: none;
+    color: #000C2B;
+    padding: 6px 12px;
+    margin-left: -12px;
+    transition: .3s all;
+    border-radius: 16px;
+}
+
+.hidden-faq-card:hover {
+    background: #F7FBFF;
+}
+
+.hidden-faq-card p {
+    color: #3C5C70;
+    transition: .3s all;
+}
+
+.hidden-faq-card h4 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 145%;
+    transition: .3s all;
+}
+
+.hidden-faq-card:hover h4 {
+    color: #00588D;
+}
+
+.hidden-faq-card:hover p {
+    color: #000C2B;
+}
+
+.hidden-news {}
+
+.hidden-news-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hidden-news-card {
+    text-decoration: none;
+    color: #000C2B;
+    padding: 6px 12px;
+    margin-left: -12px;
+    transition: .3s all;
+    border-radius: 16px;
+}
+
+.hidden-news-card:hover{
+    background: #F7FBFF;
+}
+
+.hidden-news-card h4{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 145%;
+    margin-bottom: 2px;
+    transition: .3s all;
+}
+
+.hidden-news-card p{
+    color: #3C5C70;
+    transition: .3s all;
+}
+
+.hidden-news-card:hover h4{
+    color: #00588D;
+}
+
+.hidden-news-card:hover p{
+    color: #000C2B;
+}
+
+.hidden-more {
+    display: inline-block;
+    padding-right: 30px;
+    align-self: flex-end;
+    background: url(../svg/arrow-right-blue.svg) no-repeat right center;
+    color: #00588D;
+    text-decoration: none;
+    transition: .3s all;
+}
+
+.hidden-more:hover{
+    opacity: .7;
+}
+
+.searchform__hidden_error {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 24px -243px rgba(173, 148, 136, 0.3);
+    transition: .3s all;
+    background: #FFFFFF;
+    height: 400px;
+    margin-top: 6px;
+    opacity: 0;
+}
+
+.searchform__hidden_error img{
+    margin-bottom: 12px;
+}
+
+.searchform__hidden_error p{
+    color: #3C5C70;
+}
+
+.searchform__hidden-loader{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 24px -243px rgba(173, 148, 136, 0.3);
+    transition: .3s all;
+    background: #FFFFFF;
+    height: 400px;
+    margin-top: 6px;
+}
+
+.loader {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top: 2px solid #EA5B13;
+    border-right: 2px solid #EA5B13;
+    width: 32px;
+    height: 32px;
+    animation: spin 1.3s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
 .header__searchform-form,
 .header__searchform-form::placeholder {
     font-family: 'Inter', sans-serif;
@@ -416,7 +711,6 @@ h6 {
 .header__searchform-form--active .header__nav-list {
     max-width: 0;
     overflow: hidden;
-    max-height: 0;
 }
 
 .header__searchform-form--active .searchform-button-view {
@@ -430,13 +724,13 @@ h6 {
 }
 
 .header__searchform-button {
-    text-decoration: none;
+    cursor: pointer;
     margin-right: 32px;
     transition: .3s all;
 }
 
 .searchform-button-view {
-    text-decoration: none;
+    cursor: pointer;
     transition: .3s all;
 }
 
@@ -575,11 +869,11 @@ h6 {
 
 .block_names-cards {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px 48px;
 }
 
-.block_name-card h3{
+.block_name-card h3 {
     font-family: 'Inter';
     font-weight: 500;
     font-size: 18px;
@@ -587,18 +881,18 @@ h6 {
     margin-bottom: 2px;
 }
 
-.block_name-card h3 + p {
+.block_name-card h3+p {
     color: #3C5C70;
     margin-bottom: 8px;
 }
 
-.block_name-card a{
+.block_name-card a {
     text-decoration: none;
     color: #000C2B;
     transition: .3s all;
 }
 
-.block_name-card a:hover{
+.block_name-card a:hover {
     opacity: 0.7;
 }
 
@@ -608,11 +902,11 @@ h6 {
     align-items: flex-start;
 }
 
-.block_name-card a + p{
+.block_name-card a+p {
     margin-top: 2px;
 }
 
-.block_name-card-email{
+.block_name-card-email {
     margin-top: 2px;
 }
 
@@ -1063,37 +1357,37 @@ h6 {
 
     /* Burger end*/
 
-    .contacts{
+    .contacts {
         margin-bottom: 80px;
     }
 
-    .contacts__title{
+    .contacts__title {
         margin-bottom: 24px;
     }
 
-    .contacts__card{
+    .contacts__card {
         padding: 16px;
         gap: 40px;
     }
 
-    .block_main-phone{
+    .block_main-phone {
         font-size: 20px;
     }
 
-    .block_main-card h3{
+    .block_main-card h3 {
         font-size: 20px;
     }
 
-    .contact__block-title{
+    .contact__block-title {
         font-size: 28px;
     }
 
-    .block_adress-cards{
-        grid-template-columns: repeat(2,1fr);
+    .block_adress-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .block_names-cards{
-        grid-template-columns: repeat(2,1fr);
+    .block_names-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
@@ -1183,19 +1477,19 @@ h6 {
         transform: rotate(180deg);
     }
 
-    .block_adress-cards{
+    .block_adress-cards {
         display: flex;
         flex-direction: column;
         gap: 24px;
     }
 
-    .block_names-cards{
+    .block_names-cards {
         display: flex;
         flex-direction: column;
         gap: 24px;
     }
 
-    .contacts__block_main{
+    .contacts__block_main {
         flex-direction: column;
         gap: 24px;
     }
