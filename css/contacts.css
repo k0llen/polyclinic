@@ -368,6 +368,20 @@ h6 {
     transition: .3s all;
 }
 
+.searchform-button-clear {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    z-index: 5;
+    cursor: pointer;
+    transform: scale(0);
+    transition: .3s all;
+}
+
+.show.searchform-button-clear{
+    transform: scale(1);
+}
+
 .header__searchform-form::placeholder {
     color: #607988;
 }
@@ -381,13 +395,21 @@ h6 {
     box-shadow: 0px 8px 24px -243px rgba(173, 148, 136, 0.3);
     transition: .3s all;
     background: #FFFFFF;
-    overflow: auto;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
     height: 400px;
     margin-top: 6px;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    opacity: 0;
+
+}
+
+.searchform__hidden--active .searchform__hidden_results {
+    opacity: 1;
+    visibility: visible;
+    overflow: auto;
 }
 
 .hidden-schedule {}
@@ -623,6 +645,8 @@ h6 {
     height: 400px;
     margin-top: 6px;
     opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 .searchform__hidden_error img{
@@ -633,38 +657,15 @@ h6 {
     color: #3C5C70;
 }
 
-.searchform__hidden-loader{
+.header__searchform-button_link {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    padding: 16px 24px;
-    border-radius: 8px;
-    box-shadow: 0px 8px 24px -243px rgba(173, 148, 136, 0.3);
+    top: 8px;
+    left: 12px;
+    cursor: pointer;
+    text-decoration: none;
     transition: .3s all;
-    background: #FFFFFF;
-    height: 400px;
-    margin-top: 6px;
+    display: none;
 }
-
-.loader {
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    border-top: 2px solid #EA5B13;
-    border-right: 2px solid #EA5B13;
-    width: 32px;
-    height: 32px;
-    animation: spin 1.3s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
 
 
 .header__searchform-form,
@@ -692,9 +693,11 @@ h6 {
 }
 
 .header__searchform-form-burger--active .header__searchform-button {
-    position: absolute;
-    top: 8px;
-    left: 6px;
+    display: none;
+}
+
+.header__searchform-form-burger--active .header__searchform-button_link {
+    display: block;
 }
 
 
@@ -718,9 +721,11 @@ h6 {
 }
 
 .header__searchform-form--active .header__searchform-button {
-    position: absolute;
-    top: 8px;
-    left: 12px;
+    display: none;
+}
+
+.header__searchform-form--active .header__searchform-button_link {
+    display: block;
 }
 
 .header__searchform-button {
