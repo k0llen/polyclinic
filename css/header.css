@@ -1009,6 +1009,7 @@
 
     .header__searchform-form-burger--active .searchform__hidden_results{
         overflow: auto;
+        height: calc(100vh - 45px);
     }
     
     .searchform__hidden_error {
