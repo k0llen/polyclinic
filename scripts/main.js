@@ -30,6 +30,7 @@ if (document.querySelector('.header')){
             document.addEventListener('click', (e) => {
                 if (!headerNavBot.contains(e.target) && form.value === '') {
                   headerNavBot.classList.remove('header__searchform-form--active');
+                  headerNavBot.classList.remove('searchform__hidden--error');
                 }
               });
         }

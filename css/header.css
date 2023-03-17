@@ -249,7 +249,7 @@
 .header__nav-more-list-w {
     padding-top: 6px;
     position: absolute;
-    top: 74px;
+    top: 30px;
     left: 0;
     width: 100%;
     transition: all .3s;
@@ -359,6 +359,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    z-index: 5;
 
 }
 
@@ -640,6 +641,7 @@
     opacity: 0;
     overflow: hidden;
     visibility: hidden;
+    z-index: 5;
 }
 
 .searchform__hidden--error .searchform__hidden_error {
@@ -1000,7 +1002,6 @@
     }
 
     .searchform__hidden_results {
-        z-index: 5;
         padding: 0;
         top: 36px;
         height: 100%;
@@ -1011,7 +1012,6 @@
     }
     
     .searchform__hidden_error {
-        z-index: 5;
         padding: 0;
         top: 36px;
     }
