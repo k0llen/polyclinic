@@ -907,6 +907,11 @@
 
     .header__nav--active .header__nav-item-text {
         font-weight: 500;
+        padding: 0;
+    }
+
+    .header__nav-item-text-more {
+        padding: 0;
     }
 
     .header__nav--active .header__nav-list {
@@ -1062,10 +1067,6 @@
 
     .burger__accordeon-item--active .header__nav-item-text-more::before {
         transform: rotate(180deg);
-    }
-
-    .header__nav-item-text-more {
-        padding: 0 !important;
     }
 
     .header__nav-item-text {
