@@ -4,26 +4,37 @@ if (document.querySelector('.header')){
     
     // Header searchform opening
     
-    const headerBot = document.querySelector('.header__nav-bot');
-    const btn = document.querySelector('.header__searchform-button');
-    
-
-    btn.addEventListener('click', () => {
-        if(screenWidth >= 1024){
-            headerBot.classList.add('header__searchform-form--active');
-        } else {
-            headerBot.classList.add('header__searchform-form-burger--active');
-        }
+    const headerNavBot = document.querySelector('.header__nav-bot');
+    const headerSearchformButton = document.querySelector('.header__searchform-button');
+    const form = document.querySelector('.header__searchform-form');
+    const searchformButton = document.querySelector('.search-form__btn');
+    const headerNav = document.querySelector('.header__nav');
+    const clearBtn = document.querySelector('.searchform-button-clear');
+  
+    headerSearchformButton.addEventListener('click', () => {
+      if (screenWidth >= 1024) {
+        headerNavBot.classList.add('header__searchform-form--active');
+      } else {
+        headerNav.classList.add('header__searchform-form-burger--active');
+      }
     });
 
+    searchformButton.addEventListener('click', (e) => {
+        e.preventDefault();
+    })
+  
     document.addEventListener('click', (e) => {
-        if (document.querySelector('.header__searchform-form').value === '' 
-        && e.target !== btn 
-        && e.target !== document.querySelector('.header__searchform')) {
-            
-            headerBot.classList.remove('header__searchform-form--active');
-            headerBot.classList.remove('header__searchform-form-burger--active');
-        }
+      if (!headerNavBot.contains(e.target) && form.value === '') {
+        headerNavBot.classList.remove('header__searchform-form--active');
+      }
+    });
+
+    clearBtn.addEventListener('click', (e) => {
+        form.value = '';
+        headerNav.classList.remove('header__searchform-form-burger--active');
+        headerNavBot.classList.remove('searchform__hidden--active');
+        headerNavBot.classList.remove('searchform__hidden--error');
+        clearBtn.classList.remove('show');
     });
 
 
@@ -329,20 +340,31 @@ if (document.querySelector('.searchform__hidden_results')) {
 
     const form = document.querySelector('.header__searchform-form');
     const clearBtn = document.querySelector('.searchform-button-clear');
+    const searchBtn = document.querySelector('.search-form__btn');
+    const headerNavBot = document.querySelector('.header__nav-bot');
+
+    searchBtn.addEventListener('click', (e) => {
+        if (form.value !== '') {
+            headerNavBot.classList.add('searchform__hidden--active');
+            headerNavBot.classList.remove('searchform__hidden--error');
+        } else {
+            headerNavBot.classList.remove('searchform__hidden--active');
+            headerNavBot.classList.add('searchform__hidden--error');
+        }
+    })
 
     form.addEventListener('input', (e) => {
         if (form.value !== '') {
-            form.parentNode.classList.add('searchform__hidden--active');
             clearBtn.classList.add('show');
         } else {
-            form.parentNode.classList.remove('searchform__hidden--active');
             clearBtn.classList.remove('show');
         }
     })
 
     clearBtn.addEventListener('click', (e) => {
         form.value = '';
-        form.parentNode.classList.remove('searchform__hidden--active');
+        headerNavBot.classList.remove('searchform__hidden--active');
+        headerNavBot.classList.remove('searchform__hidden--error');
         clearBtn.classList.remove('show');
     });
 

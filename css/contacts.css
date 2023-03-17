@@ -203,6 +203,7 @@ h6 {
     justify-content: space-between;
     width: 100%;
     transition: .3s all;
+    position: relative;
 }
 
 .header__nav-list {
@@ -354,19 +355,7 @@ h6 {
     margin-bottom: 0;
 }
 
-.header__searchform {
-    position: relative;
-}
-
-.header__searchform-form {
-    max-width: 0;
-    overflow: hidden;
-    color: #000C2B;
-    padding: 0;
-    border: none;
-    border-radius: 8px;
-    transition: .3s all;
-}
+.header__searchform {}
 
 .searchform-button-clear {
     position: absolute;
@@ -378,7 +367,7 @@ h6 {
     transition: .3s all;
 }
 
-.show.searchform-button-clear{
+.show.searchform-button-clear {
     transform: scale(1);
 }
 
@@ -388,6 +377,7 @@ h6 {
 
 .searchform__hidden_results {
     position: absolute;
+    top: 46px;
     left: 0;
     width: 100%;
     padding: 16px 24px;
@@ -399,7 +389,6 @@ h6 {
     visibility: hidden;
     opacity: 0;
     height: 400px;
-    margin-top: 6px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -410,6 +399,43 @@ h6 {
     opacity: 1;
     visibility: visible;
     overflow: auto;
+}
+
+.search-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 4;
+    transition: .3s all;
+}
+
+.header__searchform-form {
+    width: 100%;
+    overflow: hidden;
+    color: #000C2B;
+    padding: 8px 46px;
+    border: none;
+    border-radius: 8px;
+    transition: .3s all;
+}
+
+.search-form__btn {
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    transition: .3s all;
+}
+
+.search-form__btn:hover {
+    opacity: .7;
 }
 
 .hidden-schedule {}
@@ -588,11 +614,11 @@ h6 {
     border-radius: 16px;
 }
 
-.hidden-news-card:hover{
+.hidden-news-card:hover {
     background: #F7FBFF;
 }
 
-.hidden-news-card h4{
+.hidden-news-card h4 {
     font-family: 'Inter';
     font-weight: 600;
     font-size: 16px;
@@ -601,16 +627,16 @@ h6 {
     transition: .3s all;
 }
 
-.hidden-news-card p{
+.hidden-news-card p {
     color: #3C5C70;
     transition: .3s all;
 }
 
-.hidden-news-card:hover h4{
+.hidden-news-card:hover h4 {
     color: #00588D;
 }
 
-.hidden-news-card:hover p{
+.hidden-news-card:hover p {
     color: #000C2B;
 }
 
@@ -624,7 +650,7 @@ h6 {
     transition: .3s all;
 }
 
-.hidden-more:hover{
+.hidden-more:hover {
     opacity: .7;
 }
 
@@ -635,6 +661,7 @@ h6 {
     align-items: center;
     justify-content: center;
     left: 0;
+    top: 46px;
     width: 100%;
     height: 400px;
     padding: 16px 24px;
@@ -643,28 +670,23 @@ h6 {
     transition: .3s all;
     background: #FFFFFF;
     height: 400px;
-    margin-top: 6px;
     opacity: 0;
     overflow: hidden;
     visibility: hidden;
 }
 
-.searchform__hidden_error img{
+.searchform__hidden--error .searchform__hidden_error {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+
+.searchform__hidden_error img {
     margin-bottom: 12px;
 }
 
-.searchform__hidden_error p{
+.searchform__hidden_error p {
     color: #3C5C70;
-}
-
-.header__searchform-button_link {
-    position: absolute;
-    top: 8px;
-    left: 12px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: .3s all;
-    display: none;
 }
 
 
@@ -676,63 +698,27 @@ h6 {
     line-height: 145%;
 }
 
-.header__searchform-form-burger--active .header__searchform-form {
-    width: 100%;
-    max-width: none;
-    border: 1px solid #E0E4E7;
-    padding: 8px 16px 9px 36px;
-}
-
-.header__searchform-form-burger--active .header__searchform {
-    width: 100%;
-}
 
 
-.header__searchform-form-burger--active .searchform-button-view {
-    display: none;
-}
 
-.header__searchform-form-burger--active .header__searchform-button {
-    display: none;
-}
-
-.header__searchform-form-burger--active .header__searchform-button_link {
-    display: block;
+.header__searchform-form--active .search-form {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
 }
 
 
-.header__searchform-form--active .header__searchform-form {
-    max-width: 705px;
-    width: 100%;
-    padding: 8px 16px 9px 46px;
-}
 
-.header__searchform-form--active .header__searchform {
-    width: 100%;
-}
-
-.header__searchform-form--active .header__nav-list {
-    max-width: 0;
-    overflow: hidden;
-}
-
-.header__searchform-form--active .searchform-button-view {
-    display: none;
-}
-
-.header__searchform-form--active .header__searchform-button {
-    display: none;
-}
-
-.header__searchform-form--active .header__searchform-button_link {
-    display: block;
-}
 
 .header__searchform-button {
     cursor: pointer;
     margin-right: 32px;
     transition: .3s all;
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
 }
+
 
 .searchform-button-view {
     cursor: pointer;
@@ -743,6 +729,74 @@ h6 {
 .header__searchform-button:hover {
     opacity: .7;
 }
+
+/* Burger searhform start */
+
+.header__searchform-form-burger--active {}
+
+
+.header__searchform-form-burger--active .search-form {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    width: calc(100% - 32px);
+    height: 100%;
+    background: #FFFFFF;
+    z-index: 5;
+    position: fixed;
+    top: 12px;
+    left: 20px;
+}
+
+.header__searchform-form-burger--active .header__searchform {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background: #FFFFFF;
+}
+
+.header__searchform-form-burger--active.header__nav{
+    padding-top: 52px;
+}
+
+
+
+.header__nav--active .header__searchform {
+    position: absolute;
+    top: -60px;
+    right: 0;
+}
+
+.header__searchform-form-burger--active .header__searchform {
+    top: 0;
+}
+
+.header__searchform-form-burger--active .header__nav-bot {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: calc(100% - 32px);
+}
+
+.header__searchform-form-burger--active .header__logo-hidden{
+    top: 52px;
+}
+
+
+.header__searchform-form-burger--active ~ .header__burger{
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.header__searchform-form-burger--active .searchform-button-clear{
+    transform: scale(1);
+}
+
+
+/* Burger searchform end */
 
 /* Header styles end */
 
@@ -1177,8 +1231,8 @@ h6 {
         transform: translateX(200%);
         transition: 0.3s all;
         padding: 102px 12px 16px 20px;
-        max-width: 97%;
         height: 100%;
+        width: calc(100% - 16px);
     }
 
     .header__nav-top-entry-hidden {
@@ -1329,13 +1383,6 @@ h6 {
         box-shadow: none;
     }
 
-    .header__nav--active .header__searchform {
-        position: absolute;
-        top: -60px;
-        right: 0;
-    }
-
-
 
     .header__nav--active .header__burger {}
 
@@ -1357,6 +1404,38 @@ h6 {
         display: none;
     }
 
+    .header__nav-bot{
+        height: 100%;
+    }
+
+    .searchform__hidden_results {
+        z-index: 5;
+        padding: 0;
+        top: 36px;
+        height: 100%;
+    }
+
+    .header__searchform-form-burger--active .searchform__hidden_results{
+        overflow: visible;
+    }
+    
+    .searchform__hidden_error {
+        z-index: 5;
+        padding: 0;
+        top: 36px;
+    }
+
+    .searchform-button-clear {
+        right: 0;
+    }
+
+    .search-form__btn{
+        left: 0;
+    }
+
+    .header__searchform-form {
+        padding: 8px 34px;
+    }
 
 
 
@@ -1416,7 +1495,7 @@ h6 {
 @media screen and (max-width:660px) {
 
     .header__wrapper {
-        align-items: center;
+        align-items: flex-start;
     }
 
     .header__nav-item {
