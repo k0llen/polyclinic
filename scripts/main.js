@@ -4,38 +4,41 @@ if (document.querySelector('.header')){
     
     // Header searchform opening
     
-    const headerNavBot = document.querySelector('.header__nav-bot');
-    const headerSearchformButton = document.querySelector('.header__searchform-button');
-    const form = document.querySelector('.header__searchform-form');
-    const searchformButton = document.querySelector('.search-form__btn');
-    const headerNav = document.querySelector('.header__nav');
-    const clearBtn = document.querySelector('.searchform-button-clear');
-  
-    headerSearchformButton.addEventListener('click', () => {
-      if (screenWidth >= 1024) {
-        headerNavBot.classList.add('header__searchform-form--active');
-      } else {
-        headerNav.classList.add('header__searchform-form-burger--active');
-      }
-    });
+    if (document.querySelector('.header__searchform')) {
 
-    searchformButton.addEventListener('click', (e) => {
-        e.preventDefault();
-    })
-  
-    document.addEventListener('click', (e) => {
-      if (!headerNavBot.contains(e.target) && form.value === '') {
-        headerNavBot.classList.remove('header__searchform-form--active');
-      }
-    });
-
-    clearBtn.addEventListener('click', (e) => {
-        form.value = '';
-        headerNav.classList.remove('header__searchform-form-burger--active');
-        headerNavBot.classList.remove('searchform__hidden--active');
-        headerNavBot.classList.remove('searchform__hidden--error');
-        clearBtn.classList.remove('show');
-    });
+        const headerNavBot = document.querySelector('.header__nav-bot');
+        const headerSearchformButton = document.querySelector('.header__searchform-button');
+        const form = document.querySelector('.header__searchform-form');
+        const searchformButton = document.querySelector('.search-form__btn');
+        const headerNav = document.querySelector('.header__nav');
+        const clearBtn = document.querySelector('.searchform-button-clear');
+      
+        headerSearchformButton.addEventListener('click', () => {
+          if (screenWidth >= 1024) {
+            headerNavBot.classList.add('header__searchform-form--active');
+          } else {
+            headerNav.classList.add('header__searchform-form-burger--active');
+          }
+        });
+    
+        searchformButton.addEventListener('click', (e) => {
+            e.preventDefault();
+        })
+      
+        document.addEventListener('click', (e) => {
+          if (!headerNavBot.contains(e.target) && form.value === '') {
+            headerNavBot.classList.remove('header__searchform-form--active');
+          }
+        });
+    
+        clearBtn.addEventListener('click', (e) => {
+            form.value = '';
+            headerNav.classList.remove('header__searchform-form-burger--active');
+            headerNavBot.classList.remove('searchform__hidden--active');
+            headerNavBot.classList.remove('searchform__hidden--error');
+            clearBtn.classList.remove('show');
+        });
+    }
 
 
     // Burger menu 
