@@ -43,6 +43,39 @@ if (document.querySelector('.header')){
             clearBtn.classList.remove('show');
             headerNav.classList.remove('header__nav-noscroll');
         });
+
+        if (document.querySelector('.searchform__hidden_results')) {
+
+            const form = document.querySelector('.header__searchform-form');
+            const clearBtn = document.querySelector('.searchform-button-clear');
+            const searchBtn = document.querySelector('.search-form__btn');
+            const headerNavBot = document.querySelector('.header__nav-bot');
+        
+            searchBtn.addEventListener('click', (e) => {
+                if (form.value !== '') {
+                    headerNavBot.classList.add('searchform__hidden--active');
+                    headerNavBot.classList.remove('searchform__hidden--error');
+                } else {
+                    headerNavBot.classList.remove('searchform__hidden--active');
+                    headerNavBot.classList.add('searchform__hidden--error');
+                }
+            })
+        
+            form.addEventListener('input', (e) => {
+                if (form.value !== '') {
+                    clearBtn.classList.add('show');
+                } else {
+                    clearBtn.classList.remove('show');
+                }
+            })
+        
+            clearBtn.addEventListener('click', (e) => {
+                form.value = '';
+                headerNavBot.classList.remove('searchform__hidden--active');
+                headerNavBot.classList.remove('searchform__hidden--error');
+                clearBtn.classList.remove('show');
+            });
+        }
     }
 
 
@@ -344,37 +377,45 @@ if (document.querySelector('.projects')) {
     });
 }
 
-if (document.querySelector('.searchform__hidden_results')) {
 
-    const form = document.querySelector('.header__searchform-form');
-    const clearBtn = document.querySelector('.searchform-button-clear');
-    const searchBtn = document.querySelector('.search-form__btn');
-    const headerNavBot = document.querySelector('.header__nav-bot');
+if (document.querySelector('.results')){
 
-    searchBtn.addEventListener('click', (e) => {
-        if (form.value !== '') {
-            headerNavBot.classList.add('searchform__hidden--active');
-            headerNavBot.classList.remove('searchform__hidden--error');
-        } else {
-            headerNavBot.classList.remove('searchform__hidden--active');
-            headerNavBot.classList.add('searchform__hidden--error');
-        }
+    const parent = document.querySelector('.results__card');
+    const searchFormBtn = document.querySelector('.results__card-form-search-btn');
+    const searchFormClearBtn = document.querySelector('.results__card-form-clear-btn');
+    const form = document.querySelector('.results__card-searchform');
+
+    searchFormBtn.addEventListener('click', (e) => {
+        e.preventDefault();
     })
+
+    searchFormClearBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+    })
+
+    searchFormBtn.addEventListener('click', (e) => {
+        if (form.value !== '') {
+            parent.classList.remove('searchform--error');
+            parent.classList.add('searchform--active');
+        } else {
+            parent.classList.remove('searchform--active');
+            parent.classList.add('searchform--error');
+        }
+    });
 
     form.addEventListener('input', (e) => {
         if (form.value !== '') {
-            clearBtn.classList.add('show');
+            searchFormClearBtn.classList.add('show');
         } else {
-            clearBtn.classList.remove('show');
+            searchFormClearBtn.classList.remove('show');
         }
     })
 
-    clearBtn.addEventListener('click', (e) => {
+    searchFormClearBtn.addEventListener('click', (e) => {
         form.value = '';
-        headerNavBot.classList.remove('searchform__hidden--active');
-        headerNavBot.classList.remove('searchform__hidden--error');
-        clearBtn.classList.remove('show');
+        parent.classList.remove('searchform--active');
+        parent.classList.add('searchform--error');
+        searchFormClearBtn.classList.remove('show');
     });
-
 
 }

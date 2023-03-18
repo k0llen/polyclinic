@@ -22,7 +22,7 @@ h6 {
 }
 
 .title {
-    font-size: 42px;
+    font-size: 32px;
     line-height: 120%;
 }
 
@@ -215,7 +215,7 @@ h6 {
 @media screen and (max-width: 978px) {
 
     .title {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 120%;
     }
 
