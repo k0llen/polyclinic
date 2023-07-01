@@ -7,3 +7,4 @@ Libs on this site :
   <li>Air-datepicker(calendar)</li>
 </ol>
 
+Time spend on this site - 76 working hours
