@@ -1,0 +1,40 @@
+.main_online {
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 16px;
+        border-radius: 24px;
+        
+        img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .main_online {
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        &-item {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main_online {
+        &-list {
+            grid-template-columns: repeat(1,1fr);
+            gap: 12px;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.main_paid {
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px 20px;
+        margin-bottom: 24px;
+    }
+
+    &-item {
+        padding: 10px 12px 12px 24px;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        .content {
+            width: 100%;
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 6px;
+            }
+            .pic-block {
+                width: 48px;
+                height: 48px;
+                padding: 8px;
+                border-radius: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            ul {
+                li + li{
+                    margin-top: 6px;
+                }
+            }
+        }
+        &_1{
+            .pic-block {
+                background: #D9F7EB;
+            }
+        }
+        &_2{
+            .pic-block {
+                background: #FFE7E3;
+            }
+        }
+        &_3{
+            .pic-block {
+                background: #DDF0FE;
+            }
+        }
+        &_4{
+            .pic-block {
+                background: #FFE9C2;
+            }
+        }
+        &_5{
+            .pic-block {
+                background: #FFEBA3;
+            }
+        }
+        &_6{
+            .pic-block {
+                background: #EFE8FF;
+            }
+        }
+        .view-all {
+            align-self: flex-end;
+            padding: 5px 8px;
+            padding-right: 36px;
+            border-radius: 16px;
+            color: #005081;
+            background:  url(../img/svg/blue-arrow.svg) no-repeat 96% center;
+                transition: .3s all;
+            &:hover {
+                background: url(../img/svg/blue-arrow.svg) no-repeat right center, #FFFFFF;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .main_paid {
+        &-list {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .main_paid {
+        &-list {
+            grid-template-columns: repeat(1,1fr);
+            gap: 12px;
+            +.btn {
+                width: 100%;
+            }
+        }
+        &-item {
+            h4, .h4 {
+                font-size: 20px;
+            }
+        }
+    }
+}

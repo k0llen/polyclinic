@@ -1,0 +1,133 @@
+.wrapper {
+    max-width: 1054px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.link {
+    display: inline-block;
+    transition: .3s all;
+
+    &_blue {
+        font-weight: 500;
+        color: #00588D;
+        padding: 4px 12px;
+        border-radius: 16px;
+
+        &:hover {
+            background: #F7FBFF;
+        }
+    }
+
+    &_black {
+        color: #000C2B;
+
+        &:hover {
+            color: #00588D;
+        }
+    }
+
+    &_gray {
+        color: #3C5C70;
+        &:hover {
+            color: #00588D;
+        }
+    }
+
+    &_arrow {
+        color: #005081;
+        padding-right: 38px;
+        background: url(../img/svg/blue-arrow.svg) no-repeat 96% center;
+        &:hover {
+            background: url(../img/svg/blue-arrow.svg) no-repeat right center;
+            opacity: .8;
+        }
+    }
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%; 
+    padding: 12px 40px;
+    border-radius: 16px;
+    transition: .3s all;
+    display: inline-block;
+    text-align: center;
+
+    &_red {
+        background: #EA5B13;
+        color: #FFF;
+        &:hover {
+            background: #DA4A01;
+        }
+    }
+
+    &_white {
+        background: #FFF;
+        color: #000C2B;
+        &:hover {
+            background: #F7E6DF;
+        }
+    }
+}
+
+.page {
+    margin-top: 40px;
+    h2, .h2 {
+        margin-bottom: 32px;
+    }
+}
+
+.section {
+    margin-top: 120px;
+    h2, .h2 {
+        margin-bottom: 24px;
+    }
+}
+
+.card {
+    background: #FFFFFF;
+    transition: .3s all;
+    text-decoration: none;
+    &_white {
+        &:hover {
+            background: #F7FBFF;
+        }
+    }
+}
+
+.breadcrumb {
+    color: #3C5C70;
+    padding-left: 30px;
+    background: url(../img/svg/arrow-left-gray.svg) no-repeat left center;
+    margin-bottom: 24px;
+    &:hover {
+        opacity: .7;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .wrapper {
+        max-width: 958px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .wrapper {
+        max-width: 750px;
+    }
+    .section {
+        margin-top: 80px;
+        h2, .h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .wrapper {
+        padding: 0 16px;
+    }
+}

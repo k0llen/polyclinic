@@ -1,0 +1,61 @@
+@@include('inc/doc-start.html', {
+"title": "Расписание приёма"
+})
+
+@@include('inc/page-header.html')
+
+<section class="page schedule">
+    <div class="wrapper">
+        <h1>Расписание приёма</h1>
+        <div class="schedule__subtitle">При первом посещении врача с собой нужно взять паспорт, медполис и СНИЛС.</div>
+        <div class="filters">
+            <button class="filters-trigger card card_white">
+                <img src="img/icons/filters.svg" alt="">
+            </button>
+            <div class="dropdowns">
+                <div class="dropdown">
+                    <button class="dropdown__button">
+                        Все филлиалы
+                    </button>
+                    <ul class="dropdown__list">
+                        <li class="dropdown__item" data-value="all">Все филлиалы</li>
+                        <li class="dropdown__item" data-value="krupskoy40">ул. Крупской, 40а</li>
+                        <li class="dropdown__item" data-value="morskaya9">ул. Морская, 9</li>
+                        <li class="dropdown__item" data-value="polyarnoy3">ул. Полярной Дивизии, 3</li>
+                        <li class="dropdown__item" data-value="frolova3">ул. Фролова, 3</li>
+                        <li class="dropdown__item" data-value="lesnaya12">ул. Лесная, 12</li>
+                    </ul>
+                    <input type="text" class="dropdown__input-hidden" id="dropdown-input-address" value="all">
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown__button">
+                        Все отделения и специальности
+                    </button>
+                    <ul class="dropdown__list">
+                        <li class="dropdown__item" data-value="all">Все отделения и специальности</li>
+                        <li class="dropdown__item" data-value="terapevt">Терапевт</li>
+                        <li class="dropdown__item" data-value="hirurg">Хирург</li>
+                        <li class="dropdown__item" data-value="nevrolog">Невролог</li>
+                        <li class="dropdown__item" data-value="fizioterapevt">Физиотерапевт</li>
+                        <li class="dropdown__item" data-value="endokrinolog">Эндокринолог</li>
+                        <li class="dropdown__item" data-value="infekcionist">Инфекционист</li>
+                        <li class="dropdown__item" data-value="stomatolog">Стоматолог</li>
+                        <li class="dropdown__item" data-value="kardiolog">Кардиолог</li>
+                        <li class="dropdown__item" data-value="uzi">Врач ультразвуковой диагностики</li>
+                    </ul>
+                    <input type="text" class="dropdown__input-hidden" id="dropdown-input-spec" value="all">
+                </div>
+            </div>
+            <div class="searchform">
+                <input type="text" id="schedule-searchform" placeholder="Найти врача...">
+                <button class="searchform-button"> <img src="img/svg/search.svg" alt="Искать"></button>
+            </div>
+        </div>
+        <div class="schedule__list">
+        </div>
+    </div>
+</section>
+
+
+@@include('inc/page-footer.html')
+@@include('inc/doc-end.html')
