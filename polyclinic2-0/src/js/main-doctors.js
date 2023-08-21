@@ -10,10 +10,6 @@ if (document.querySelector('.main_doctors')) {
             for (let i = 0; i < cards.length; i++) {
                 if (i >= 9) {
                     cards[i].style.display = 'flex';
-                    cards[i].style.maxHeight = cards[i].scrollHeight + 'px';
-                    cards[i].style.minHeight = '40px';
-                    cards[i].style.overflow = 'visible';
-                    cards[i].style.visibility = 'visible';
                 }
             }
         }
@@ -24,10 +20,6 @@ if (document.querySelector('.main_doctors')) {
             for(let i = 0; i<cards.length;i++) {
                 if (i >= 9) {
                     cards[i].style.display = 'none';
-                    cards[i].style.maxHeight= '0';
-                    cards[i].style.minHeight = '0';
-                    cards[i].style.overflow = 'hidden';
-                    cards[i].style.visibility = 'hidden';
                 }
             }
         }
