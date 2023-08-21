@@ -1,0 +1,161 @@
+body {
+    background: #F6F0ED;
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    max-width: 1054px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Manrope', sans-serif;
+    color: #000C2B;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 42px;
+    line-height: 120%;
+}
+
+.link {
+    color: #00588D;
+    text-decoration: none;
+    transition: .3s all;
+}
+
+.link:hover {
+    opacity: .7;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 145%;
+}
+
+/* Attachment styles start */
+.attachment {
+    margin-bottom: 120px;
+}
+
+.attachment__title {
+    font-size: 42px;
+    line-height: 120%;
+    margin-bottom: 32px;
+}
+
+.attachment__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 32px 32px;
+    gap: 32px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.attachment__block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.attachment__block-title {
+    font-size: 22px;
+    line-height: 135%;
+}
+
+.attachment__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.attachment__desc-link-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.attachment__desc-link {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 0 6px 0 6px;
+}
+
+.attachment__block-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: calc(100% - 30px);
+}
+
+.attachment__block-link svg {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+}
+
+.attachment__pic {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Attachments styles end */
+
+
+
+/* Media styles */
+
+
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 978px) {
+
+    .title {
+        font-size: 32px;
+        line-height: 120%;
+    }
+
+    .attachment {
+        margin-bottom: 80px;
+    }
+
+    .attachment__title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .attachment__card {
+        padding: 16px;
+    }
+
+    .attachment__block-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:516px) {
+
+    .attachment__desc-link-block p:first-child {
+        width: 100%;
+    }
+
+    .attachment__desc-link {
+        margin-left: 0;
+    }
+
+}

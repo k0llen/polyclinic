@@ -1,0 +1,361 @@
+body {
+    background: #F6F0ED;
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    max-width: 1054px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Manrope', sans-serif;
+    color: #000C2B;
+    font-weight: 700;
+}
+
+.title{
+    font-size: 42px;
+    line-height: 120%;
+}
+
+.desc{
+    font-size: 16px;
+    line-height: 145%;
+}
+
+/* Dispensary styles start */
+
+.dispensary {
+    margin-bottom: 120px;
+}
+
+.dispensary__title {
+    font-size: 42px;
+    line-height: 120%;
+    margin-bottom: 32px;
+}
+
+.dispensary__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    position: relative;
+}
+
+.dispensary__card {
+    width: calc(100% - 316px);
+    padding: 24px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    border-radius: 24px;
+    background: #FFFFFF;
+}
+
+.dispensary__block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dispensary__block-title {
+    font-size: 30px;
+    line-height: 120%;
+}
+
+.dispensary__block-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.dispensary__block-text-list-wrapper ul{
+    list-style: disc;
+    padding-left: 25px;
+}
+
+.dispensary__pic {
+    width: 100%;
+    object-fit: cover;
+}
+
+.dispensary__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dispensary__form-top {
+    margin-bottom: 24px;
+}
+
+.dispensary__form-title {
+    margin-bottom: 8px;
+}
+
+.dispensary__form-phone {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 8px;
+    color: #000C2B;
+    text-decoration: none;
+    transition: .3s all;
+}
+
+.dispensary__form-phone:hover{
+    opacity: .7;
+}
+
+.dispensary__form-dates {
+    color: #3C5C70;
+    margin-bottom: 8px;
+}
+
+.dispensary__form-descs {
+}
+
+.dispensary__form-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.dispensary__form-block {
+}
+
+.dispensary__form-bock_large {
+    width: 100%;
+}
+
+.dispensary__form-block-name {
+    margin-bottom: 6px;
+}
+
+.dispensary__form-input_large {
+    width: 100%;
+}
+
+.dispensary__form-input {
+    border: 1px solid #E0E4E7;
+    border-radius: 8px;
+    transition: .3s all;
+    padding: 8px 8px 8px 10px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 145%;
+    color: #000C2B;
+    font-family: "Inter", sans-serif;
+    transition: .3s all;
+}
+
+.dispensary__form-input:hover, .dispensary__form-input:focus, .dispensary__form-input:active{
+    border-color:#00588D;
+}
+
+.dispensary__form-block-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    gap: 12px;
+}
+
+.dispensary__form-block_small {
+    position: relative;
+    max-width: 160px;
+    width: 100%;
+}
+
+.dispensary__form-block_small svg{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    stroke: #9CADB8;
+    transition: .3s all;
+}
+
+.dispensary__form-input_small:hover ~ svg, .dispensary__form-input_small:focus ~ svg, .dispensary__form-input_small:active ~ svg{
+    stroke: #00588D;
+}
+
+.dispensary__form-input_small {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    background-color: transparent;
+}
+
+.dispensary__form-block_medium {
+    max-width: calc(100% - 172px);
+    width: 100%;  
+}
+
+.dispensary__form-block-input_medium {
+    width: 100%;
+}
+
+.dispensary__form-block-desired {
+}
+
+.dispensary__form-textarea-desired {
+    height: 85px;
+    resize: none;
+    display: block;
+}
+
+.dispensary__form-agreement {
+    margin-bottom: 32px;
+}
+
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E0E4E7;
+    border-radius: 4px;
+    vertical-align: sub;
+    margin-right: 8px;
+}
+
+.custom-checkbox::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../svg/check.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .1s ease-in;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.real-checkbox:checked + .custom-checkbox {
+    background: #EA5B13;
+}
+
+.dispensary__form-agreement label{
+    display: flex;
+    align-items: flex-start;
+}
+
+.dispensary__form-agreement-label {
+    width: calc(100% - 28px);
+}
+.dispensary__form-button {
+    display: inline-block;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.dispensary_side {
+    padding: 20px 24px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    width: 300px;
+    position: sticky;
+    top: 15px;
+    height: fit-content;
+}
+
+.dispensary__side-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dispensary__side-link {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3C5C70;
+    transition: .3s all;
+}
+
+.dispensary__side-link:hover, .dispensary__side-link:focus, .dispensary__side-link:active{
+    color: #000C2B;
+}
+
+/* Dispensary styles end */
+
+
+
+/* Media styles */ 
+
+
+@media screen and (max-width: 1024px) {
+    .wrapper{
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 978px) {
+
+    .title{
+        font-size: 28px;
+    }
+
+    .dispensary{
+        margin-bottom: 80px;
+    }
+
+    .dispensary__title{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .dispensary__card{
+        width: 100%;
+        max-width: none;
+        padding: 16px;
+        gap: 40px;
+    }
+
+    .dispensary__block-title{
+        font-size: 28px;
+    }
+
+    .dispensary_side{
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width:660px){
+
+
+    .dispensary__form-block-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .dispensary__form-block_small, .dispensary__form-block_medium{
+        max-width: none;
+        width: 100%;
+    }
+
+    .dispensary__form-button{
+        align-self: stretch;
+    }
+
+}

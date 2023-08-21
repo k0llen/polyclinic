@@ -1,0 +1,117 @@
+body {
+    background: #F6F0ED;
+    font-family: 'Inter', sans-serif;
+    color: #000C2B;
+}
+
+.wrapper {
+    max-width: 1054px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Manrope', sans-serif;
+    color: #000C2B;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 42px;
+    line-height: 120%;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 145%;
+}
+
+/* Access styles start */
+
+
+
+.access {
+    margin-bottom: 120px;
+}
+
+.access__title {
+    margin-bottom: 32px;
+}
+
+.access__card {
+    padding: 24px 32px 32px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.access__block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.access__block-title {
+    font-size: 30px;
+}
+
+.access__block-text {}
+
+.access__block-text ol{
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+
+.access__link {
+    padding-left: 30px;
+    text-decoration: none;
+    color: #00588D;
+    transition: .3s all;
+    background: url(../svg/file.svg) no-repeat left top;
+}
+
+.access__link:hover{
+    opacity: .7;
+}
+
+/* Access styles end */
+
+
+/* Media styles */
+
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 978px) {
+
+    .title {
+        font-size: 32px;
+        line-height: 120%;
+    }
+
+
+    .access__title {
+        margin-bottom: 24px;    
+    }
+
+    .access__card{
+        padding: 16px;
+        gap: 40px;
+    }
+
+    .access__block-title{
+        font-size: 28px;
+    }
+}

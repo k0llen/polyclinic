@@ -1,0 +1,278 @@
+body {
+    background: #F6F0ED;
+    font-family: 'Inter', sans-serif;
+    color: #000C2B;
+}
+
+.wrapper {
+    max-width: 1054px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Manrope', sans-serif;
+    color: #000C2B;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 32px;
+    line-height: 120%;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 145%;
+}
+
+/* Contacts styles start */
+
+.contacts {
+    margin-bottom: 120px;
+}
+
+.contacts__title {
+    margin-bottom: 32px;
+}
+
+.contacts__card {
+    padding: 24px 32px 32px 32px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.contacts__block_main {
+    display: flex;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+.block_main-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.block_main-card h3 {
+    font-size: 22px;
+    line-height: 135%;
+    padding-left: 32px;
+    background: url(../img/location.png) no-repeat left top;
+}
+
+.block_main-card p {
+    color: #3C5C70;
+}
+
+.block_main-phone {
+    padding-left: 32px;
+    text-decoration: none;
+    background: url(../svg/phone.svg) no-repeat left center;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 135%;
+    color: #000C2B;
+    transition: .3s all;
+}
+
+.block_main-phone:hover {
+    opacity: .7;
+}
+
+.block_main-date {}
+
+.block_main-bus {}
+
+.block_main-cass a {
+    font-weight: 500;
+    color: #000C2B;
+    transition: .3s all;
+    text-decoration: none;
+}
+
+.block_main-cass a:hover {
+    opacity: .7;
+}
+
+.contact__block_adress {}
+
+.contact__block-title {
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+
+.block_adress-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 48px;
+}
+
+.block_adress-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.block_adress-card p {
+    color: #3C5C70;
+}
+
+.block_adress-card h3 {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    padding-left: 32px;
+    background: url(../img/location.png) no-repeat left top;
+}
+
+.block_adress-bus {}
+
+.block_adress-date {}
+
+.block_adress-cass a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #000C2B;
+    transition: .3s all;
+}
+
+.block_adress-cass a:hover {
+    opacity: .7;
+}
+
+
+.contacts__block_names {}
+
+.block_names-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 48px;
+}
+
+.block_name-card h3 {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 2px;
+}
+
+.block_name-card h3+p {
+    color: #3C5C70;
+    margin-bottom: 8px;
+}
+
+.block_name-card a {
+    text-decoration: none;
+    color: #000C2B;
+    transition: .3s all;
+}
+
+.block_name-card a:hover {
+    opacity: 0.7;
+}
+
+.block_name-card-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.block_name-card a+p {
+    margin-top: 2px;
+}
+
+.block_name-card-email {
+    margin-top: 2px;
+}
+
+/* Contact styles end */
+
+
+/* Media styles */
+
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 978px) {
+
+    .title {
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    .contacts {
+        margin-bottom: 80px;
+    }
+
+    .contacts__title {
+        margin-bottom: 24px;
+    }
+
+    .contacts__card {
+        padding: 16px;
+        gap: 40px;
+    }
+
+    .block_main-phone {
+        font-size: 20px;
+    }
+
+    .block_main-card h3 {
+        font-size: 20px;
+    }
+
+    .contact__block-title {
+        font-size: 28px;
+    }
+
+    .block_adress-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .block_names-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:700px) {}
+
+
+
+@media screen and (max-width:660px) {
+
+    .block_adress-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .block_names-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .contacts__block_main {
+        flex-direction: column;
+        gap: 24px;
+    }
+}

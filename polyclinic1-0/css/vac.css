@@ -1,0 +1,243 @@
+body {
+    background: #F6F0ED;
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    max-width: 1054px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Manrope', sans-serif;
+    color: #000C2B;
+    font-weight: 700;
+}
+
+.title{
+    font-size: 30px;
+    line-height: 120%;
+}
+
+.desc{
+    font-size: 16px;
+    line-height: 145%;
+}
+
+/* Vac styles start */
+
+.vac {
+    margin-bottom: 120px;
+}
+
+.vac__title {
+    margin-bottom: 32px;
+    font-size: 42px;
+    line-height: 120%;
+}
+.vac__cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    justify-content: space-between;
+    position: relative;
+}
+.vac__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 32px 32px;
+    gap: 48px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    width: calc(100% - 316px);
+}
+.vac__block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vac__block_1{
+
+}
+
+.vac__block_2{
+
+}
+
+.vac__block_3{
+
+}
+
+.vac__block-title {
+}
+
+.vac__pic {
+    width: 100%;
+    object-fit: cover;
+}
+
+.vac__block-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.vac__block-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.vac__block-date-wrapper {
+}
+
+.vac__block-date-title {
+}
+
+.vac__block-text_covid-top {
+    gap: 0;
+}
+
+.vac__block-list {
+}
+
+.vac__block-list-link{
+    text-decoration: none;
+    color: #000C2B;
+    display: inline-block;
+    transition: .3s all;
+}
+
+.vac__block-list-link:hover{
+    opacity: .7;
+}
+
+.vac__block-list-phone {
+    text-decoration: none;
+    color: #000C2B;
+    display: inline-block;
+    transition: .3s all;
+}
+
+.vac__block-list-phone:hover{
+    opacity: .7;
+}
+
+.vac__block-text_covid-title {
+    font-size: 22px;
+    line-height: 135%;
+}
+
+.vac__block-text-places {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.vac__block-text-place {
+}
+.vac__block-place-title {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+}
+.vac__block-text_covid-link {
+    display: inline-block;
+    padding-left: 30px;
+    text-decoration: none;
+    color: #005081;
+    background: url(../svg/file.svg) no-repeat left center;
+    margin-top: 4px;
+    transition: .3s all;
+
+}
+
+.vac__block-text_covid-link:hover{
+    opacity: .7;
+}
+.vac__block-text_covid_title {
+}
+
+.vac__block-text_covid-bottom{
+    gap: 0;
+}
+
+.vac__block-text_covid-bottom .vac__block-text_covid-title{
+    margin-bottom: 4px;
+}
+.vac__side {
+    position: sticky;
+    top: 15px;
+    padding: 20px 24px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    width: 300px;
+}
+.vac__side-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.vac__side-link {
+    text-decoration: none;
+    color: #3C5C70;
+    transition: .3s all;
+}
+
+.vac__side-link:hover{
+    color: #000C2B;
+}
+
+
+/* Vac styles end */
+
+
+/* Media styles */ 
+
+
+@media screen and (max-width: 1024px) {
+    .wrapper{
+        padding: 0 16px;
+    }
+
+    .vac__cards{
+        gap: 12px;
+    }
+
+    .vac__card{
+        width: calc(100% - 312px);
+    }
+
+}
+
+@media screen and (max-width: 978px) {
+
+    .title{
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    .vac{
+        margin-bottom: 80px;
+    }
+
+    .vac__title{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .vac__card{
+        width: 100%;
+        max-width: none;
+        padding: 16px;
+        gap: 40px;
+    }
+
+    .vac__side{
+        display: none;
+    }
+}
+

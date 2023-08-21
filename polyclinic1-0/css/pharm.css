@@ -1,0 +1,410 @@
+body {
+    background: #F6F0ED;
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    max-width: 1054px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Manrope', sans-serif;
+    color: #000C2B;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 30px;
+    line-height: 120%;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 145%;
+}
+
+
+/* Pharm styles start */
+
+
+.pharm {
+    margin-bottom: 120px;
+}
+
+.pharm__title {
+    margin-bottom: 32px;
+    font-size: 42px;
+    line-height: 120%;
+}
+
+.pharm__cards {
+    display: flex;
+    position: relative;
+    gap: 16px;
+}
+
+.pharm__card {
+    max-width: calc(100% - 316px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px 32px;
+    gap: 48px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.pharm__block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pharm__block-title {}
+
+.pharm__block-list ul {
+    list-style: disc;
+    padding-left: 22px;
+}
+
+
+.pharm__links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pharm__link {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    text-decoration: none;
+    color: #00588D;
+    transition: .3s all;
+}
+
+.pharm__link:hover {
+    opacity: .7;
+}
+
+.pharm__link svg {
+    width: 24px;
+    min-width: 24px;
+}
+
+.pharm__block-adresses {}
+
+.pharm__block-adresses {
+    gap: 16px;
+}
+
+.pharm__block-adresses-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 48px;
+}
+
+.pharm__block-adresses-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pharm__block-adresses-card p {
+    color: #3C5C70;
+}
+
+.pharm__block-adresses-card-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.pharm__block-adresses-card-time {}
+
+.pharm__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.pharm__form-top {
+    margin-bottom: 24px;
+}
+
+.pharm__form-top p {}
+
+.pharm__form-title {
+    margin-bottom: 8px;
+}
+
+.pharm__form-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.pharm__form-block {}
+
+.pharm__form-input {
+    border: 1px solid #E0E4E7;
+    border-radius: 8px;
+    transition: .3s all;
+    padding: 8px 8px 8px 10px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 145%;
+    color: #000C2B;
+    font-family: "Inter", sans-serif;
+    transition: .3s all;
+}
+
+.pharm__form-input:hover,
+.pharm__form-input:focus,
+.pharm__form-input:active {
+    border-color: #00588D;
+}
+
+.pharm__form-bock_large {
+    width: 100%;
+}
+
+.pharm__form-block-name {
+    margin-bottom: 6px;
+}
+
+.pharm__form-input_large {
+    width: 100%;
+}
+
+.pharm__form-block-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    gap: 12px;
+}
+
+.pharm__form-block_small {
+    position: relative;
+    max-width: 160px;
+    width: 100%;
+}
+
+.pharm__form-block_small svg {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    stroke: #9CADB8;
+    transition: .3s all;
+}
+
+.pharm__form-input_small:hover~svg,
+.pharm__form-input_small:focus~svg,
+.pharm__form-input_small:active~svg {
+    stroke: #00588D;
+}
+
+
+.pharm__form-input_small {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    background-color: transparent;
+}
+
+
+.pharm__form-block_medium {
+    max-width: calc(100% - 172px);
+    width: 100%;
+}
+
+.pharm__form-block-input_medium {
+    width: 100%;
+}
+
+.pharm__form-block-pharmacy {}
+
+.pharm__form-textarea-pharmacy {
+    height: 85px;
+    resize: none;
+    display: block;
+}
+
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E0E4E7;
+    border-radius: 4px;
+    vertical-align: sub;
+    margin-right: 8px;
+}
+
+.custom-checkbox::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../svg/check.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .1s ease-in;
+}
+
+.real-checkbox:checked+.custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.real-checkbox:checked+.custom-checkbox {
+    background: #EA5B13;
+}
+
+.pharm__form-agreement {
+    margin-bottom: 32px;
+}
+
+.pharm__form-agreement label {
+    display: flex;
+    align-items: flex-start;
+}
+
+.pharm__form-agreement-label {
+    width: calc(100% - 28px);
+}
+
+.pharm__form-button {
+    display: inline-block;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.pharm__side {
+    padding: 20px 24px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    width: 300px;
+    position: sticky;
+    top: 15px;
+    height: fit-content;
+}
+
+.pharm__side-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pharm__side-link {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3C5C70;
+    transition: .3s all;
+}
+
+.pharm__side-link:hover,
+.pharm__side-link:focus,
+.pharm__side-link:active {
+    color: #000C2B;
+}
+
+
+/* Pharm styles end */
+
+
+/* Media styles */
+
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        padding: 0 16px;
+    }
+
+    .pharm__cards {
+        gap: 12px;
+    }
+
+    .pharm__card {
+        width: calc(100% - 312px);
+    }
+
+}
+
+@media screen and (max-width: 978px) {
+
+    .pharm {
+        margin-bottom: 80px;
+    }
+
+    .pharm__title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .pharm__cards {
+        flex-direction: column-reverse;
+    }
+
+    .pharm__card {
+        width: 100%;
+        max-width: none;
+        padding: 16px;
+        gap: 40px;
+    }
+
+    .pharm__side {
+        position: static;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width:660px) {
+
+    .pharm__form-block-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .pharm__form-block_small,
+    .pharm__form-block_medium {
+        max-width: none;
+        width: 100%;
+    }
+
+    .pharm__form-button {
+        align-self: stretch;
+    }
+
+    .pharm__block-adresses-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+}
