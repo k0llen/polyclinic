@@ -1,10 +1,2 @@
-# Polyclinic website (Html + css + js)
+# Polyclinic website (gulp, js, scss, html)(v2.0)
 
-Libs on this site : 
-<ol>
-  <li>JQuery</li>
-  <li>JQuery MaskedInput</li>
-  <li>Air-datepicker(calendar)</li>
-</ol>
-
-Time spend on this site - 76 working hours
