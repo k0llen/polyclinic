@@ -1,0 +1,128 @@
+.cab {
+    &-card {
+        padding: 24px 32px 32px 32px;
+        border-radius: 24px;
+        background: #FFF;
+
+        p,
+        li {
+            color: #3C5C70;
+        }
+    }
+
+    &-about {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .pic-block {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .cab-text {
+            .name {}
+
+            .spec {
+                margin-top: 4px;
+                color: #3C5C70;
+            }
+        }
+
+        +p {
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .block {
+
+        h4,
+        .h4 {
+            +.block-cab-name {
+                margin-top: 12px;
+            }
+
+            +.block-desc {
+                margin-top: 4px;
+                margin-bottom: 12px;
+            }
+        }
+
+        &-cab-name {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+
+            +ul {
+                margin-top: 4px;
+            }
+
+        }
+
+        &-desc {}
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        +.block {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .cab {
+        &-card {
+            padding: 16px;
+
+            .h4,
+            h4 {
+                font-size: 20px;
+            }
+        }
+
+        &-about {
+            .cab-text {
+                .name {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .block {
+            .areas {
+                flex-direction: column;
+                gap: 2px;
+                align-items: flex-start;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .cab {
+        &-about {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+    }
+}
