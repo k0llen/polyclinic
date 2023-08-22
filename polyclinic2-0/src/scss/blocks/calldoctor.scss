@@ -1,0 +1,48 @@
+.calldoctor {
+    .sticky-page-content{
+        p+.phone {
+            margin-top: 8px;
+        }
+        .phone {
+            font-size: 22px;
+            line-height: 135%;
+            font-weight: 700;
+            font-family: 'Manrope', sans-serif;
+            +.dates {
+                margin-top: 2px;
+            }
+        }
+        .dates + p {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .calldoctor {
+        .sticky-page {
+            &-content {
+                .phone {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .calldoctor {
+        .sticky-page {
+            &-content {
+                .form {
+                    flex-direction: column;
+                    .input-block {
+                        width: 100%;
+                        max-width: none;
+                    }
+                }
+            }
+        }
+    }
+}

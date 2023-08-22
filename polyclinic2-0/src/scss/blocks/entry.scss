@@ -1,0 +1,68 @@
+.entry {
+    .sticky-page {
+        &-content {
+            .block {
+                .h4 {
+                    margin-bottom: 12px;
+                }
+
+                +.block {
+                    margin-top: 32px;
+                }
+
+                .link_inline {
+                    margin: 0 6px;
+                }
+
+                >p+p {
+                    margin-top: 4px;
+                }
+
+                p+.link_file {
+                    margin-top: 12px;
+                }
+
+                .phone {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 150%;
+                    +.dates {
+                        margin-top: 4px;
+                    }
+                }
+
+                .dates+p {
+                    margin-top: 4px;
+                }
+            }
+        }
+
+        &-side {
+            p{
+                +p {
+                    margin-top: 16px;
+                }
+
+                +.btn_pink{
+                    margin-top: 16px;
+                }
+
+            }
+        }
+    }
+
+}
+
+.h4 {}
+
+.link {}
+
+.link_inline {}
+
+.link_file {}
+
+.phone {}
+
+.dates {}
+
+.btn_pink {}

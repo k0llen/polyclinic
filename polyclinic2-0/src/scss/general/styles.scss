@@ -29,12 +29,12 @@ body {
 	background-color: #F6F0ED;
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
 	font-size: 16px;
 	line-height: 145%;
 }
 
 body {
+	overflow-x: hidden;
 	min-height: 100vh;
 	display: grid;
 	grid-template-rows: repeat(3,auto);

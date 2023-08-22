@@ -43,6 +43,24 @@
             opacity: .8;
         }
     }
+
+    &_inline {
+        padding-right: 26px;
+        background: url(../img/svg/external-link.svg) no-repeat right center;
+        color: #00588D;
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &_file {
+        padding-left: 30px;
+        color: #00588D;
+        background: url(../img/svg/file.svg) no-repeat left top;
+        &:hover {
+            opacity: .7;
+        }
+    }
 }
 
 .btn {
@@ -67,6 +85,18 @@
         background: #FFF;
         color: #000C2B;
         &:hover {
+            background: #F7E6DF;
+        }
+    }
+
+    &_pink {
+        font-size: 16px;
+        line-height: 145%;
+        font-weight: 400;
+        background: #FAEDE6;
+        color: #000;
+
+        &:hover{
             background: #F7E6DF;
         }
     }

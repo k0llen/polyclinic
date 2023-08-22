@@ -1,0 +1,107 @@
+
+.sticky-page {
+    &-wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        position: relative;
+    }
+
+    &-content {
+        padding: 24px 32px 32px;
+        border-radius: 24px;
+        background: #fff;
+        width: calc(100% - 316px);
+        .link_inline {
+            margin: 0 6px;
+        }
+        .links_files {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .link_file {
+            +.link_file {
+                margin-top: 12px;
+            }
+        }
+    }
+
+    &-side {
+        position: sticky;
+        top: 15px;
+        padding: 20px 24px;
+        border-radius: 24px;
+        background: #fff;
+        width: 300px;
+        .btn_pink {
+            margin-top: 16px;
+            width: 100%;
+        }
+        li, p{
+            color: #3C5C70;
+        }
+        &-title {
+            font-size: 18px;
+            line-height: 150%;
+            font-weight: 500;
+            +ul{
+                margin-top: 6px;
+            }
+        }
+        li+li {
+            margin-top: 4px;
+        }
+        &-desc {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .sticky-page{
+        &-wrapper {
+            gap: 12px;
+        }
+        &-content {
+            width: calc(100% - 312px);
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .sticky-page{
+        h2, .h2 {
+            font-size: 32px;
+        }
+        h3, .h3 {
+            font-size: 28px;
+        }
+        &-wrapper {
+            flex-direction: column-reverse;
+        }
+        &-side {
+            position: static;
+            padding: 16px;
+            width: 100%;
+            .btn_pink {
+                width: fit-content;
+            }
+        }
+        &-content {
+            padding: 16px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .sticky-page {
+        &-side {
+            .btn_pink {
+                width: 100%;
+            }
+        }
+    }    
+}
