@@ -1,0 +1,240 @@
+.paid {
+    .sticky-page-content{
+        h3, .h3 {
+            margin-bottom: 12px;
+        }
+        .block {
+            +.block {
+                margin-top: 48px;
+            }
+            &_top {
+                h3, .h3 {
+                    margin-bottom: 16px;
+                }
+                .top-blocks {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 64px;
+                    .top-block {
+                        &-title {
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 150%;
+                            +.dates {
+                                margin-top: 8px;
+                            }
+                            +.phone {
+                                margin-top: 8px;
+                            }
+                        }
+        
+                        .phone {
+                            font-weight: 600;
+                            +.dates {
+                                margin-top: 4px;
+                            }
+                        }
+        
+                        .dates {}
+                    }
+                }
+            }
+    
+            &_cost {
+                .form {
+                    position: relative;
+                    margin-bottom: 32px;
+                }
+    
+                .block_top-block {
+                    +.block_top-block {
+                        margin-top: 40px;
+                    }
+                    &_vac, &_analis {
+                        .pic-block{
+                            background: #FFE7E3;
+                        }
+                    }
+                    &_phisio, &_ekg {
+                        .pic-block{
+                            background: #DDF0FE;
+                        }
+                    }
+                    &_doctors, &_uzi {
+                        .pic-block{
+                            background: #D9F7EB;
+                        }
+                    }
+                    &_lfk {
+                        .pic-block{
+                            background: #FFF1D9;
+                        }
+                    }
+                    &_xray {
+                        .pic-block{
+                            background: #FFEBA3;
+                        }
+                    }
+                    &_else {
+                        .pic-block{
+                            background: #efe8ff;
+                        }
+                    }
+                    &-top {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        +.accordeon-content-cards{
+                            margin-top: 16px;
+                        }
+                        .name {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                        }
+                        .pic-block {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            padding: 8px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+    
+                            .h4 {
+    
+                            }
+                        }
+                    }
+                    .accordeon-content-cards {
+                        display: grid;
+                        grid-template-columns: repeat(4,1fr);
+                        gap: 24px 16px;
+                        .accordeon-content-card {
+                            .name {
+                                font-size: 14px;
+                                line-height: 150%;
+                                color: #3C5C70;
+                                +.cost {
+                                    margin-top: 4px;
+                                }
+                            }
+                            
+                            .appointment {
+                                font-weight: 500;
+                            }
+    
+                            .cost {}
+                        }
+                        .btn_show, .btn_pink {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .sticky-page-side {}
+}
+
+@media screen and (max-width: 990px) {
+    .paid {
+        .sticky-page-side {
+            display: none;
+        }
+
+        .sticky-page-content{
+            >.block {
+                .h3, h3 {
+                    margin-bottom: 0;
+                }
+                padding-bottom: 24px;
+                margin-bottom: 24px;
+                border-bottom: 1px solid #E0E4E7;
+                &:last-child {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                }
+                +.block {
+                    margin-top: 0;
+                }
+                .h3 {
+                    position: relative;
+                    font-size: 28px;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 6px;
+                        right: 4px;
+                        width: 24px;
+                        height: 24px;
+                        background: url(../img/svg/select-arrow.svg) no-repeat center center;
+                        transition: .3s all;
+                    }
+                }
+                >&_cost {
+                    .block_top-block {
+                        .h4 {
+                            font-size: 20px;
+                        }
+                        .accordeon-content-cards{
+                            grid-template-columns: repeat(3,1fr);
+                        }
+                    }
+                }
+                .accordeon-content {
+                    max-height: 0;
+                    overflow: hidden;
+                    visibility: hidden;
+                    transition: .3s all;
+                }
+            }
+        }
+        .accordeon.active {
+            padding-bottom: 32px;
+            .h3, h3 {
+                margin-bottom: 12px;
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+            .accordeon-content {
+                overflow: visible;
+                visibility: visible;
+                max-height: none;
+            }
+        }
+        .block_cost.accordeon.active {
+            .h3, h3 {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .paid {
+        .sticky-page-content{    
+            .block_top {
+                .top-blocks {
+                    flex-direction: column;
+                    gap: 16px;
+                }
+            }
+            .block_cost{
+                .block_top-block{
+                    .accordeon-content-cards {
+                        grid-template-columns: repeat(1,1fr);
+                        gap: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -19,11 +19,32 @@
         border-radius: 8px;
         border: 1px solid #E0E4E7;
         transition: .3s all;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 145%;
+        color: #607998;
     
         &:focus {
             border-color: #00588D;
         }
     }
+
+    .form-input-search {
+        padding-left: 46px;
+        &-button {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            cursor: pointer;
+            transition: .3s all;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
 
     .form-input {
         height: 39px;
