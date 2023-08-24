@@ -1,0 +1,192 @@
+.paid-schedule {
+    .text-page-card {
+        .top {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            .pic-block {
+                width: 88px;
+                height: 88px;
+                border-radius: 50%;
+                overflow: hidden;
+                padding: 22px;
+                background: #D9F7EB;
+            }
+            .text {
+                .h3 {}
+                .count {
+                    color: #3C5C70;
+                    margin-top: 4px;
+                }
+            }
+            + .desc {
+                margin-top: 16px;
+            }
+        }
+        .desc + .form {
+            margin-top: 32px;
+        }
+        .form {
+            +.accordeon-list {
+                margin-top: 32px;
+            }
+        }
+        .accordeon-list {
+            .accordeon-item {
+                +.accordeon-item {
+                    margin-top: 40px;
+                }
+                &_akusher{
+                    .pic-block{
+
+                        background: #FFE7E3;
+                    }
+                }
+                &_terapevt {
+                    .pic-block{
+
+                        background: #EFE8FF;
+                    }
+                }
+                &_nevrolog {
+                    .pic-block{
+
+                        background: #DDF0FE;
+                    }
+                }
+                &_hirurg {
+                    .pic-block{
+
+                        background: #FFF1D9;
+                    }
+                }
+                &_travmatolog {
+                    .pic-block{
+
+                        background: #D9F7EB;
+                    }
+                }
+                &_pediatr {
+                    .pic-block{
+
+                        background: #FFE7E3;
+                    }
+                }
+                .accordeon-trigger {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    .pic-block {
+                        width: 32px;
+                        height: 32px;
+                        padding: 4px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .h4 {
+                    }
+                    +.accordeon-content {
+                        margin-top: 12px;
+                    }
+                }
+                .accordeon-content {
+                    .block {
+                        .name {
+                            font-weight: 500;
+                            +.cab {
+                                margin-top: 4px;
+                            }
+                        }
+                        .cab {
+                            font-weight: 500;
+                            +.dates {
+                                margin-top: 2px;
+                            }
+                        }
+                        .dates {
+                            display: flex;
+                            align-items: center;
+                            gap: 32px;
+                            color: #3C5C70;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .paid-schedule {
+        .text-page-card {
+            .top {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .accordeon-list {
+                .accordeon-item {
+                    padding: 24px 0;
+                    border-bottom: 1px solid #E0E4E7;
+                    &:first-child{
+                        padding-top: 0;
+                    }
+                    &:last-child{
+                        border-bottom: 0;
+                    }
+                    +.accordeon-item {
+                        margin-top: 0;
+                    }
+                    .accordeon-trigger {
+                        position: relative;
+                        cursor: pointer;
+                        &::after {
+                            content: '';
+                            width: 24px;
+                            height: 24px;
+                            position: absolute;
+                            top: 6px;
+                            right: 0;
+                            background: url(../img/svg/select-arrow.svg) no-repeat center center;
+                            transition: .3s all;
+                        }
+                        +.accordeon-content {
+                            margin-top: 0;
+                        }
+                    }
+                    .accordeon-content {
+                        max-height: 0;
+                        overflow: hidden;
+                        visibility: hidden;
+                        transition: .3s all;
+                        .block {
+                            .dates {
+                                flex-direction: column;
+                                gap: 4px;
+                                align-items: flex-start;
+                            }
+                        }
+                    }
+                }
+                .accordeon-item.active {
+                    .accordeon-trigger{
+                        &::after {
+                            transform: rotate(180deg);
+                        }
+                        +.accordeon-content{
+                            margin-top: 12px;
+                        }
+                    }
+                    .accordeon-content {
+                        overflow: visible;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
