@@ -1,0 +1,36 @@
+.prepare {
+    .title-block {
+        h2, .h2 {
+            margin: 0;
+        }
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        +.form {
+            margin-top: 24px;
+        }
+    }
+
+    .form {
+        +.accordeon-list {
+            margin-top: 32px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .prepare {
+        .title-block {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 6px;
+            +.form {
+                margin-top: 20px;
+            }
+        }
+        .form +.accordeon-list{
+            margin-top: 24px;
+        }
+    }   
+}
