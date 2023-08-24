@@ -1,0 +1,66 @@
+.vac {
+    .block {
+        .h3, h3 {}
+
+        .pic-block {}
+
+        p+.mode {
+            margin-top: 4px;
+        }
+
+        .mode {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        .dates {
+            font-size: 16px;
+            line-height: 145%;
+            color: #000C2B;
+        }
+
+        &_covid {
+            &-block {
+                +.block_covid-block {
+                    margin-top: 16px;
+                }
+
+                .adress-blocks {}
+
+                .adress-block {
+                    +.adress-block {
+                        margin-top: 8px;
+                    }
+                }
+
+                .adress {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 150%;
+                }
+
+                .route {}
+
+                .h4, h4 {
+                    margin-bottom: 4px;
+                }
+
+                p+.link_file {
+                    margin-top: 8px;
+                }
+
+            }
+        }
+    }
+
+    .sticky-page-side {}
+}
+
+@media screen and (max-width: 990px) {
+    .vac{
+        .sticky-page-side {
+            display: none;
+        }
+    }
+}

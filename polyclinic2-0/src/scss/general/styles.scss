@@ -180,6 +180,8 @@ video {
 	max-width: 100%;
 	height: auto;
 	display: block;
+	width: 100%;
+	object-fit: cover;
 }
 
 svg,
