@@ -1,0 +1,88 @@
+@@include('inc/doc-start.html', {
+"title": "Расписание приёма платных врачей"
+})
+
+@@include('inc/page-header.html')
+
+<section class="page sticky-page dispanser">
+    <div class="wrapper">
+        <h2>Диспансеризация</h2>
+        <div class="sticky-page-wrapper">
+            <div class="sticky-page-content">
+                <div class="block">
+                    <div class="h3">О диспансеризации</div>
+                    <p>Диспансеризация — профилактическое обследование для раннего выявления заболеваний, получения
+                        рекомендаций от врачей. Занимает 1–3 дня.</p>
+                    <p>Диспансеризацию рекомендуют проходить:</p>
+                    <ul>
+                        <li>раз в три года в возрасте от 18 до 39 лет включительно;</li>
+                        <li>ежегодно в возрасте 40 лет и старше</li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="h3">Углублённая диспансеризация</div>
+                    <p>Приглашаем пациентов, прикрепленных к врачебному участку для медицинского обслуживания
+                        государственных служащих Мурманской области, пройти углубленную диспансеризацию </p>
+                    <div class="pic-block">
+                        <img src="img/dispanser-pic.png" alt="">
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="h3">Запись на диспансеризацию</div>
+                    <p>Записаться можно по телефону</p>
+                    <a href="tel:88153656286" class="link link_black phone">8 (81536) 5-62-86</a>
+                    <div class="dates">
+                        <p>пн-пт 08:00–20:00</p>
+                        <p>сб 9:00–14:00</p>
+                    </div>
+                    <p>либо заполнив форму ниже.</p>
+                    <p>Заявки обрабатываем по будням 08:00–20:00, в сб 09:00–13:00.</p>
+                    <form action="#!" class="form">
+                        <div class="input-block input-block_large">
+                            <div class="name">ФИО</div>
+                            <input type="text" class="form-input" id="input-name">
+                        </div>
+                        <div class="input-block input-block_small">
+                            <div class="name">Дата рождения</div>
+                            <input type="text" class="form-input form-input_calendar" id="input-birthday">
+                            <span class="calendar-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M21 4H3V20H21V4Z"  stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 2V6"  stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 2V6"  stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M3 10H21"  stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="input-block input-block_medium">
+                            <div class="name">Телефон</div>
+                            <input type="text" class="form-input" id="input-phone">
+                        </div>
+                        <label class="checkbox-block">
+                            <input type="checkbox" name="" class="real-checkbox" id="form-checkbox-personal">
+                            <span class="custom-checkbox"></span>
+                            <p>Cоглашаюсь на передачу и обработку персональных данных в соответствии с п.4 ст. 9
+                                Федерального закона № 152-ФЗ</p>
+                        </label>
+                        <button class="btn btn_red">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+            <aside class="sticky-page-side">
+                <ul>
+                    <li>О диспансеризации</li>
+                    <li>Углублённая диспансеризация</li>
+                    <li>Запись на диспансеризацию</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</section>
+
+@@include('inc/page-footer.html')
+@@include('inc/doc-end.html')

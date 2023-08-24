@@ -136,3 +136,18 @@
         margin-top: 8px;
     }
 }
+@media screen and (max-width: 990px) {
+    .form {
+        .input-block {
+            width: 100%;
+            max-width: none;
+        }
+    }
+}
+@media screen and (max-width: 990px) {
+    .form {
+        .btn_red{
+            width: 100%;
+        }
+    }
+}
