@@ -1,0 +1,40 @@
+.school {
+    .sticky-page-content {
+        p {
+            +p{
+                margin-top: 4px;
+            }
+            +.h4, +h4 {
+                margin-top: 12px;
+            }
+        }
+        .h4, h4 {
+            +.cab-name {
+                margin-top: 4px;
+            }
+        }
+        .cab-name {
+            font-weight: 500;
+            +.dates {
+                margin-top: 2px;
+            }
+        }
+        .dates {
+            font-size: 16px;
+            line-height: 145%;
+        }
+        .phone {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .school {
+        .sticky-page-side {
+            display: none;
+        }
+    }
+}
