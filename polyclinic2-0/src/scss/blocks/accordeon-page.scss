@@ -15,7 +15,7 @@
                 background: url(../img/svg/select-arrow.svg) no-repeat center center;
                 transition: .3s all;
             }
-            padding: 20px 24px 20px 32px;
+            padding: 20px 48px 20px 32px;
             margin: -20px -24px -20px -32px;
             position: relative;
             cursor: pointer;
@@ -58,7 +58,7 @@
         .accordeon-item{
             padding: 12px 12px 16px 16px;
             &-trigger {
-                padding: 12px 12px 16px 16px;
+                padding: 12px 32px 16px 16px;
                 margin: -12px -12px -16px -16px;
                 &::after {
                     top: 14px;

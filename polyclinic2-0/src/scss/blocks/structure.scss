@@ -1,0 +1,35 @@
+
+.structure {
+    
+    .form {
+        +.accordeon-list {
+            margin-top: 32px;
+        }
+    }
+    .accordeon-item-trigger {
+        span{
+            font-family: 'Manrope', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 135%;
+        }
+    }
+}
+.accordeon-item-content {
+    .block {
+        ul {
+            padding-left: 23px;
+            list-style: disc;
+        }
+        +.block {
+            margin-top: 16px;
+        }
+    }
+
+}
+.pic-block {
+    max-width: 400px;
+}
+.accordeon-page .accordeon-item.active .accordeon-item-content {
+    margin-top: 16px;
+}
