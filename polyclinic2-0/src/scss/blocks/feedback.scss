@@ -1,0 +1,191 @@
+.feedback {
+    .sticky-page-content {
+
+    }
+
+    .block {
+        &_form {
+
+            .h3,
+            h3 {
+                margin-bottom: 16px;
+            }
+            .appeal-wrapper {
+                +.form {
+                    margin-top: 24px;
+                }
+                .appeal-trigger {
+                    display: inline-block;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 150%;
+                    padding-right: 28px;
+                    position: relative;
+                    cursor: pointer;
+            
+                    &::after {
+                        content: '';
+                        width: 16px;
+                        height: 16px;
+                        position: absolute;
+                        right: 0;
+                        top: 6px;
+                        background: url(../img/svg/select-arrow.svg) no-repeat center center;
+                        transition: .3s all;
+                    }
+                }
+                .appeal-trigger.active {
+                    margin-bottom: 12px;
+                    &::after {
+                        transform: rotate(180deg);
+                    }
+                    ~.appeal-hidden {
+                        padding: 5px 20px 5px 5px;
+                        border-radius: 8px;
+                        border: 1px solid rgb(203, 208, 211);
+                    }
+                }
+            
+                .appeal-hidden {
+                    max-height: 0;
+                    overflow: scroll;
+                    transition: .3s all;
+                    padding: 0;
+                    &-item {
+                        .theme {
+
+                        }
+                        .date {
+                            color: #3C5C70;
+                            font-size: 14px;
+                            line-height: 150%;
+                            +.answer {
+                                margin-top: 6px;
+                            }
+                        }
+                        .answer {
+                            span {
+                                font-weight: 500;
+                            }
+                        }
+                        + .appeal-hidden-item {
+                        margin-top: 12px;
+                    }}
+                }
+            }
+        
+        
+            .form {}
+        }
+        
+        &_writting {
+            .link_file+.h4,
+            .link_file+h4 {
+                margin-top: 24px;
+            }
+        
+            .h4 {
+                margin-bottom: 8px;
+            }
+        
+            p{
+                +.link_file {
+                    margin-top: 12px;
+                }
+                +.type {
+                margin-top: 12px;
+                }
+                +.methods {
+                    margin-top: 24px;
+                }
+            }
+        
+            .type {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 130%;
+                margin-bottom: 4px;
+            }
+        
+            .methods {
+                p {
+                    color: #3C5C70;
+                }
+                
+                &-block {
+                    +.methods-block {
+                        margin-top: 16px;
+                    }
+                    .methods-block-title {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 150%;
+                    }
+                }
+            }
+
+        }
+
+        
+        &_phones {
+            &-blocks {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 16px 48px;
+            }
+            &-block {
+    
+            }
+            .phone {
+                +.dates {
+                    margin-top: 4px;
+                }
+            }
+        
+            .dates {}
+        }
+        
+        &_personal {
+            p+.block_personal-schedule {
+                margin-top: 16px;
+            }
+            &-schedule{
+                &-card {
+                    .name {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 150%;
+                    }
+                    .cab {
+                        +.dates {
+                            margin-top: 2px;
+                        }
+                    }
+                    .dates {
+                        display: flex;
+                        align-items: center;
+                        gap: 32px;
+                    }
+                    +.block_personal-schedule-card{
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .feedback {
+        .sticky-page-side {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 760px) {
+    .feedback {
+        .form .btn_red {
+            padding: 12px;
+        }
+    }
+}
