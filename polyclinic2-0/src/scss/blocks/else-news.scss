@@ -1,0 +1,16 @@
+.else-news {
+    margin-top: 64px;
+    h3, .h3 {
+        +.news-cards {
+            margin-top: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .else-news{
+        h3, .h3 {
+            font-size: 28px;
+        }
+    }
+}
