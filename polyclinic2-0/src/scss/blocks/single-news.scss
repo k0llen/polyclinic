@@ -1,8 +1,5 @@
 .single-news {
     &-card {
-        padding: 24px 32px 32px;
-        border-radius: 24px;
-        background: #FFF;
         h3, .h3 {
             +.single-news-card-content {
                 margin-top: 32px;
@@ -26,9 +23,6 @@
 
 @media screen and (max-width: 990px) {
     .single-news{
-        h3, .h3 {
-            font-size: 28px;
-        }
         &-card-content{
             flex-direction: column;
             .pic-block {
