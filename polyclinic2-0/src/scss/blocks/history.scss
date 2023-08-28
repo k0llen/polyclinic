@@ -1,0 +1,35 @@
+.history {
+    
+    .block {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        .pic-block {
+            width: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .text {
+            width: calc(100% - 324px);
+            ul {
+                list-style: disc;
+                padding-left: 23px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .history{
+        .block {
+            flex-direction: column;
+            .pic-block{
+                width: 100%;
+                max-width: 400px;
+            }
+            .text{
+                width: 100%;
+            }
+        }
+    }
+}
