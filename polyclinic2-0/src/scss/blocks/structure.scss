@@ -14,22 +14,22 @@
             line-height: 135%;
         }
     }
-}
-.accordeon-item-content {
-    .block {
-        ul {
-            padding-left: 23px;
-            list-style: disc;
+    .accordeon-item-content {
+        .block {
+            ul {
+                padding-left: 23px;
+                list-style: disc;
+            }
+            +.block {
+                margin-top: 16px;
+            }
         }
-        +.block {
-            margin-top: 16px;
-        }
+    
     }
-
-}
-.pic-block {
-    max-width: 400px;
-}
-.accordeon-page .accordeon-item.active .accordeon-item-content {
-    margin-top: 16px;
+    .pic-block {
+        max-width: 400px;
+    }
+    .accordeon-page .accordeon-item.active .accordeon-item-content {
+        margin-top: 16px;
+    }
 }
