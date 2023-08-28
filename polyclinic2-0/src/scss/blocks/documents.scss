@@ -1,0 +1,27 @@
+.documents{
+    .form + .text-page-card {
+        margin-top: 32px;
+    }
+    .text-page-card {
+        .block{
+            display: flex;
+            flex-direction: column;
+            +.block {
+                margin-top: 48px;
+            }
+            h3, .h3 {
+                +.link_file {
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .documents{
+        .form + .text-page-card {
+            margin-top: 24px;
+        }
+    }
+}
