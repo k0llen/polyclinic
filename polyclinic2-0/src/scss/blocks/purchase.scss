@@ -1,0 +1,14 @@
+.purchase {
+    .text-page-card{
+        .block {
+            .h3, h3 {
+                +p {
+                    margin-top: 12px;
+                }
+                +.link_files{
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
