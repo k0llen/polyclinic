@@ -1,0 +1,37 @@
+.projects {
+}
+.accordeon-item {
+    &-trigger {
+        
+    }
+    &-content {
+        .link_file + .content-title {
+            margin-top: 24px;
+        }
+        .content-title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 130%;
+            +.year {
+                margin-top: 12px;
+            }
+        }
+        .year {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+            +p{
+                margin-top: 8px;
+            }
+        }
+        p+.pic-block {
+            margin-top: 8px;
+        }
+        .pic-block+p{
+            margin-top: 12px;
+        }
+        .pic-block {
+            max-width: 300px;
+        }
+    }
+}

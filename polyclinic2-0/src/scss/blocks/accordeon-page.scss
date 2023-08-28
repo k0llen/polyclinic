@@ -4,6 +4,7 @@
         padding: 20px 24px 20px 32px;
         border-radius: 24px;
         background: #FFF;
+        transition: .3s all;
         &-trigger {
             &::after {
                 content: '';
@@ -19,9 +20,6 @@
             margin: -20px -24px -20px -32px;
             position: relative;
             cursor: pointer;
-            .h4, h4 {
-                width: calc(100% - 60px);
-            }
         }
         &-content {
             max-height: 0;
@@ -32,9 +30,13 @@
         +.accordeon-item {
             margin-top: 8px;
         }
+        &:hover {
+            background: #F7FBFF;
+        }
     }
     .accordeon-item.active {
         padding-bottom: 24px;
+        background: #F7FBFF;
         .accordeon-item-trigger {
             padding-bottom: 0;
             margin-bottom: 0;
