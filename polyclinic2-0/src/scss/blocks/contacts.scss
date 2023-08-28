@@ -1,0 +1,153 @@
+.contacts {
+    .block {
+        +.block {
+            margin-top: 48px;
+        }
+
+        .address {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+            padding-left: 28px;
+            background: url(../img/icons/point.svg) no-repeat left center;
+
+            +.route {
+                margin-top: 8px;
+            }
+        }
+
+        .route {
+            color: #3C5C70;
+
+            +.dates {
+                margin-top: 8px;
+            }
+        }
+
+        .dates {
+            color: #3C5C70;
+
+            +.cass {
+                margin-top: 12px;
+            }
+        }
+
+        .cass {
+            color: #3C5C70;
+
+            .link_black {
+                font-weight: 500;
+            }
+        }
+
+        &-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px 48px;
+        }
+
+        h3,
+        .h3 {
+            +.block-cards {
+                margin-top: 16px;
+            }
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+
+            +p {
+                color: #3C5C70;
+                margin-top: 2px;
+            }
+        }
+
+        p+.link_black {
+            margin-top: 8px;
+        }
+
+        .link_black {
+            +.link_black {
+                margin-top: 2px;
+            }
+
+            +.block-card-adress {
+                margin-top: 2px;
+            }
+        }
+
+        .block-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_1 {
+            .phone {
+                font-family: 'Manrope', sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 135%;
+                padding-left: 32px;
+                background: url(../img/icons/phone.svg) no-repeat left center;
+
+                +.call-centre {
+                    margin-top: 2px;
+                }
+
+                .call-centre {
+                    +.dates {
+                        margin-top: 2px;
+                    }
+                }
+            }
+
+            .block-cards {
+                display: flex;
+                align-items: flex-start;
+                gap: 64px;
+            }
+
+            .address {
+                font-family: 'Manrope', sans-serif;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 135%;
+                padding-left: 32px;
+            }
+        }
+
+        &_2 {}
+
+        &_3 {}
+
+        &_4 {}
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .contacts{
+        .block{
+            &-cards {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .contacts{
+        .block{
+            &-cards {
+                grid-template-columns: repeat(1,1fr);
+            }
+            &_1{
+                .block-cards{
+                    display: grid;
+                }
+            }
+        }
+    }
+}
