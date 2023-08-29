@@ -1,0 +1,121 @@
+@@include('inc/doc-start.html', {
+"title": "Результаты поиска"
+})
+
+@@include('inc/page-header.html')
+
+<section class="page results-page text-page">
+    <div class="wrapper">
+        <a href="index.html" class="link breadcrumb">Главная</a>
+        <div class="text-page-card">
+            <div class="h3">Результаты поиска <span class="results-count">12</span></div>
+            <form class="results-page-searchform form">
+                <input type="text" class="form-input form-input-search" placeholder="Найти..." id="results-searchform-input">
+                <button class="form-input-search-button">
+                    <img src="img/svg/search.svg" alt="">
+                </button>
+                <button class="form-input-search-button-clear">
+                    <img src="img/svg/clear.svg" alt="">
+                </button>
+            </form>
+            <div class="results-page-results">
+                <div class="error">
+                    <img src="img/icons/lens.png" alt="">
+                    <p>Результатов не найдено.</p>
+                    <p>Попробуйте изменить запрос.</p>
+                </div>
+                <div class="result">
+                    <div class="block block_schedule">
+                        <div class="h4">Расписание приёма <span>2</span></div>    
+                        <div class="cards">
+                            <a href="barsukova.html" class="card">
+                                <div class="pic-block">
+                                    <img src="img/doctors/barsukova.png" alt="">
+                                </div>
+                                <div class="about">
+                                    <div class="name">Барсукова Анастасия Николаевна</div>
+                                    <div class="spec">Педиатр</div>
+                                </div>
+                            </a>
+                            <a href="barsukova.html" class="card">
+                                <div class="pic-block">
+                                    <img src="img/doctors/abdulov.png" alt="">
+                                </div>
+                                <div class="about">
+                                    <div class="name">Абдулов Хусрав Умаралиевич</div>
+                                    <div class="spec">Педиатр</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block block_paid">
+                        <div class="h4">Платные услуги <span>3</span></div>
+                        <div class="cards">
+                            <a href="paid-schedule.html" class="card">
+                                <div class="name">
+                                    Педиатр
+                                </div>
+                                <p>
+                                    Первичный приём
+                                </p>
+                                <div class="count">
+                                    650 ₽
+                                </div>
+                            </a>
+                            <a href="paid-schedule.html" class="card">
+                                <div class="name">
+                                    Педиатр
+                                </div>
+                                <p>
+                                    Повторный приём
+                                </p>
+                                <div class="count">
+                                    500 ₽
+                                </div>
+                            </a>
+                            <a href="paid-schedule.html" class="card">
+                                <div class="name">
+                                    Педиатр — зав. отделением
+                                </div>
+                                <div class="count">
+                                    700 ₽
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block block_vac">
+                        <div class="h4">Вакцинация <span>1</span></div>
+                        <a href="#!" class="link">
+                            <div class="link-desc">Вакцинация проводится после осмотра ребёнка врачом - педиатром...</div>
+                        </a>
+                    </div>
+                    <div class="block block_faq">
+                        <div class="h4">Частые вопросы <span>2</span></div>
+                        <a href="#!" class="link">
+                            <div class="link-title">Какие документы необходимо взять на приём к педиатру?</div>
+                        </a>
+                        <a href="#!" class="link">
+                            <div class="link-title">Как проходит вакцинация ребёнка?</div>
+                            <div class="link-desc">Вакцинация проводится после осмотра ребёнка врачом - педиатром...</div>
+                        </a>
+                    </div>
+                    <div class="block block_news">
+                        <div class="h4">Новости <span>3</span></div>
+                        <a href="#!" class="link">
+                            <div class="link-title">Вакцинация подростов от короновируса</div>
+                            <div class="link-desc">Вакцинация проводится после осмотра ребёнка врачом - педиатром...</div>
+                        </a>
+                        <a href="#!" class="link">
+                            <div class="link-title">Встречи с федеральными экспертами по вопросам здоровья детей.</div>
+                            <div class="link-desc">Также состоится встреча с врачом - педиатром...</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@@include('inc/page-footer.html')
+@@include('inc/doc-end.html')

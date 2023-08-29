@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Расписание приёма платных врачей</title>
+    <title>Результаты поиска</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
@@ -470,85 +470,118 @@
 </header>
 <main class="main">
 
-<section class="page sticky-page dispanser">
+<section class="page results-page text-page">
     <div class="wrapper">
-        <h2>Диспансеризация</h2>
-        <div class="sticky-page-wrapper">
-            <div class="sticky-page-content">
-                <div class="block">
-                    <div class="h3">О диспансеризации</div>
-                    <p>Диспансеризация — профилактическое обследование для раннего выявления заболеваний, получения
-                        рекомендаций от врачей. Занимает 1–3 дня.</p>
-                    <p>Диспансеризацию рекомендуют проходить:</p>
-                    <ul>
-                        <li>раз в три года в возрасте от 18 до 39 лет включительно;</li>
-                        <li>ежегодно в возрасте 40 лет и старше</li>
-                    </ul>
+        <a href="index.html" class="link breadcrumb">Главная</a>
+        <div class="text-page-card">
+            <div class="h3">Результаты поиска <span class="results-count">12</span></div>
+            <form class="results-page-searchform form">
+                <input type="text" class="form-input form-input-search" placeholder="Найти..." id="results-searchform-input">
+                <button class="form-input-search-button">
+                    <img src="img/svg/search.svg" alt="">
+                </button>
+                <button class="form-input-search-button-clear">
+                    <img src="img/svg/clear.svg" alt="">
+                </button>
+            </form>
+            <div class="results-page-results">
+                <div class="error">
+                    <img src="img/icons/lens.png" alt="">
+                    <p>Результатов не найдено.</p>
+                    <p>Попробуйте изменить запрос.</p>
                 </div>
-                <div class="block">
-                    <div class="h3">Углублённая диспансеризация</div>
-                    <p>Приглашаем пациентов, прикрепленных к врачебному участку для медицинского обслуживания
-                        государственных служащих Мурманской области, пройти углубленную диспансеризацию </p>
-                    <div class="pic-block">
-                        <img src="img/dispanser-pic.png" alt="">
+                <div class="result">
+                    <div class="block block_schedule">
+                        <div class="h4">Расписание приёма <span>2</span></div>    
+                        <div class="cards">
+                            <a href="barsukova.html" class="card">
+                                <div class="pic-block">
+                                    <img src="img/doctors/barsukova.png" alt="">
+                                </div>
+                                <div class="about">
+                                    <div class="name">Барсукова Анастасия Николаевна</div>
+                                    <div class="spec">Педиатр</div>
+                                </div>
+                            </a>
+                            <a href="barsukova.html" class="card">
+                                <div class="pic-block">
+                                    <img src="img/doctors/abdulov.png" alt="">
+                                </div>
+                                <div class="about">
+                                    <div class="name">Абдулов Хусрав Умаралиевич</div>
+                                    <div class="spec">Педиатр</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="block">
-                    <div class="h3">Запись на диспансеризацию</div>
-                    <p>Записаться можно по телефону</p>
-                    <a href="tel:88153656286" class="link link_black phone">8 (81536) 5-62-86</a>
-                    <div class="dates">
-                        <p>пн-пт 08:00–20:00</p>
-                        <p>сб 9:00–14:00</p>
+                    <div class="block block_paid">
+                        <div class="h4">Платные услуги <span>3</span></div>
+                        <div class="cards">
+                            <a href="paid-schedule.html" class="card">
+                                <div class="name">
+                                    Педиатр
+                                </div>
+                                <p>
+                                    Первичный приём
+                                </p>
+                                <div class="count">
+                                    650 ₽
+                                </div>
+                            </a>
+                            <a href="paid-schedule.html" class="card">
+                                <div class="name">
+                                    Педиатр
+                                </div>
+                                <p>
+                                    Повторный приём
+                                </p>
+                                <div class="count">
+                                    500 ₽
+                                </div>
+                            </a>
+                            <a href="paid-schedule.html" class="card">
+                                <div class="name">
+                                    Педиатр — зав. отделением
+                                </div>
+                                <div class="count">
+                                    700 ₽
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <p>либо заполнив форму ниже.</p>
-                    <p>Заявки обрабатываем по будням 08:00–20:00, в сб 09:00–13:00.</p>
-                    <form action="#!" class="form">
-                        <div class="input-block input-block_large">
-                            <div class="name">ФИО</div>
-                            <input type="text" class="form-input" id="input-name">
-                        </div>
-                        <div class="input-block input-block_small">
-                            <div class="name">Дата рождения</div>
-                            <input type="text" class="form-input form-input_calendar" id="input-birthday">
-                            <span class="calendar-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path d="M21 4H3V20H21V4Z"  stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8 2V6"  stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M16 2V6"  stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M3 10H21"  stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="input-block input-block_medium">
-                            <div class="name">Телефон</div>
-                            <input type="text" class="form-input" id="input-phone">
-                        </div>
-                        <label class="checkbox-block">
-                            <input type="checkbox" name="" class="real-checkbox" id="form-checkbox-personal">
-                            <span class="custom-checkbox"></span>
-                            <p>Cоглашаюсь на передачу и обработку персональных данных в соответствии с п.4 ст. 9
-                                Федерального закона № 152-ФЗ</p>
-                        </label>
-                        <button class="btn btn_red">Отправить заявку</button>
-                    </form>
+                    <div class="block block_vac">
+                        <div class="h4">Вакцинация <span>1</span></div>
+                        <a href="#!" class="link">
+                            <div class="link-desc">Вакцинация проводится после осмотра ребёнка врачом - педиатром...</div>
+                        </a>
+                    </div>
+                    <div class="block block_faq">
+                        <div class="h4">Частые вопросы <span>2</span></div>
+                        <a href="#!" class="link">
+                            <div class="link-title">Какие документы необходимо взять на приём к педиатру?</div>
+                        </a>
+                        <a href="#!" class="link">
+                            <div class="link-title">Как проходит вакцинация ребёнка?</div>
+                            <div class="link-desc">Вакцинация проводится после осмотра ребёнка врачом - педиатром...</div>
+                        </a>
+                    </div>
+                    <div class="block block_news">
+                        <div class="h4">Новости <span>3</span></div>
+                        <a href="#!" class="link">
+                            <div class="link-title">Вакцинация подростов от короновируса</div>
+                            <div class="link-desc">Вакцинация проводится после осмотра ребёнка врачом - педиатром...</div>
+                        </a>
+                        <a href="#!" class="link">
+                            <div class="link-title">Встречи с федеральными экспертами по вопросам здоровья детей.</div>
+                            <div class="link-desc">Также состоится встреча с врачом - педиатром...</div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <aside class="sticky-page-side">
-                <ul>
-                    <li>О диспансеризации</li>
-                    <li>Углублённая диспансеризация</li>
-                    <li>Запись на диспансеризацию</li>
-                </ul>
-            </aside>
         </div>
     </div>
 </section>
+
 
 </main>
 <footer class="footer">

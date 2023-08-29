@@ -1,2 +1,13 @@
-# Polyclinic website (gulp, js, scss, html)(v2.0)
+# Polyclinic website(v2.0)
 
+Actual version of Polyclinic website
+
+Made with Gulp, js, scss, html
+
+<h2>Libs on this site:</h2>
+<ol>
+    <li>JQueryMaskedInput</li>
+    <li>Air-datepicker</li>
+</ol>
+
+Time spend on this site : 28 working hours
