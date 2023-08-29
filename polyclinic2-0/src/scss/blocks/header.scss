@@ -249,7 +249,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: 145%;
-
+            transition: .3s all;
             &::placeholder {
                 color: #607988;
             }
@@ -258,6 +258,23 @@
                 position: absolute;
                 bottom: 8px;
                 left: 12px;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .form-input-search-button-back{
+            display: none;
+            transition: .3s all;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        .form-input-search-button-clear{
+            display: none;
+            transition: .3s all;
+            &:hover {
+                transform: scale(1.1);
             }
         }
     }
@@ -286,7 +303,7 @@
         .error {
             width: 100%;
             height: 100%;
-            display: flex;
+            display: none;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -304,7 +321,7 @@
         }
 
         .result {
-            display: flex;
+            display: none;
             flex-direction: column;
             align-items: flex-start;
             transition: .3s all;
@@ -351,6 +368,9 @@
                                 height: 64px;
                                 border-radius: 50%;
                                 overflow: hidden;
+                            }
+                            .about{
+                                width: calc(100% - 76px);
                             }
                             .name {
                                 font-size: 18px;
@@ -571,6 +591,52 @@
                 }
             }
         }
+
+        &-searchform.--burger-searchform-active {
+            z-index: 10;
+            opacity: 1;
+            visibility: visible;
+            overflow: visible;
+            height: 100%;
+            margin-top: 52px;
+            background: #FFF;
+            .form-input-search-button {
+                top: 6px;
+                bottom: auto;
+            }
+            .form-input-search-button-back{
+                display: block;
+                position: absolute;
+                top: -32px;
+                left: 12px;
+            }
+            .form-input-search-button-clear.active {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 8px;
+            }
+        }
+        .form-results.--burger-error-active{
+            .result{
+                display: none;
+            }
+            .error{
+                display: flex;
+            }
+        }        
+        .form-results.--burger-result-active{
+            .result{
+                display: flex;
+            }
+            .error{
+                display: none;
+            }
+        }
+        .form-results.active{
+            height: calc(100% - 108px);
+            top: 108px;
+        }
     }
 }
 
@@ -653,9 +719,37 @@
 
 
         }
+
+        .form-results {
+            .result {
+                .block {
+                    &_paid{
+                        .cards {
+                            display: grid;
+                            grid-template-columns: repeat(2,1fr);
+                            gap: 10px 16px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-@media screen and (max-width: 550px) {
-    .header {}
+@media screen and (max-width: 350px) {
+    .header {
+        .form-results {
+            .result {
+                .block {
+                    &_paid{
+                        .cards {
+                            display: grid;
+                            grid-template-columns: repeat(1,1fr);
+                            gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

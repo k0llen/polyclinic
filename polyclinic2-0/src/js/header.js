@@ -57,12 +57,14 @@ if (window.innerWidth > 990) {
     })
 
     searchformForm.addEventListener('keydown', (e) => {
-        if (searchformForm.value.slice() !== '' || searchformForm.value.length - 1 < 1) {
-            resultsModal.classList.remove('--error');
-            resultsModal.classList.add('--result');
+        if (e.key === 'Backspace') {
+            if (searchformForm.value.length - 1 < 1) {
+                resultsModal.classList.remove('--result');
+                resultsModal.classList.add('--error');
+            }
         } else {
-            resultsModal.classList.remove('--result');
-            resultsModal.classList.add('--error');
+            resultsModal.classList.add('--result');
+            resultsModal.classList.remove('--error');
         }
     })
 
@@ -86,9 +88,80 @@ if (window.innerWidth < 991) {
     const body = document.querySelector('.body');
 
     burger.addEventListener('click', (e) => {
-        navWrapper.classList.toggle('burger--active');
-        body.classList.toggle('lock');
+        if (navWrapper.classList.contains('burger--active')){
+            navWrapper.classList.remove('burger--active');
+            body.classList.remove('lock');
+            searchform.classList.remove('--burger-searchform-active');
+            resultsModal.classList.remove('--burger-result-active');
+            resultsModal.classList.remove('--burger-error-active');
+            resultsModal.classList.remove('active');
+            searchformForm.value = '';
+        } else {
+            navWrapper.classList.add('burger--active');
+            body.classList.add('lock');
+        }
     })
+
+
+    // burger searchform
+    const searchformOpenBtn = document.querySelector('.header__button-search');
+    const searchform = document.querySelector('.header-searchform');
+    const resultsModal = document.querySelector('.form-results');
+    const searchformBtn = searchform.querySelector('.form-input-search-button');
+    const searchformBtnClear = searchform.querySelector('.form-input-search-button-clear');
+    const searchformBtnBack = searchform.querySelector('.form-input-search-button-back');
+    const searchformForm = document.querySelector('#header-searchform-input');
+
+    searchformOpenBtn.addEventListener('click', (e)=>{
+        e.preventDefault();
+        searchform.classList.toggle('--burger-searchform-active');
+        resultsModal.classList.add('active');
+    })
+
+    searchformBtnBack.addEventListener('click', (e)=>{
+        e.preventDefault();
+        searchform.classList.remove('--burger-searchform-active');
+        resultsModal.classList.remove('active');
+        resultsModal.classList.remove('--burger-result-active');
+        resultsModal.classList.remove('--burger-error-active');
+        searchformForm.value = '';
+    })
+
+    searchformForm.addEventListener('keydown', (e)=>{
+        if (e.key === 'Backspace') {
+            if (searchformForm.value.length - 1 < 1) {
+                searchformBtnClear.classList.remove('active');
+                resultsModal.classList.remove('--burger-result-active');
+                resultsModal.classList.add('--burger-error-active');
+            } else {
+                searchformBtnClear.classList.add('active');
+            }
+        } else {
+            searchformBtnClear.classList.add('active');
+            resultsModal.classList.add('--burger-result-active');
+            resultsModal.classList.remove('--burger-error-active');
+        }
+    })
+
+    searchformBtn.addEventListener('click', (e) =>{
+        e.preventDefault();
+        if (searchformForm.value.slice() !== '') {
+            resultsModal.classList.remove('--burger-error-active');
+            resultsModal.classList.add('--burger-result-active');
+        } else {
+            resultsModal.classList.add('--burger-error-active');
+            resultsModal.classList.remove('--burger-result-active');
+        }
+    })
+
+    searchformBtnClear.addEventListener('click', (e)=>{
+        e.preventDefault();
+        searchformForm.value = '';
+        resultsModal.classList.remove('--burger-result-active');
+        resultsModal.classList.add('--burger-error-active');
+        searchformBtnClear.classList.remove('active');
+    })
+
 
     if (window.innerWidth <= 760) {
         //burger accordeon
@@ -125,4 +198,6 @@ if (window.innerWidth < 991) {
             }
         })
     }
+
+
 }
