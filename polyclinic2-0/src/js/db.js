@@ -17,7 +17,7 @@ const doctorsDB = [
         'name': 'Диагностические кабинеты',
         'spec': 'Приём анализов, прививки, процедуры, ЭКГ',
         'img': 'img/doctors/diagnostic.png',
-        'link': 'cab.html',
+        'link': 'diagnostic.html',
         'type': 'diagnostic',
     },
     {
