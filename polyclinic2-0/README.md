@@ -9,5 +9,3 @@ Made with Gulp, js, scss, html
     <li>JQueryMaskedInput</li>
     <li>Air-datepicker</li>
 </ol>
-
-Time spend on this site : 28 working hours
