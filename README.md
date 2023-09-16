@@ -1,5 +1,9 @@
 # Polyclinic website
 
-<a href="https://k0llen.github.io/polyclinic/polyclinic1-0/index.html">polyclinic1-0</a> - first version, made with html, css, js
+Made with Gulp, js, scss, html
 
-<a href="https://k0llen.github.io/polyclinic/polyclinic2-0/docs/index.html">polyclinic2-0</a> - actual version, made with gulp, html, scss, js
+<h2>Libs on this site:</h2>
+<ol>
+    <li>JQueryMaskedInput</li>
+    <li>Air-datepicker</li>
+</ol>
